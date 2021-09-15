@@ -6,6 +6,7 @@ int main()
 // Declaração de Variáveis
 float numero1, numero2, resultado; 
 // Entrada de dados
+printf("------------------------------------------Realize sua conta de subtracao-----------------------------------------------------\n");
 printf("Primeiro numero: ");
 scanf("%f", &numero1);//O %f é pra definir o tipo de dado, neste caso ‘float’- & comercial é para localizar a variável  
 printf("Segundo numero: ");
