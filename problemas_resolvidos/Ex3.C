@@ -12,7 +12,7 @@ scanf("%f", &n1);
 printf("Nota 2:");
 scanf("%f", &n2);
 // processamento de dados
-resultado = (n1*2) + (n2*3)/2;
+resultado = (n1*0.2) + (n2*0.3)/2;
 // saída de dados
 printf("\nMedia: %.2f \n", resultado);
 system("pause");
