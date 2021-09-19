@@ -1,20 +1,18 @@
-// Programa que calcula a média ponderada de duas notas fornecidas pelo usuário, sendo que a primeira tem peso 2 e a segunda peso 3 
+// Programa que recebe o preço de um produto e calcula um desconto de 10% 
 #include <stdio.h>
 #include <locale.h>
 #include <stdlib.h>
 int main()
 {setlocale(LC_ALL, "Portuguese");
 // Declaração de Variáveis
-float n1, n2, resultado; 
+float preco, novoPreco; 
 // Entrada de dados
-printf("Nota 1: ");
-scanf("%f", &n1); 
-printf("Nota 2: ");
-scanf("%f", &n2);
+printf("Preco do produto: ");
+scanf("%f", &preco); 
 // processamento de dados
-resultado =(n1*2+n2*3)/5;
+novoPreco =preco*0.9;
 // saída de dados
-printf("\nMedia ponderada: %.2f \n", resultado);
+printf("\nNovo preco: %.2f \n", novoPreco);
 system("pause");
 return 0;
 }
