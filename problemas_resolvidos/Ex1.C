@@ -1,6 +1,7 @@
 // Desenvolvimento de calculadora para realizar cálculos de subtração
 #include <stdio.h>
 #include <locale.h>
+#include <stdlib.h> //para da dar uma pausa na hora da execução (system pause)
 int main()
 {setlocale(LC_ALL, "Portuguese");
 // Declaração de Variáveis
