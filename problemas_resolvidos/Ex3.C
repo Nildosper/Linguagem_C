@@ -7,9 +7,9 @@ int main()
 // Declaração de Variáveis
 float n1, n2, resultado; 
 // Entrada de dados
-printf("Nota 1:");
+printf("Nota 1: ");
 scanf("%f", &n1); 
-printf("Nota 2:");
+printf("Nota 2: ");
 scanf("%f", &n2);
 // processamento de dados
 resultado =(n1*2+n2*3)/5;
