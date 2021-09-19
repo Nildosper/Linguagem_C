@@ -1,6 +1,7 @@
 // Multiplicação de três números fornecidos pelo usuário
 #include <stdio.h>
 #include <locale.h>
+#include <stdlib.h>
 int main()
 {setlocale(LC_ALL, "Portuguese");
 
@@ -17,6 +18,7 @@ scanf("%f", &n3);
 // processamento de dados
 resultado = n1*n2*n3;
 // saída de dados
-printf("\nO valor da multiplicacao e: %2.f", resultado);
+printf("\nO valor da multiplicacao e: %2.f \n", resultado);
+system("pause");
 return 0;
 }
