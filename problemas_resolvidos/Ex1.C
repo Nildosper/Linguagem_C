@@ -15,7 +15,7 @@ scanf("%f", &numero2);
 // processamento de dados
 resultado = numero1 - numero2; // O ‘=’ é um sinal de atribuição
 // saída de dados
-printf("\nResultado da subtracao: %.2f ",resultado); // \n é utilizado para mudar de linha e o 2 no ‘%2f’ é para definir o número de casas decimais 
+printf("\nResultado da subtracao: %.2f \n",resultado); // \n é utilizado para mudar de linha e o 2 no ‘%2f’ é para definir o número de casas decimais 
 system("pause");
 return 0;
 }
