@@ -24,8 +24,8 @@ r9=numero*8;
 r10=numero*9; 
 r11=numero*10;
 // saída de dados
-printf("%2.f x %2.f: %2.f \n", numero, r1);
-printf("%2.f x %2.f: %2.f \n", numero, r2);
+printf("%2.f x 0: %2.f \n", numero, r1);
+printf("%2.f x 1: %2.f \n", numero, r2);
 system("pause");
 return 0;
 }
