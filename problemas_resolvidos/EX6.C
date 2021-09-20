@@ -26,6 +26,15 @@ r11=numero*10;
 // saída de dados
 printf("%2.f x 0: %2.f \n", numero, r1);
 printf("%2.f x 1: %2.f \n", numero, r2);
+printf("%2.f x 2: %2.f \n", numero, r3);
+printf("%2.f x 3: %2.f \n", numero, r4);
+printf("%2.f x 4: %2.f \n", numero, r5);
+printf("%2.f x 5: %2.f \n", numero, r6);
+printf("%2.f x 6: %2.f \n", numero, r7);
+printf("%2.f x 7: %2.f \n", numero, r8);
+printf("%2.f x 8: %2.f \n", numero, r9);
+printf("%2.f x 9: %2.f \n", numero, r10);
+printf("%2.f x 10: %2.f \n", numero, r11);
 system("pause");
 return 0;
 }
