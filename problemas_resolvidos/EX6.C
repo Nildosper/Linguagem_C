@@ -9,7 +9,7 @@ int main()
 float numero, r1, r2,r3,r4,r5,r6,r7,r8,r9,r10,r11; 
 // Entrada de dados
 printf("------------------------------------------Tabuada de multiplicacao-----------------------------------------------------\n");
-printf("Digite um numero de 0 a 10:  ");
+printf("Digite um numero:  ");
 scanf("%f", &numero); 
 // processamento de dados
 r1=numero*0;
