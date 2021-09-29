@@ -21,7 +21,7 @@ area = dimensao1 * dimensao2;
  potencia = area * 18;
 // saída de dados
 printf("\n----------------------------------Resultado ---------------------------------");
-printf ("\nA área do seu ambiente é: %.2f", area);
+printf ("\nA área do seu ambiente é: %.2f m2", area);
 printf ("\nA potência de iluminação necessária é: %.2f W", potencia);
 printf("\n------------------------------------------------------------------------------\n");
 system("pause");
