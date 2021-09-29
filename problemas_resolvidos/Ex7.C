@@ -12,9 +12,9 @@ int main()
 // declaração de variáveis
 float dimensao1, dimensao2, area, potencia ;
 // entrada de dados
-printf("Digite a dimensão 1..: ");
+printf("Digite a dimensão 1: ");
 scanf("%f", &dimensao1);
-printf("Digite a dimensão 2..: ");
+printf("Digite a dimensão 2: ");
 scanf("%f", &dimensao2);
  // processamento
 area = dimensao1 * dimensao2;
@@ -22,8 +22,9 @@ area = dimensao1 * dimensao2;
 // saída de dados
 printf("\n----------------------------------Resultado ---------------------------------");
 printf ("\nA área do seu ambiente é: %.2f", area);
-printf ("\nO total de potência de iluminação necessária é: %.2f", potencia);
-printf("\n------------------------------------------------------------------------------");
+printf ("\nA potência de iluminação necessária é: %.2f W", potencia);
+printf("\n------------------------------------------------------------------------------\n");
+system("pause");
 return 0;
 // Retorna codificação padrão do Windows
   SetConsoleOutputCP(CPAGE_DEFAULT);
