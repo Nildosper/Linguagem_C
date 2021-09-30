@@ -12,7 +12,7 @@ int main()
 // declaração de variáveis
 float salFixo, vendas, comissao, salFinal;  
 // entrada de dados
-    printf("---------------------------------------------------");
+    printf("----------------------------------------------------------");
     printf("\nSalario Fixo..: R$ ");
     scanf("%f", &salFixo); 
     printf("Valor das Vendas..: R$ ");
@@ -28,7 +28,7 @@ float salFixo, vendas, comissao, salFinal;
       }
     salFinal = salFixo + (vendas * comissao / 100);
 // Saída de dados
-    printf("---------------- Resultado -----------------------");
+    printf("-------------------- Resultado ---------------------------");
     printf("\nValor do salario final..: R$ %.2f \n", salFinal);
 system("pause");
 return 0;
