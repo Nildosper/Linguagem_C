@@ -10,7 +10,7 @@ int main()
 // Define codificação como sendo UTF-8
   SetConsoleOutputCP(CPAGE_UTF8);
 // declaração de variáveis
-float salFixo, vendas, comissao, salFinal;   // declaração de variáveis
+float salFixo, vendas, comissao, salFinal;  
 // entrada de dados
     printf("---------------------------------------------------");
     printf("\nSalario Fixo..: R$ ");
