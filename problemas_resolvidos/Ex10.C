@@ -35,7 +35,7 @@ if (vendas<=3000)
 comissao = vendas * comissao/100;
 //Saída de dados
 printf("\n------------------------------------------------------------------------");
-printf("\nValor da comissão: R$ %.2f" , comissao);
+printf("\nValor da comissão: R$ %.2f \n" , comissao);
 system("pause");
 return 0;
 // Retorna codificação padrão do Windows
