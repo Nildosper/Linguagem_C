@@ -1,6 +1,7 @@
 //Estrutura Múltipla Escolha (Estrutura Caso)
 /*Programa que que retorna o nome do mês de acordo com o número digitado pelo usuário*/
 #include <stdio.h>
+#include <stdlib.h>
 #include <windows.h>
 int main()
 {
@@ -55,9 +56,10 @@ scanf("%d", &mes);
                break;       
         default: // se não for nenhuma das opções (case)
                printf("Número inválido\n");
+               system("pause");
+               system("cls");
+               main(); 
     }
-    
-system("pause");
 return 0;
 // Retorna codificação padrão do Windows
   SetConsoleOutputCP(CPAGE_DEFAULT);
