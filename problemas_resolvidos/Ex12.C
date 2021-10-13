@@ -62,9 +62,9 @@ if (preco<=25 && categoria==1)
 // calculando o novo preço – preço + aumento + imposto
 novoPreco = preco + aumento + imposto;
 //Saída de dados - Valor do aumento, imposto e do novo preço
-printf("Valor do aumento: R$ %.2f \n ", aumento);
-printf("Valor do imposto: R$ %.2f \n", imposto);
-printf("Valor do novo preço: R$ %.2f \n", novoPreco);
+printf("\nValor do aumento: R$ %.2f ", aumento);
+printf("\nValor do imposto: R$ %.2f", imposto);
+printf("\nNovo preço: R$ %.2f \n", novoPreco);
 system("pause");
 return 0;
 // Retorna codificação padrão do Windows
