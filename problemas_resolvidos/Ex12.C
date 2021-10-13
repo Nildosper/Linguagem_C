@@ -13,7 +13,7 @@ int main()
 // Define codificação como sendo UTF-8
   SetConsoleOutputCP(CPAGE_UTF8);
 // declaração de variáveis
-float preco;
+float preco, aumento;
 int categoria, situacao;
 //Entrada de dados
 printf("-------------------------------------------------------------------------------");
@@ -23,14 +23,39 @@ printf("Categoria: \n1- Limpeza \n2- Alimentação \n3- Vestuário \nCategoria e
 scanf("%d", &categoria);
 printf("Situação: \n1 - Produtos que necessitam de refrigeração  \n2- Produtos que não necessitam de refrigeração  \nSituação escolhida: ");
 scanf("%d", &situacao);
-
-
-
-
-
 //Processamento
-printf("-------------------------------------------------------------------------------");
+printf("-------------------------------------------------------------------------------\n");
+if (preco<=25)
+{
 
+}
+  else if (categoria==1)
+  {
+    aumento=preco*0.05;
+  }
+    else if (categoria==2)
+    {
+      aumento=preco*0.08;
+    }
+      else 
+      {
+        aumento=preco*0.10;
+      }
+else
+{
+}
+else if (categoria==1)
+  {
+    aumento=preco*0.12;
+  }
+    else if (categoria==2)
+    {
+      aumento=preco*0.15;
+    }
+      else 
+      {
+        aumento=preco*0.18;
+      }
 
 
 
