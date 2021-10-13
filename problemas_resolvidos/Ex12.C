@@ -13,7 +13,7 @@ int main()
 // Define codificação como sendo UTF-8
   SetConsoleOutputCP(CPAGE_UTF8);
 // declaração de variáveis
-float preco, aumento;
+float preco, aumento, imposto, novoPreco;
 int categoria, situacao;
 //Entrada de dados
 printf("-------------------------------------------------------------------------------");
@@ -25,42 +25,46 @@ printf("Situação: \n1 - Produtos que necessitam de refrigeração  \n2- Produt
 scanf("%d", &situacao);
 //Processamento
 printf("-------------------------------------------------------------------------------\n");
-if (preco<=25)
-{
-
-}
-  else if (categoria==1)
+if (preco<=25 && categoria==1)
   {
-    aumento=preco*0.05;
+  aumento=preco*0.05;
   }
-    else if (categoria==2)
+  else if (preco<=25 && categoria==2)
     {
       aumento=preco*0.08;
     }
-      else 
+    else if (preco<=25 && categoria==3)
       {
         aumento=preco*0.10;
       }
-else
+      else if (preco > 25 && categoria==1)
+       {
+        aumento=preco*0.12;
+       }
+        else if (preco > 25 && categoria==2)
+          {
+           aumento=preco*0.15;
+          }
+            else if (preco > 25 && categoria==3) 
+              {
+              aumento=preco*0.18;
+              }
+
+//calculando o valor do imposto
+ if (categoria == 2 || situacao == 1)
 {
+  imposto = preco * 0.05;
 }
-else if (categoria==1)
+  else
   {
-    aumento=preco*0.12;
-  }
-    else if (categoria==2)
-    {
-      aumento=preco*0.15;
-    }
-      else 
-      {
-        aumento=preco*0.18;
-      }
-
-
-
-
-
+     imposto= preco * 0.08;
+  }     
+// calculando o novo preço – preço + aumento + imposto
+novoPreco = preco + aumento + imposto;
+//Saída de dados - Valor do aumento, imposto e do novo preço
+printf("Valor do aumento: R$ %.2f \n ", aumento);
+printf("Valor do imposto: R$ %.2f \n", imposto);
+printf("Valor do novo preço: R$ %.2f \n", novoPreco);
 system("pause");
 return 0;
 // Retorna codificação padrão do Windows
