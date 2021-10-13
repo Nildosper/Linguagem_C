@@ -1,5 +1,7 @@
-/Trabalhando com estrutura condicional encadeada
-//Programa que calcula a comissão de acordo com as vendas 
+//Trabalhando com estrutura condicional encadeada
+/*Programa que calcula o preço final de um produto com base em seu preço inicial (<=25; >25), 
+categoria (1-limpeza, 2-Alimentação e 3- vestuário) e 
+situação (1- Produtos que necessitam de refrigeração  2- Produtos que não necessitam de refrigeração)*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>
@@ -11,26 +13,29 @@ int main()
 // Define codificação como sendo UTF-8
   SetConsoleOutputCP(CPAGE_UTF8);
 // declaração de variáveis
-float custoFabrica, alicotaDistribuidor, alicotaImposto;
+float preco;
+int categoria, situacao;
 //Entrada de dados
 printf("-------------------------------------------------------------------------------");
-printf("\nInforme o preço de fábrica..: R$ ");
-scanf("%f", &custoFabrica);
+printf("\nPreço do Produto: ");
+scanf ("%f", &preco);
+printf("Categoria: \n1- Limpeza \n2- Alimentação \n3- Vestuário\n ");
+scanf("%d", &categoria);
+printf("Situação: 1 - Produtos que necessitam de refrigeração  2- Produtos que não necessitam de refrigeração: ");
+scanf("%d", &situacao);
+
+
+
+
+
 //Processamento
 printf("-------------------------------------------------------------------------------");
-if (custoFabrica > 25000)
-{
-    alicotaDistribuidor = 0.15; alicotaImposto = 0.20;
-}
-        else if (custoFabrica > 12000)
-        {
-            alicotaDistribuidor = 0.10; alicotaImposto = 0.15;
-        }
-            else
-            {
-                alicotaDistribuidor = 0.05; alicotaImposto = 0.0;
-            }
-printf("\nO preço ao consumidor será R$ %.2f \n",((custoFabrica)+(custoFabrica*alicotaDistribuidor)+(custoFabrica*alicotaImposto)));
+
+
+
+
+
+
 system("pause");
 return 0;
 // Retorna codificação padrão do Windows
