@@ -19,9 +19,9 @@ int categoria, situacao;
 printf("-------------------------------------------------------------------------------");
 printf("\nPreço do Produto: ");
 scanf ("%f", &preco);
-printf("Categoria: \n1- Limpeza \n2- Alimentação \n3- Vestuário\n ");
+printf("Categoria: \n1- Limpeza \n2- Alimentação \n3- Vestuário \nCategoria escolhida: ");
 scanf("%d", &categoria);
-printf("Situação: 1 - Produtos que necessitam de refrigeração  2- Produtos que não necessitam de refrigeração: ");
+printf("Situação: \n1 - Produtos que necessitam de refrigeração  \n2- Produtos que não necessitam de refrigeração  \nSituação escolhida: ");
 scanf("%d", &situacao);
 
 
