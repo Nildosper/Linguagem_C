@@ -18,55 +18,26 @@ int main()
 // Define codificação como sendo UTF-8
   SetConsoleOutputCP(CPAGE_UTF8);
 // declaração de variáveis
-int mes;
+int op;
 // entrada de dados
-printf("Digite o número do mês: ");
-scanf("%d", &mes);
-// processamento
-    switch (mes)
-    {
-        case 1:  // if (mes == 1)
-                printf("Janeiro\n");  // saída de dados
-                break;
-        case 2: 
-               printf("Fevereiro\n"); // saída de dados
-               break;
-        case 3: 
-               printf("Março\n"); // saída de dados
-               break;
-        case 4: 
-               printf("Abril\n"); // saída de dados
-               break;
-        case 5: 
-               printf("Maio\n"); // saída de dados
-               break;
-        case 6: 
-               printf("Junho\n"); // saída de dados
-               break;
-        case 7: 
-               printf("Julho\n"); // saída de dados
-               break;
-        case 8: 
-               printf("Agosto\n"); // saída de dados
-               break;
-        case 9: 
-               printf("Setembro\n"); // saída de dados
-               break;
-        case 10: 
-               printf("Outubro\n"); // saída de dados
-               break;       
-        case 11: 
-               printf("Novembro\n"); // saída de dados
-               break;
-        case 12: 
-               printf("Dezembro\n"); // saída de dados
-               break;       
-        default: // se não for nenhuma das opções (case)
-               printf("Número inválido\n");
-               system("pause");
-               system("cls");
-               main(); 
-    }
+//boas vindas
+printf("---------------------------------------------------------------------------------------------------------\n\n");
+printf("|                                            Bem-vindo a BRPETS                                         |\n\n");
+printf("---------------------------------------------------------------------------------------------------------\n\n");
+
+printf("1 - Conheça a BRPets\n");
+printf("2 - Clube Pet\n");
+printf("3 - Loja\n");
+printf("4 - Ofertas\n");
+printf("5 - Busca\n");
+printf("6 - Carinho\n");
+printf("0 - Sair do site\n");
+printf("Opção: ");
+scanf("%d", &op);
+
+
+
+
 return 0;
 // Retorna codificação padrão do Windows
   SetConsoleOutputCP(CPAGE_DEFAULT);
