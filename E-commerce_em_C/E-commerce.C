@@ -41,11 +41,11 @@ switch(op){
             printf("|                                                BRPETS                                                 |\n\n");
             printf("---------------------------------------------------------------------------------------------------------\n\n");
             printf("\n| A BRPet é uma empresa que surgiu para fazer a relação entre você e seu pet ser melhor a cada dia!     |\n");
-	     printf("\n| Somos apaixonados por pets e , por isso, a nossa loja foi preparada e organizada para você encontrar  |\n"); 
+	        printf("\n| Somos apaixonados por pets e , por isso, a nossa loja foi preparada e organizada para você encontrar  |\n"); 
             printf("\n| facilmente o que procura a qualquer hora e em qualquer lugar.                                         |\n");
-	     printf("\n| Os nossos principais produtos são as PetBOX, uma maneira inovadora de ter todo mês na sua casa tudo   |\n");
+	        printf("\n| Os nossos principais produtos são as PetBOX, uma maneira inovadora de ter todo mês na sua casa tudo   |\n");
             printf("\n| que seu pet precisa.                                                                                  |\n");   
-	     printf("\n| Faça parte do nosso Clube Pet  e aproveite o que há de melhor no mundo pet!                           |\n");
+	        printf("\n| Faça parte do nosso Clube Pet  e aproveite o que há de melhor no mundo pet!                           |\n");
             printf("---------------------------------------------------------------------------------------------------------\n\n");
             system("pause");
             system("cls");
