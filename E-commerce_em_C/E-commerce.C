@@ -18,7 +18,7 @@ int main()
 // Define codificação como sendo UTF-8
   SetConsoleOutputCP(CPAGE_UTF8);
 // declaração de variáveis
-int op, opcao;
+int op, opcao, opBox, opBoxCao,opBoxGato;
 // entrada de dados
 //boas vindas
 printf("---------------------------------------------------------------------------------------------------------\n\n");
@@ -83,36 +83,61 @@ switch(op){
                 system("cls");
                 main();             
                 }
-                if (opcao==2)
+                else if (opcao==2)
                     {
                     printf("--------------------------------------------------------------------------------------------------------\n");
                     printf("| Escolha a PetBOX ideal para o seu Pet                                                                |\n");
                     printf("--------------------------------------------------------------------------------------------------------\n");
-                    printf("\n 1 - PetBox para Cachoros                                                                             \n");
-                    printf("\n 2 - PetBox para gatos                                                                                \n");
+                    printf("1 - PetBox para Cachoros                                                                                \n");
+                    printf("2 - PetBox para gatos                                                                                   \n");
                     printf("Opção: ");
-                    scanf("%d", & opbox);
-
-                    printf("--------------------------------------------------------------------------------------------------------\n\n");
-                    system("pause");
-                    system("cls");
-                    main();
-                     }             
+                    scanf("%d", &opBox);              
+                    }             
                  else 
-                        {
+                    {
                     printf("Número inválido\n");
                     printf("--------------------------------------------------------------------------------------------------------\n\n");
                     system("pause");
                     system("cls");
                     main();
-                        }  
+                    }          
+                if (opBox==1)
+                {
+                printf("--------------------------------------------------------------------------------------------------------\n");
+                printf("| PetBox para Cachoros                                                                                 |\n");
+                printf("--------------------------------------------------------------------------------------------------------\n");
+                printf("PetBox para filhotes                                                                                    \n");
+                printf("1 - Standard                                                                                            \n");
+                printf("2 - Premium                                                                                             \n");
+                printf("3 - Super Premium                                                                                       \n");
+                printf("Opção: ");
+                scanf("%d", &opBoxCao); 
+                }
+                else if (opBox==2)
+                {
+                printf("--------------------------------------------------------------------------------------------------------\n");
+                printf("| PetBox para gatos                                                                                    |\n");
+                printf("--------------------------------------------------------------------------------------------------------\n");
+                printf("PetBox para filhotes                                                                                    \n");
+                printf("1 - Standard                                                                                            \n");
+                printf("2 - Premium                                                                                             \n");
+                printf("3 - Super Premium                                                                                       \n");
+                printf("Opção: ");
+                scanf("%d", &opBoxGato); 
+                }
+                else 
+                {
+                printf("Número inválido\n");
+                printf("--------------------------------------------------------------------------------------------------------\n\n");
+                system("pause");
+                system("cls");
+                main();  
+                }         
+                            
+                          
                     
 
              break;
-
-
-
-
 
             
 
