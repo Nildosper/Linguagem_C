@@ -1,4 +1,3 @@
-/*Programa que que retorna o nome do mês de acordo com o número digitado pelo usuário*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>
@@ -126,8 +125,7 @@ switch(op){
                 system("cls");
                 main();  
                 }         
-                            
-                          
+                                   
                     
 
              break;
