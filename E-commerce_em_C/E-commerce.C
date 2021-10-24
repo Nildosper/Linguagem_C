@@ -3,13 +3,6 @@
 #include <stdlib.h>
 #include <windows.h>
 
-
-
-
-
-
-
-
 int main()
 {
 // Define o valor das páginas de código UTF8 e default do Windows
