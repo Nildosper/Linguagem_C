@@ -18,7 +18,7 @@ int main()
 // Define codificação como sendo UTF-8
   SetConsoleOutputCP(CPAGE_UTF8);
 // declaração de variáveis
-int op;
+int op, opcao;
 // entrada de dados
 //boas vindas
 printf("---------------------------------------------------------------------------------------------------------\n\n");
@@ -40,12 +40,12 @@ switch(op){
             printf("---------------------------------------------------------------------------------------------------------\n\n");
             printf("|                                                BRPETS                                                 |\n\n");
             printf("---------------------------------------------------------------------------------------------------------\n\n");
-            printf("\n| A BRPet é uma empresa que surgiu para fazer a relação entre você e seu pet ser melhor a cada dia!     |\n");
-	        printf("\n| Somos apaixonados por pets e , por isso, a nossa loja foi preparada e organizada para você encontrar  |\n"); 
-            printf("\n| facilmente o que procura a qualquer hora e em qualquer lugar.                                         |\n");
-	        printf("\n| Os nossos principais produtos são as PetBOX, uma maneira inovadora de ter todo mês na sua casa tudo   |\n");
-            printf("\n| que seu pet precisa.                                                                                  |\n");   
-	        printf("\n| Faça parte do nosso Clube Pet  e aproveite o que há de melhor no mundo pet!                           |\n");
+            printf("\n A BRPet é uma empresa que surgiu para fazer a relação entre você e seu pet ser melhor a cada dia!     \n");
+	        printf("\n Somos apaixonados por pets e , por isso, a nossa loja foi preparada e organizada para você encontrar  \n"); 
+            printf("\n facilmente o que procura a qualquer hora e em qualquer lugar.                                         \n");
+	        printf("\n Os nossos principais produtos são as PetBOX, uma maneira inovadora de ter todo mês na sua casa tudo   \n");
+            printf("\n que seu pet precisa.                                                                                  \n");   
+	        printf("\n Faça parte do nosso Clube Pet  e aproveite o que há de melhor no mundo pet!                           \n");
             printf("---------------------------------------------------------------------------------------------------------\n\n");
             system("pause");
             system("cls");
@@ -53,13 +53,69 @@ switch(op){
 
             break;
         case 2:
-            printf("Em construção \n");
+            printf("---------------------------------------------------------------------------------------------------------\n");
+            printf("|                                                BRPETS                                                 |\n");
+            printf("---------------------------------------------------------------------------------------------------------\n");
+            printf("| Clube Pet |                                                                                            \n");
+            printf("-------------                                                                                            \n");
+            printf("1 - Como funciona a PetBox                                                                               \n");
+            printf("2 - Escolha a PetBOX ideal para o seu Pet                                                                \n");
+            printf("Opção: ");
+            scanf("%d", &opcao);
+                if (opcao==1)
+                {
+                printf("---------------------------------------------------------------------------------------------------------\n");
+                printf("| Como funciona a PetBox                                                                                |\n");
+                printf("---------------------------------------------------------------------------------------------------------\n");
+                printf("\n         No Clube Pet você recebe, todo mês, uma PetBOX com tudo que o seu bichinho precisa!         \n\n");
+		        printf("\n                                 PASSOS PARA ADQUIRIR SUA PET BOX                                      \n");
+		        printf("\n                                        1 - Você escolhe!                                              \n");
+                printf("\n         São vários clubes diferentes, e você escolhe a PetBOX que mais combina com o seu pet.         \n");
+		        printf("\n                                        2 - Nós selecionamos                                           \n"); 
+                printf("\n  Nossos especialistas  se encarregam em selecionar os melhores produtos que farão parte de cada PetBOX\n");
+		        printf("\n                                        3 - Comodidade                                                 \n");
+                printf("\n                Todo mês, você recebe a sua PetBOX no conforto da sua casa.                            \n");
+		        printf("\n                                        4 - Aproveite                                                  \n");
+                printf("\n                            O seu bichinho com o melhor do mundo Pet!                                  \n");
 
-            system("pause");
-            system("cls");
-            main();
+                printf("--------------------------------------------------------------------------------------------------------\n\n");
+                system("pause");
+                system("cls");
+                main();             
+                }
+                if (opcao==2)
+                    {
+                    printf("--------------------------------------------------------------------------------------------------------\n");
+                    printf("| Escolha a PetBOX ideal para o seu Pet                                                                |\n");
+                    printf("--------------------------------------------------------------------------------------------------------\n");
+                    printf("\n 1 - PetBox para Cachoros                                                                             \n");
+                    printf("\n 2 - PetBox para gatos                                                                                \n");
+                    printf("Opção: ");
+                    scanf("%d", & opbox);
 
-            break;
+                    printf("--------------------------------------------------------------------------------------------------------\n\n");
+                    system("pause");
+                    system("cls");
+                    main();
+                     }             
+                 else 
+                        {
+                    printf("Número inválido\n");
+                    printf("--------------------------------------------------------------------------------------------------------\n\n");
+                    system("pause");
+                    system("cls");
+                    main();
+                        }  
+                    
+
+             break;
+
+
+
+
+
+            
+
         case 3:
            printf("Em contrução \n");
 
