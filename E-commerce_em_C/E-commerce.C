@@ -54,18 +54,43 @@ switch(op){
             break;
         case 2:
             printf("Em contrução \n");
+
+            system("pause");
+            system("cls");
+            main();
+
             break;
         case 3:
            printf("Em contrução \n");
+
+           system("pause");
+           system("cls");
+           main();
+
             break;
         case 4:
             printf("Em contrução \n");
+
+           system("pause");
+           system("cls");
+           main();
+
             break;
         case 5:
            printf("Em contrução \n");
+
+           system("pause");
+           system("cls");
+           main();
+
             break;
         case 6:
             printf("Em contrução \n");
+
+           system("pause");
+           system("cls");
+           main();
+
             break;
         case 0:
             exit(0);
