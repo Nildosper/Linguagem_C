@@ -53,7 +53,7 @@ switch(op){
 
             break;
         case 2:
-            printf("Em contrução \n");
+            printf("Em construção \n");
 
             system("pause");
             system("cls");
