@@ -10,7 +10,7 @@ int main()
 // Define codificação como sendo UTF-8
   SetConsoleOutputCP(CPAGE_UTF8);
 // declaração de variáveis
-int op, opcao, opBox, opBoxCao,opBoxGato, categoriaFilhotes, categoriaAdultos, categoriaIdosos;
+int op, opcao, opBox, opBoxCao,opBoxGato, categoriaCaoFilhotes, categoriaCaoAdultos, categoriaCaoIdosos, tamanhoBoxCaoFilhotes1, tamanhoBoxCaoFilhotes2, tamanhoBoxCaoFilhotes3, carrinhoCaoFilhotes1;
 // entrada de dados
 //boas vindas
 printf("---------------------------------------------------------------------------------------------------------\n\n");
@@ -142,7 +142,7 @@ switch(op){
                 printf("\nAcompanha rações 100 de origem animal. Além disso, todos os conservantes utilizados são de origem      \n");
                 printf("\nnatural. O seu cão com o melhor do mundo Pet!                                                          \n");
                 printf("Opção: ");
-                scanf("%d", &categoriaFilhotes); 
+                scanf("%d", &categoriaCaoFilhotes); 
                 
                 }
                     else if (opBoxCao==2)
@@ -151,7 +151,7 @@ switch(op){
                      printf("2 - Premium                                                                                             \n");
                      printf("3 - Super Premium                                                                                       \n");
                      printf("Opção: ");
-                     scanf("%d", &categoriaAdultos);
+                     scanf("%d", &categoriaCaoAdultos);
                     }   
                         else if (opBoxCao==3)    
                         {
@@ -159,7 +159,7 @@ switch(op){
                         printf("2 - Premium                                                                                             \n");
                         printf("3 - Super Premium                                                                                       \n");
                         printf("Opção: ");
-                        scanf("%d", &categoriaIdosos);
+                        scanf("%d", &categoriaCaoIdosos);
                         }  
                             else 
                              {
@@ -169,7 +169,7 @@ switch(op){
                              system("cls");
                              main();  
                              } 
-                if (categoriaFilhotes==1)
+                if (categoriaCaoFilhotes==1)
                 {
                 printf("--------------------------------------------------------------------------------------------------------\n");
                 printf("| PetBox para filhotes                                                                                 |\n");
@@ -196,9 +196,20 @@ switch(op){
                 printf("|                          |--------|  e Condicionador (1 un) |--------| e Condicionador (1 un)  |------\n");
                 printf("|                          |--------|                         |--------|-Kit dental (1 un)       |------\n");
                 printf("--------------------------------------------------------------------------------------------------------\n");
+                printf("\n\nEscolha o tamanho da sua PetBox                                                                     \n");
+                printf("1 - Pequeno                                                                                             \n");
+                printf("3 - Médio                                                                                               \n");
+                printf("3 - Grande                                                                                              \n");
+                printf("Opção: ");
+                scanf("%d", &tamanhoBoxCaoFilhotes1);
+                printf("\n\nDeseja adicionar ao carrinho de compras?                                                            \n");
+                printf("1 - Sim                                                                                                 \n");
+                printf("2 - Não                                                                                                 \n");
+                printf("Opção: ");
+                scanf("%d", &carrinhoCaoFilhotes1);
 
                 }
-                    else if (categoriaFilhotes==2)
+                    else if (categoriaCaoFilhotes==2)
                     {
                     printf("--------------------------------------------------------------------------------------------------------\n");
                     printf("| PetBox para filhotes                                                                                 |\n");
@@ -225,8 +236,14 @@ switch(op){
                     printf("|                          |--------|  e Condicionador (1 un) |--------| e Condicionador (1 un)  |------\n");
                     printf("|                          |--------|                         |--------|-Kit dental (1 un)       |------\n");
                     printf("--------------------------------------------------------------------------------------------------------\n");
+                    printf("\n\nEscolha o tamanho da sua PetBox                                                                     \n");
+                    printf("1 - Pequeno                                                                                             \n");
+                    printf("3 - Médio                                                                                               \n");
+                    printf("3 - Grande                                                                                              \n");
+                    printf("Opção: ");
+                    scanf("%d", &tamanhoBoxCaoFilhotes2);
                     }
-                        else if (categoriaFilhotes==3)
+                        else if (categoriaCaoFilhotes==3)
                         {
                         printf("--------------------------------------------------------------------------------------------------------\n");
                         printf("| PetBox para filhotes                                                                                 |\n");
@@ -253,6 +270,12 @@ switch(op){
                         printf("|                          |--------|  e Condicionador (1 un) |--------| e Condicionador (1 un)  |------\n");
                         printf("|                          |--------|                         |--------|-Kit dental (1 un)       |------\n");
                         printf("--------------------------------------------------------------------------------------------------------\n");
+                        printf("\n\nEscolha o tamanho da sua PetBox                                                                     \n");
+                        printf("1 - Pequeno                                                                                             \n");
+                        printf("3 - Médio                                                                                               \n");
+                        printf("3 - Grande                                                                                              \n");
+                        printf("Opção: ");
+                        scanf("%d", &tamanhoBoxCaoFilhotes3);
                         }
                             else 
                              {
@@ -311,6 +334,21 @@ switch(op){
             system("cls");
             main();
     }
+        if (tamanhoBoxCaoFilhotes1==1 && carrinhoCaoFilhotes1==1)
+        {
+        printf("\n-----------------------------Carrinho de compras------------------------------------------------------\n");
+        printf("\nVocê possui um item:\n");
+        printf("\nPetBOX para cachorros filhotes: Standard Pequeno\n");
+        }
+        else 
+        {
+        printf ("\nVocê não possui nenhum item no carrinho\n");
+        printf("\n--------------------------------------------------------------------------------------------------------\n\n");
+        system("pause");
+        system("cls");
+        main(); 
+        }
+        
  
 
 return 0;
