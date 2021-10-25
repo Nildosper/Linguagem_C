@@ -198,7 +198,7 @@ switch(op){
                 printf("--------------------------------------------------------------------------------------------------------\n");
                 printf("\n\nEscolha o tamanho da sua PetBox                                                                     \n");
                 printf("1 - Pequeno                                                                                             \n");
-                printf("3 - Médio                                                                                               \n");
+                printf("2 - Médio                                                                                               \n");
                 printf("3 - Grande                                                                                              \n");
                 printf("Opção: ");
                 scanf("%d", &tamanhoBoxCaoFilhotes1);
@@ -272,7 +272,7 @@ switch(op){
                         printf("--------------------------------------------------------------------------------------------------------\n");
                         printf("\n\nEscolha o tamanho da sua PetBox                                                                     \n");
                         printf("1 - Pequeno                                                                                             \n");
-                        printf("3 - Médio                                                                                               \n");
+                        printf("2 - Médio                                                                                               \n");
                         printf("3 - Grande                                                                                              \n");
                         printf("Opção: ");
                         scanf("%d", &tamanhoBoxCaoFilhotes3);
@@ -336,18 +336,18 @@ switch(op){
     }
         if (tamanhoBoxCaoFilhotes1==1 && carrinhoCaoFilhotes1==1)
         {
-        printf("\n-----------------------------Carrinho de compras------------------------------------------------------\n");
+        printf("\n------------------------------------Carrinho de compras--------------------------------------------------\n");
         printf("\nVocê possui um item:\n");
         printf("\nPetBOX para cachorros filhotes: Standard Pequeno\n");
         }
-        else 
-        {
-        printf ("\nVocê não possui nenhum item no carrinho\n");
-        printf("\n--------------------------------------------------------------------------------------------------------\n\n");
-        system("pause");
-        system("cls");
-        main(); 
-        }
+            else 
+            {
+            printf ("\nVocê não possui nenhum item no carrinho\n");
+            printf("\n--------------------------------------------------------------------------------------------------------\n\n");
+            system("pause");
+            system("cls");
+            main(); 
+            }
         
  
 
