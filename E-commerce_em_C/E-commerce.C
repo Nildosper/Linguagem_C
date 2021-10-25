@@ -205,6 +205,26 @@ switch(op){
                     printf("--------------------------------------------------------------------------------------------------------\n");
                     printf("| 2 - Premium  |                                                                                        \n");
                     printf("----------------                                                                                        \n");
+                    printf("\n    Acompanha rações de primeira qualidade ricas em proteínas de alta digestibilidade, as quais       \n");         
+                    printf("\n               proporcionaram um melhor funcionamento do organismo do seu Pet.                         \n");
+                    printf("\n--------------------------------------------TAMANHOS ---------------------------------------------------\n\n");
+                    printf("--------------------------------------------------------------------------------------------------------\n");
+                    printf("|     PetBOX: Pequeno      |--------|      PetBOX: Médio      |--------|     PetBOX: Grande      |------\n");
+                    printf("|      Plano mensal        |--------|      Plano mensal       |--------|      Plano mensal       |------\n");
+                    printf("|      R$ 89,90/mês        |--------|      R$ 119,90/mês      |--------|     R$ 149,90/mês       |------\n");
+                    printf("|       Plano anual        |--------|      Plano anual        |--------|      Plano anual        |------\n");
+                    printf("|      R$ 79,90/mês        |--------|      R$ 109,90/mês      |--------|     R$ 139,90/mês       |------\n");
+                    printf("--------------------------------------------------------------------------------------------------------\n");
+                    printf("|Itens:                    |--------|Itens:                   |--------|Itens:                   |------\n");
+                    printf("|-Ração premium  (1 kg)    |--------|-Ração premium  (2 kg)   |--------|-Ração premium  (3  kg)  |------\n");
+                    printf("|-Petiscos (2 un)          |--------|-Petiscos (3 un)         |--------|-Petiscos (4 un)         |------\n");
+                    printf("|-Brinquedo (1 un)         |--------|-Brinquedo (1 un)        |--------|-Brinquedo (1 un)        |------\n");
+                    printf("|-Tapete higiênico (10 un) |--------|-Tapete higiênico (15 un)|--------|-Tapete higiênico (15 un)|------\n");
+                    printf("|-Sabonete (2 un)          |--------|-Sabonete (2 un)         |--------|-Sabonete (2 un)         |------\n");
+                    printf("|                          |--------|-Kit de Shampoo, Colônia |--------|-Kit de Shampoo, Colônia |------\n");
+                    printf("|                          |--------|  e Condicionador (1 un) |--------| e Condicionador (1 un)  |------\n");
+                    printf("|                          |--------|                         |--------|-Kit dental (1 un)       |------\n");
+                    printf("--------------------------------------------------------------------------------------------------------\n");
                     }
                         else if (categoriaFilhotes==3)
                         {
@@ -213,6 +233,26 @@ switch(op){
                         printf("--------------------------------------------------------------------------------------------------------\n");
                         printf("| 3 - Super Premium  |                                                                                  \n");
                         printf("----------------------                                                                                  \n");
+                        printf("\n  Acompanha rações 100 de origem animal. Além disso, todos os conservantes utilizados são de origem   \n");
+                        printf("\n                     natural. O seu cão com o melhor do mundo Pet!                                    \n");
+                        printf("\n--------------------------------------------TAMANHOS ---------------------------------------------------\n\n");
+                        printf("--------------------------------------------------------------------------------------------------------\n");
+                        printf("|     PetBOX: Pequeno      |--------|      PetBOX: Médio      |--------|     PetBOX: Grande      |------\n");
+                        printf("|      Plano mensal        |--------|      Plano mensal       |--------|      Plano mensal       |------\n");
+                        printf("|      R$ 99,90/mês        |--------|      R$ 129,90/mês      |--------|     R$ 169,90/mês       |------\n");
+                        printf("|       Plano anual        |--------|      Plano anual        |--------|      Plano anual        |------\n");
+                        printf("|      R$ 89,90/mês        |--------|      R$ 119,90/mês      |--------|     R$ 159,90/mês       |------\n");
+                        printf("--------------------------------------------------------------------------------------------------------\n");
+                        printf("|Itens:                    |--------|Itens:                   |--------|Itens:                   |------\n");
+                        printf("|-Ração premium  (5 kg)    |--------|-Ração premium  (8 kg)   |--------|-Ração premium  (12 kg)  |------\n");
+                        printf("|-Petiscos (2 un)          |--------|-Petiscos (3 un)         |--------|-Petiscos (4 un)         |------\n");
+                        printf("|-Brinquedo (1 un)         |--------|-Brinquedo (1 un)        |--------|-Brinquedo (1 un)        |------\n");
+                        printf("|-Tapete higiênico (10 un) |--------|-Tapete higiênico (15 un)|--------|-Tapete higiênico (15 un)|------\n");
+                        printf("|-Sabonete (2 un)          |--------|-Sabonete (2 un)         |--------|-Sabonete (2 un)         |------\n");
+                        printf("|                          |--------|-Kit de Shampoo, Colônia |--------|-Kit de Shampoo, Colônia |------\n");
+                        printf("|                          |--------|  e Condicionador (1 un) |--------| e Condicionador (1 un)  |------\n");
+                        printf("|                          |--------|                         |--------|-Kit dental (1 un)       |------\n");
+                        printf("--------------------------------------------------------------------------------------------------------\n");
                         }
                             else 
                              {
