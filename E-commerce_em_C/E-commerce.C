@@ -98,10 +98,9 @@ switch(op){
                 printf("--------------------------------------------------------------------------------------------------------\n");
                 printf("| PetBox para Cachoros                                                                                 |\n");
                 printf("--------------------------------------------------------------------------------------------------------\n");
-                printf("PetBox para filhotes                                                                                    \n");
-                printf("1 - Standard                                                                                            \n");
-                printf("2 - Premium                                                                                             \n");
-                printf("3 - Super Premium                                                                                       \n");
+                printf("1 - PetBox para filhotes                                                                                \n");
+                printf("2 - PetBox para adultos                                                                                 \n");
+                printf("3 - PetBox para idosos                                                                                  \n");
                 printf("Opção: ");
                 scanf("%d", &opBoxCao); 
                 }
@@ -110,10 +109,9 @@ switch(op){
                 printf("--------------------------------------------------------------------------------------------------------\n");
                 printf("| PetBox para gatos                                                                                    |\n");
                 printf("--------------------------------------------------------------------------------------------------------\n");
-                printf("PetBox para filhotes                                                                                    \n");
-                printf("1 - Standard                                                                                            \n");
-                printf("2 - Premium                                                                                             \n");
-                printf("3 - Super Premium                                                                                       \n");
+                printf("1 - PetBox para filhotes                                                                                \n");
+                printf("2 - PetBox para adultos                                                                                 \n");
+                printf("3 - PetBox para idosos                                                                                  \n");
                 printf("Opção: ");
                 scanf("%d", &opBoxGato); 
                 }
