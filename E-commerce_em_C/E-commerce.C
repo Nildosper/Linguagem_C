@@ -124,7 +124,26 @@ switch(op){
                 main();  
                 }         
                                    
-                    
+                if (opBoxCao==1)
+                {
+                    printf(" em construção");
+                }
+                    else if (opBoxCao==2)
+                    {
+                    printf("em construção");
+                    }   
+                        else if (opBoxCao==3)    
+                        {
+                         printf( "em cosntrução");
+                        }  
+                            else 
+                             {
+                             printf("Número inválido\n");
+                             printf("--------------------------------------------------------------------------------------------------------\n\n");
+                             system("pause");
+                             system("cls");
+                             main();  
+                             }        
 
              break;
 
