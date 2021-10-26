@@ -4,7 +4,7 @@
 
 int clubepet();
 // declaração de variáveis globais
-int op, opcao, opBox, opBoxCao,opBoxGato, categoriaCaoFilhotes, categoriaCaoAdultos, categoriaCaoIdosos, tamanhoBoxCaoFilhotes1, tamanhoBoxCaoFilhotes2, tamanhoBoxCaoFilhotes3, carrinhoCaoFilhotes1;
+int op, opcao, opBox, opBoxCao,opBoxGato, categoriaCaoFilhotes, categoriaCaoAdultos, categoriaCaoIdosos, tamanhoBoxCaoFilhotes1, tamanhoBoxCaoFilhotes2, tamanhoBoxCaoFilhotes3, tamanhoBoxCaoAdultos1, tamanhoBoxCaoAdultos2, tamanhoBoxCaoAdultos3, tamanhoBoxCaoIdosos1, tamanhoBoxCaoIdosos2, tamanhoBoxCaoIdosos3;
 
 
 int main()
@@ -194,8 +194,8 @@ int clubepet()
                 if (opBoxCao==1)
                 {
                 printf("\n--------------------------------------------------------------------------------------------------------\n");
-                printf("| PetBox para filhotes                                                                                 |\n");
-                printf("--------------------------------------------------------------------------------------------------------\n");
+                printf("| PetBox para filhotes                                                                                   |\n");
+                printf("----------------------------------------------------------------------------------------------------------\n");
                 printf("\n1 -- Standard --                                                                                       \n");
                 printf("\nAcompanha ração balanceada com proteínas de boa qualidade preparadas por empresas de renome no mercado \n");
                 printf("\nNa composição da ração você encontrar farinha de carne, gordura animal, glúten  e outros ingredientes  \n");
@@ -211,17 +211,35 @@ int clubepet()
                 }
                     else if (opBoxCao==2)
                     {
-                     printf("\n1 - Standard                                                                                            \n");
-                     printf("2 - Premium                                                                                             \n");
-                     printf("3 - Super Premium                                                                                       \n");
-                     printf("\nOpção: ");
+                    printf("\n--------------------------------------------------------------------------------------------------------\n");
+                    printf("| PetBox para Adultos                                                                                    |\n");
+                    printf("----------------------------------------------------------------------------------------------------------\n");
+                    printf("\n1 -- Standard --                                                                                       \n");
+                    printf("\nAcompanha ração balanceada com proteínas de boa qualidade preparadas por empresas de renome no mercado \n");
+                    printf("\nNa composição da ração você encontrar farinha de carne, gordura animal, glúten  e outros ingredientes  \n");
+                    printf("\n2 -- Premium --                                                                                        \n");
+                    printf("\nAcompanha rações de primeira qualidade ricas em proteínas de alta digestibilidade, as quais            \n");         
+                    printf("\nproporcionaram um melhor funcionamento do organismo do seu Pet.                                        \n");
+                    printf("\n3 -- Super Premium  --                                                                                 \n");
+                    printf("\nAcompanha rações 100 de origem animal. Além disso, todos os conservantes utilizados são de origem      \n");
+                    printf("\nnatural. O seu cão com o melhor do mundo Pet!                                                          \n");
+                    printf("\nOpção: ");
                      scanf("%d", &categoriaCaoAdultos);
                     }   
                         else if (opBoxCao==3)    
                         {
-                        printf("\n1 - Standard                                                                                            \n");
-                        printf("2 - Premium                                                                                             \n");
-                        printf("3 - Super Premium                                                                                       \n");
+                        printf("\n--------------------------------------------------------------------------------------------------------\n");
+                        printf("| PetBox para Idosos                                                                                     |\n");
+                        printf("----------------------------------------------------------------------------------------------------------\n");
+                        printf("\n1 -- Standard --                                                                                       \n");
+                        printf("\nAcompanha ração balanceada com proteínas de boa qualidade preparadas por empresas de renome no mercado \n");
+                        printf("\nNa composição da ração você encontrar farinha de carne, gordura animal, glúten  e outros ingredientes  \n");
+                        printf("\n2 -- Premium --                                                                                        \n");
+                        printf("\nAcompanha rações de primeira qualidade ricas em proteínas de alta digestibilidade, as quais            \n");         
+                        printf("\nproporcionaram um melhor funcionamento do organismo do seu Pet.                                        \n");
+                        printf("\n3 -- Super Premium  --                                                                                 \n");
+                        printf("\nAcompanha rações 100 de origem animal. Além disso, todos os conservantes utilizados são de origem      \n");
+                        printf("\nnatural. O seu cão com o melhor do mundo Pet!                                                          \n");
                         printf("\nOpção: ");
                         scanf("%d", &categoriaCaoIdosos);
                         }  
@@ -236,8 +254,8 @@ int clubepet()
                 if (categoriaCaoFilhotes==1)
                 {
                 printf("\n--------------------------------------------------------------------------------------------------------\n");
-                printf("| PetBox para filhotes                                                                                 |\n");
-                printf("--------------------------------------------------------------------------------------------------------\n");
+                printf("| PetBox para filhotes                                                                                   |\n");
+                printf("----------------------------------------------------------------------------------------------------------\n");
                 printf("| 1 - Standard |                                                                                        \n");
                 printf("----------------                                                                                        \n");
 		        printf("\nAcompanha ração balanceada com proteínas de boa qualidade preparadas por empresas de renome no mercado\n");
@@ -266,18 +284,14 @@ int clubepet()
                 printf("3 - Grande                                                                                              \n");
                 printf("Opção: ");
                 scanf("%d", &tamanhoBoxCaoFilhotes1);
-                printf("\n\nDeseja adicionar ao carrinho de compras?                                                            \n");
-                printf("1 - Sim                                                                                                 \n");
-                printf("2 - Não                                                                                                 \n");
-                printf("\nOpção: ");
-                scanf("%d", &carrinhoCaoFilhotes1);
+               
 
                 }
                     else if (categoriaCaoFilhotes==2)
                     {
                     printf("\n--------------------------------------------------------------------------------------------------------\n");
-                    printf("| PetBox para filhotes                                                                                 |\n");
-                    printf("--------------------------------------------------------------------------------------------------------\n");
+                    printf("| PetBox para filhotes                                                                                   |\n");
+                    printf("----------------------------------------------------------------------------------------------------------\n");
                     printf("| 2 - Premium  |                                                                                        \n");
                     printf("----------------                                                                                        \n");
                     printf("\n    Acompanha rações de primeira qualidade ricas em proteínas de alta digestibilidade, as quais       \n");         
@@ -310,8 +324,8 @@ int clubepet()
                         else if (categoriaCaoFilhotes==3)
                         {
                         printf("\n--------------------------------------------------------------------------------------------------------\n");
-                        printf("| PetBox para filhotes                                                                                 |\n");
-                        printf("--------------------------------------------------------------------------------------------------------\n");
+                        printf("| PetBox para filhotes                                                                                   |\n");
+                        printf("----------------------------------------------------------------------------------------------------------\n");
                         printf("| 3 - Super Premium  |                                                                                  \n");
                         printf("----------------------                                                                                  \n");
                         printf("\n  Acompanha rações 100 de origem animal. Além disso, todos os conservantes utilizados são de origem   \n");
@@ -341,6 +355,215 @@ int clubepet()
                         printf("\nOpção: ");
                         scanf("%d", &tamanhoBoxCaoFilhotes3);
                         }
+                            
+
+                else if (categoriaCaoAdultos==1)
+                {
+                printf("\n--------------------------------------------------------------------------------------------------------\n");
+                printf("| PetBox para Adultos                                                                                    |\n");
+                printf("----------------------------------------------------------------------------------------------------------\n");
+                printf("| 1 - Standard |                                                                                        \n");
+                printf("----------------                                                                                        \n");
+		        printf("\nAcompanha ração balanceada com proteínas de boa qualidade preparadas por empresas de renome no mercado\n");
+                printf("\nNa composição da ração você encontrar farinha de carne, gordura animal, glúten  e outros ingredientes \n");
+                printf("\n--------------------------------------------TAMANHOS ---------------------------------------------------\n\n");
+                printf("--------------------------------------------------------------------------------------------------------\n");
+                printf("|     PetBOX: Pequeno      |--------|      PetBOX: Médio      |--------|     PetBOX: Grande      |------\n");
+                printf("|      Plano mensal        |--------|      Plano mensal       |--------|      Plano mensal       |------\n");
+                printf("|      R$ 89,90/mês        |--------|      R$ 129,90/mês      |--------|     R$ 159,90/mês       |------\n");
+                printf("|       Plano anual        |--------|      Plano anual        |--------|      Plano anual        |------\n");
+                printf("|      R$ 79,90/mês        |--------|      R$ 119,90/mês      |--------|     R$ 149,90/mês       |------\n");
+                printf("--------------------------------------------------------------------------------------------------------\n");
+                printf("|Itens:                    |--------|Itens:                   |--------|Itens:                   |------\n");
+                printf("|-Ração standard (5 kg)    |--------|-Ração standard (8 kg)   |--------|-Ração standard (12 kg)  |------\n");
+                printf("|-Petiscos (2 un)          |--------|-Petiscos (3 un)         |--------|-Petiscos (4 un)         |------\n");
+                printf("|-Brinquedo (1 un)         |--------|-Brinquedo (1 un)        |--------|-Brinquedo (1 un)        |------\n");
+                printf("|-Tapete higiênico (10 un) |--------|-Tapete higiênico (15 un)|--------|-Tapete higiênico (15 un)|------\n");
+                printf("|-Sabonete (2 un)          |--------|-Sabonete (2 un)         |--------|-Sabonete (2 un)         |------\n");
+                printf("|                          |--------|-Kit de Shampoo, Colônia |--------|-Kit de Shampoo, Colônia |------\n");
+                printf("|                          |--------|  e Condicionador (1 un) |--------| e Condicionador (1 un)  |------\n");
+                printf("|                          |--------|                         |--------|-Kit dental (1 un)       |------\n");
+                printf("--------------------------------------------------------------------------------------------------------\n");
+                printf("\n\nEscolha o tamanho da sua PetBox                                                                     \n");
+                printf("1 - Pequeno                                                                                             \n");
+                printf("2 - Médio                                                                                               \n");
+                printf("3 - Grande                                                                                              \n");
+                printf("Opção: ");
+                scanf("%d", &tamanhoBoxCaoAdultos1);
+               
+
+                }
+                    else if (categoriaCaoAdultos==2)
+                    {
+                    printf("\n--------------------------------------------------------------------------------------------------------\n");
+                    printf("| PetBox para Adultos                                                                                    |\n");
+                    printf("----------------------------------------------------------------------------------------------------------\n");
+                    printf("| 2 - Premium  |                                                                                        \n");
+                    printf("----------------                                                                                        \n");
+                    printf("\n    Acompanha rações de primeira qualidade ricas em proteínas de alta digestibilidade, as quais       \n");         
+                    printf("\n               proporcionaram um melhor funcionamento do organismo do seu Pet.                         \n");
+                    printf("\n--------------------------------------------TAMANHOS ---------------------------------------------------\n\n");
+                    printf("--------------------------------------------------------------------------------------------------------\n");
+                    printf("|     PetBOX: Pequeno      |--------|      PetBOX: Médio      |--------|     PetBOX: Grande      |------\n");
+                    printf("|      Plano mensal        |--------|      Plano mensal       |--------|      Plano mensal       |------\n");
+                    printf("|      R$ 99,90/mês        |--------|      R$ 149,90/mês      |--------|     R$ 179,90/mês       |------\n");
+                    printf("|       Plano anual        |--------|      Plano anual        |--------|      Plano anual        |------\n");
+                    printf("|      R$ 89,90/mês        |--------|      R$ 139,90/mês      |--------|     R$ 169,90/mês       |------\n");
+                    printf("--------------------------------------------------------------------------------------------------------\n");
+                    printf("|Itens:                    |--------|Itens:                   |--------|Itens:                   |------\n");
+                    printf("|-Ração premium  (1 kg)    |--------|-Ração premium  (2 kg)   |--------|-Ração premium  (3  kg)  |------\n");
+                    printf("|-Petiscos (2 un)          |--------|-Petiscos (3 un)         |--------|-Petiscos (4 un)         |------\n");
+                    printf("|-Brinquedo (1 un)         |--------|-Brinquedo (1 un)        |--------|-Brinquedo (1 un)        |------\n");
+                    printf("|-Tapete higiênico (10 un) |--------|-Tapete higiênico (15 un)|--------|-Tapete higiênico (15 un)|------\n");
+                    printf("|-Sabonete (2 un)          |--------|-Sabonete (2 un)         |--------|-Sabonete (2 un)         |------\n");
+                    printf("|                          |--------|-Kit de Shampoo, Colônia |--------|-Kit de Shampoo, Colônia |------\n");
+                    printf("|                          |--------|  e Condicionador (1 un) |--------| e Condicionador (1 un)  |------\n");
+                    printf("|                          |--------|                         |--------|-Kit dental (1 un)       |------\n");
+                    printf("--------------------------------------------------------------------------------------------------------\n");
+                    printf("\n\nEscolha o tamanho da sua PetBox                                                                     \n");
+                    printf("1 - Pequeno                                                                                             \n");
+                    printf("3 - Médio                                                                                               \n");
+                    printf("3 - Grande                                                                                              \n");
+                    printf("\nOpção: ");
+                    scanf("%d", &tamanhoBoxCaoAdultos2);
+                    }
+                        else if (categoriaCaoAdultos==3)
+                        {
+                        printf("\n--------------------------------------------------------------------------------------------------------\n");
+                        printf("| PetBox para Adultos                                                                                    |\n");
+                        printf("----------------------------------------------------------------------------------------------------------\n");
+                        printf("| 3 - Super Premium  |                                                                                  \n");
+                        printf("----------------------                                                                                  \n");
+                        printf("\n  Acompanha rações 100 de origem animal. Além disso, todos os conservantes utilizados são de origem   \n");
+                        printf("\n                     natural. O seu cão com o melhor do mundo Pet!                                    \n");
+                        printf("\n--------------------------------------------TAMANHOS ---------------------------------------------------\n\n");
+                        printf("--------------------------------------------------------------------------------------------------------\n");
+                        printf("|     PetBOX: Pequeno      |--------|      PetBOX: Médio      |--------|     PetBOX: Grande      |------\n");
+                        printf("|      Plano mensal        |--------|      Plano mensal       |--------|      Plano mensal       |------\n");
+                        printf("|      R$ 109,90/mês       |--------|      R$ 169,90/mês      |--------|     R$ 199,90/mês       |------\n");
+                        printf("|       Plano anual        |--------|      Plano anual        |--------|      Plano anual        |------\n");
+                        printf("|      R$ 99,90/mês        |--------|      R$ 159,90/mês      |--------|     R$ 189,90/mês       |------\n");
+                        printf("--------------------------------------------------------------------------------------------------------\n");
+                        printf("|Itens:                    |--------|Itens:                   |--------|Itens:                   |------\n");
+                        printf("|-Ração premium  (5 kg)    |--------|-Ração premium  (8 kg)   |--------|-Ração premium  (12 kg)  |------\n");
+                        printf("|-Petiscos (2 un)          |--------|-Petiscos (3 un)         |--------|-Petiscos (4 un)         |------\n");
+                        printf("|-Brinquedo (1 un)         |--------|-Brinquedo (1 un)        |--------|-Brinquedo (1 un)        |------\n");
+                        printf("|-Tapete higiênico (10 un) |--------|-Tapete higiênico (15 un)|--------|-Tapete higiênico (15 un)|------\n");
+                        printf("|-Sabonete (2 un)          |--------|-Sabonete (2 un)         |--------|-Sabonete (2 un)         |------\n");
+                        printf("|                          |--------|-Kit de Shampoo, Colônia |--------|-Kit de Shampoo, Colônia |------\n");
+                        printf("|                          |--------|  e Condicionador (1 un) |--------| e Condicionador (1 un)  |------\n");
+                        printf("|                          |--------|                         |--------|-Kit dental (1 un)       |------\n");
+                        printf("--------------------------------------------------------------------------------------------------------\n");
+                        printf("\n\nEscolha o tamanho da sua PetBox                                                                     \n");
+                        printf("1 - Pequeno                                                                                             \n");
+                        printf("2 - Médio                                                                                               \n");
+                        printf("3 - Grande                                                                                              \n");
+                        printf("\nOpção: ");
+                        scanf("%d", &tamanhoBoxCaoAdultos3);
+                        }
+                else if (categoriaCaoIdosos==1)
+                {
+                printf("\n--------------------------------------------------------------------------------------------------------\n");
+                printf("| PetBox para Idosos                                                                                     |\n");
+                printf("----------------------------------------------------------------------------------------------------------\n");
+                printf("| 1 - Standard |                                                                                        \n");
+                printf("----------------                                                                                        \n");
+		        printf("\nAcompanha ração balanceada com proteínas de boa qualidade preparadas por empresas de renome no mercado\n");
+                printf("\nNa composição da ração você encontrar farinha de carne, gordura animal, glúten  e outros ingredientes \n");
+                printf("\n--------------------------------------------TAMANHOS ---------------------------------------------------\n\n");
+                printf("--------------------------------------------------------------------------------------------------------\n");
+                printf("|     PetBOX: Pequeno      |--------|      PetBOX: Médio      |--------|     PetBOX: Grande      |------\n");
+                printf("|      Plano mensal        |--------|      Plano mensal       |--------|      Plano mensal       |------\n");
+                printf("|      R$ 89,90/mês        |--------|      R$ 129,90/mês      |--------|     R$ 159,90/mês       |------\n");
+                printf("|       Plano anual        |--------|      Plano anual        |--------|      Plano anual        |------\n");
+                printf("|      R$ 79,90/mês        |--------|      R$ 119,90/mês      |--------|     R$ 149,90/mês       |------\n");
+                printf("--------------------------------------------------------------------------------------------------------\n");
+                printf("|Itens:                    |--------|Itens:                   |--------|Itens:                   |------\n");
+                printf("|-Ração standard (5 kg)    |--------|-Ração standard (8 kg)   |--------|-Ração standard (12 kg)  |------\n");
+                printf("|-Petiscos (2 un)          |--------|-Petiscos (3 un)         |--------|-Petiscos (4 un)         |------\n");
+                printf("|-Brinquedo (1 un)         |--------|-Brinquedo (1 un)        |--------|-Brinquedo (1 un)        |------\n");
+                printf("|-Tapete higiênico (10 un) |--------|-Tapete higiênico (15 un)|--------|-Tapete higiênico (15 un)|------\n");
+                printf("|-Sabonete (2 un)          |--------|-Sabonete (2 un)         |--------|-Sabonete (2 un)         |------\n");
+                printf("|                          |--------|-Kit de Shampoo, Colônia |--------|-Kit de Shampoo, Colônia |------\n");
+                printf("|                          |--------|  e Condicionador (1 un) |--------| e Condicionador (1 un)  |------\n");
+                printf("|                          |--------|                         |--------|-Kit dental (1 un)       |------\n");
+                printf("--------------------------------------------------------------------------------------------------------\n");
+                printf("\n\nEscolha o tamanho da sua PetBox                                                                     \n");
+                printf("1 - Pequeno                                                                                             \n");
+                printf("2 - Médio                                                                                               \n");
+                printf("3 - Grande                                                                                              \n");
+                printf("Opção: ");
+                scanf("%d", &tamanhoBoxCaoIdosos1);
+               
+                }
+                    else if (categoriaCaoIdosos==2)
+                    {
+                    printf("\n--------------------------------------------------------------------------------------------------------\n");
+                    printf("| PetBox para Idosos                                                                                     |\n");
+                    printf("----------------------------------------------------------------------------------------------------------\n");
+                    printf("| 2 - Premium  |                                                                                        \n");
+                    printf("----------------                                                                                        \n");
+                    printf("\n    Acompanha rações de primeira qualidade ricas em proteínas de alta digestibilidade, as quais       \n");         
+                    printf("\n               proporcionaram um melhor funcionamento do organismo do seu Pet.                         \n");
+                    printf("\n--------------------------------------------TAMANHOS ---------------------------------------------------\n\n");
+                    printf("--------------------------------------------------------------------------------------------------------\n");
+                    printf("|     PetBOX: Pequeno      |--------|      PetBOX: Médio      |--------|     PetBOX: Grande      |------\n");
+                    printf("|      Plano mensal        |--------|      Plano mensal       |--------|      Plano mensal       |------\n");
+                    printf("|      R$ 99,90/mês        |--------|      R$ 149,90/mês      |--------|     R$ 179,90/mês       |------\n");
+                    printf("|       Plano anual        |--------|      Plano anual        |--------|      Plano anual        |------\n");
+                    printf("|      R$ 89,90/mês        |--------|      R$ 139,90/mês      |--------|     R$ 169,90/mês       |------\n");
+                    printf("--------------------------------------------------------------------------------------------------------\n");
+                    printf("|Itens:                    |--------|Itens:                   |--------|Itens:                   |------\n");
+                    printf("|-Ração premium  (1 kg)    |--------|-Ração premium  (2 kg)   |--------|-Ração premium  (3  kg)  |------\n");
+                    printf("|-Petiscos (2 un)          |--------|-Petiscos (3 un)         |--------|-Petiscos (4 un)         |------\n");
+                    printf("|-Brinquedo (1 un)         |--------|-Brinquedo (1 un)        |--------|-Brinquedo (1 un)        |------\n");
+                    printf("|-Tapete higiênico (10 un) |--------|-Tapete higiênico (15 un)|--------|-Tapete higiênico (15 un)|------\n");
+                    printf("|-Sabonete (2 un)          |--------|-Sabonete (2 un)         |--------|-Sabonete (2 un)         |------\n");
+                    printf("|                          |--------|-Kit de Shampoo, Colônia |--------|-Kit de Shampoo, Colônia |------\n");
+                    printf("|                          |--------|  e Condicionador (1 un) |--------| e Condicionador (1 un)  |------\n");
+                    printf("|                          |--------|                         |--------|-Kit dental (1 un)       |------\n");
+                    printf("--------------------------------------------------------------------------------------------------------\n");
+                    printf("\n\nEscolha o tamanho da sua PetBox                                                                     \n");
+                    printf("1 - Pequeno                                                                                             \n");
+                    printf("3 - Médio                                                                                               \n");
+                    printf("3 - Grande                                                                                              \n");
+                    printf("\nOpção: ");
+                    scanf("%d", &tamanhoBoxCaoIdosos2);
+                    }
+                        else if (categoriaCaoIdosos==3)
+                        {
+                        printf("\n--------------------------------------------------------------------------------------------------------\n");
+                        printf("| PetBox para Idosos                                                                                     |\n");
+                        printf("----------------------------------------------------------------------------------------------------------\n");
+                        printf("| 3 - Super Premium  |                                                                                  \n");
+                        printf("----------------------                                                                                  \n");
+                        printf("\n  Acompanha rações 100 de origem animal. Além disso, todos os conservantes utilizados são de origem   \n");
+                        printf("\n                     natural. O seu cão com o melhor do mundo Pet!                                    \n");
+                        printf("\n--------------------------------------------TAMANHOS ---------------------------------------------------\n\n");
+                        printf("--------------------------------------------------------------------------------------------------------\n");
+                        printf("|     PetBOX: Pequeno      |--------|      PetBOX: Médio      |--------|     PetBOX: Grande      |------\n");
+                        printf("|      Plano mensal        |--------|      Plano mensal       |--------|      Plano mensal       |------\n");
+                        printf("|      R$ 109,90/mês       |--------|      R$ 169,90/mês      |--------|     R$ 199,90/mês       |------\n");
+                        printf("|       Plano anual        |--------|      Plano anual        |--------|      Plano anual        |------\n");
+                        printf("|      R$ 99,90/mês        |--------|      R$ 159,90/mês      |--------|     R$ 189,90/mês       |------\n");
+                        printf("--------------------------------------------------------------------------------------------------------\n");
+                        printf("|Itens:                    |--------|Itens:                   |--------|Itens:                   |------\n");
+                        printf("|-Ração premium  (5 kg)    |--------|-Ração premium  (8 kg)   |--------|-Ração premium  (12 kg)  |------\n");
+                        printf("|-Petiscos (2 un)          |--------|-Petiscos (3 un)         |--------|-Petiscos (4 un)         |------\n");
+                        printf("|-Brinquedo (1 un)         |--------|-Brinquedo (1 un)        |--------|-Brinquedo (1 un)        |------\n");
+                        printf("|-Tapete higiênico (10 un) |--------|-Tapete higiênico (15 un)|--------|-Tapete higiênico (15 un)|------\n");
+                        printf("|-Sabonete (2 un)          |--------|-Sabonete (2 un)         |--------|-Sabonete (2 un)         |------\n");
+                        printf("|                          |--------|-Kit de Shampoo, Colônia |--------|-Kit de Shampoo, Colônia |------\n");
+                        printf("|                          |--------|  e Condicionador (1 un) |--------| e Condicionador (1 un)  |------\n");
+                        printf("|                          |--------|                         |--------|-Kit dental (1 un)       |------\n");
+                        printf("--------------------------------------------------------------------------------------------------------\n");
+                        printf("\n\nEscolha o tamanho da sua PetBox                                                                     \n");
+                        printf("1 - Pequeno                                                                                             \n");
+                        printf("2 - Médio                                                                                               \n");
+                        printf("3 - Grande                                                                                              \n");
+                        printf("\nOpção: ");
+                        scanf("%d", &tamanhoBoxCaoIdosos3);
+                        }
                             else 
                              {
                              printf("Número inválido\n");
@@ -348,5 +571,7 @@ int clubepet()
                              system("pause");
                              system("cls");
                              clubepet();  
-                             }                                 
+                             }    
+
+
 } 
