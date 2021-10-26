@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <windows.h>
 
-int clubepet();
 // declaração de variáveis globais
 int op, opcao, opBox, opBoxCao,opBoxGato, categoriaCaoFilhotes, categoriaCaoAdultos, categoriaCaoIdosos, tamanhoBoxCaoFilhotes1, tamanhoBoxCaoFilhotes2, tamanhoBoxCaoFilhotes3, tamanhoBoxCaoAdultos1, tamanhoBoxCaoAdultos2, tamanhoBoxCaoAdultos3, tamanhoBoxCaoIdosos1, tamanhoBoxCaoIdosos2, tamanhoBoxCaoIdosos3;
 
+int clubepet();
 
 int main()
 {
