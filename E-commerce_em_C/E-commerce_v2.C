@@ -3,8 +3,9 @@
 #include <windows.h>
 
 // declaração de variáveis globais
-int op, opcao, opBox, opBoxCao,opBoxGato, categoriaCaoFilhotes, categoriaCaoAdultos, categoriaCaoIdosos, tamanhoBoxCaoFilhotes1, tamanhoBoxCaoFilhotes2, tamanhoBoxCaoFilhotes3, tamanhoBoxCaoAdultos1, tamanhoBoxCaoAdultos2, tamanhoBoxCaoAdultos3, tamanhoBoxCaoIdosos1, tamanhoBoxCaoIdosos2, tamanhoBoxCaoIdosos3;
+int menuPrincipal, op, opcao, opBox, opBoxCao,opBoxGato, categoriaCaoFilhotes, categoriaCaoAdultos, categoriaCaoIdosos, tamanhoBoxCaoFilhotes1, tamanhoBoxCaoFilhotes2, tamanhoBoxCaoFilhotes3, tamanhoBoxCaoAdultos1, tamanhoBoxCaoAdultos2, tamanhoBoxCaoAdultos3, tamanhoBoxCaoIdosos1, tamanhoBoxCaoIdosos2, tamanhoBoxCaoIdosos3;
 
+int menuCliente();
 int clubepet();
 
 int main()
@@ -15,22 +16,32 @@ int main()
 // Define codificação como sendo UTF-8
   SetConsoleOutputCP(CPAGE_UTF8);
 // entrada de dados
-//boas vindas
+//Menu principal 
 printf("---------------------------------------------------------------------------------------------------------\n\n");
-printf("|                                            Bem-vindo a BRPETS                                         |\n\n");
+printf("|                                                  BRPETS                                               |\n\n");
 printf("---------------------------------------------------------------------------------------------------------\n\n");
-
-printf("1 - Conheça a BRPets\n");
-printf("2 - Clube Pet\n");
-printf("3 - Loja\n");
-printf("4 - Ofertas\n");
-printf("5 - Busca\n");
-printf("6 - Carinho\n");
+printf("1 - Proprietário\n");
+printf("2 - Cliente\n");
 printf("0 - Sair do site\n");
 printf("\nOpção: ");
-scanf("%d", &op);
+scanf("%d", &menuPrincipal);
 
-switch(op){
+switch (menuPrincipal)
+
+{
+case 1:
+    printf("em contrução\n");
+    system("pause");
+    system("cls");
+    main();
+    break;
+
+
+
+case 2:
+
+   menuCliente();//chama a função menuCliente
+    switch(op){
         case 1:
             printf("\n---------------------------------------------------------------------------------------------------------\n\n");
             printf("|                                                BRPETS                                                 |\n\n");
@@ -44,7 +55,7 @@ switch(op){
             printf("---------------------------------------------------------------------------------------------------------\n\n");
             system("pause");
             system("cls");
-            main();
+            menuCliente();
 
             break;
         case 2:
@@ -56,7 +67,7 @@ switch(op){
 
            system("pause");
            system("cls");
-           main();
+           menuCliente();
 
             break;
         case 4:
@@ -64,7 +75,7 @@ switch(op){
 
            system("pause");
            system("cls");
-           main();
+           menuCliente();
 
             break;
         case 5:
@@ -72,7 +83,7 @@ switch(op){
 
            system("pause");
            system("cls");
-           main();
+           menuCliente();
 
             break;
         case 6:
@@ -80,7 +91,7 @@ switch(op){
 
            system("pause");
            system("cls");
-           main();
+          menuCliente();
 
             break;
         case 0:
@@ -91,6 +102,18 @@ switch(op){
             system("cls");
             main();
     }
+
+case 0:
+exit(0);
+default:
+printf("Digite uma opção valida: \n");
+system("pause");
+system("cls");
+main();
+}
+
+
+
                 
  
 
@@ -98,8 +121,24 @@ return 0;
 // Retorna codificação padrão do Windows
   SetConsoleOutputCP(CPAGE_DEFAULT);
  }
- 
- 
+ //função menuCliente
+int menuCliente()
+{
+    printf("---------------------------------------------------------------------------------------------------------\n\n");
+    printf("|                                            Bem-vindo a BRPETS                                         |\n\n");
+    printf("---------------------------------------------------------------------------------------------------------\n\n");
+
+    printf("1 - Conheça a BRPets\n");
+    printf("2 - Clube Pet\n");
+    printf("3 - Loja\n");
+    printf("4 - Ofertas\n");
+    printf("5 - Busca\n");
+    printf("6 - Carinho\n");
+    printf("0 - Sair do site\n");
+    printf("\nOpção: ");
+    scanf("%d", &op);
+}
+
 //função clubepet 
 int clubepet()
 {
@@ -147,7 +186,7 @@ int clubepet()
                  else if (opcao==3)
                  	{
                  	system("cls");
-                 	main();
+                 	menuCliente();
                  	}
                  else
                     {
