@@ -55,7 +55,7 @@ case 2:
             printf("---------------------------------------------------------------------------------------------------------\n\n");
             system("pause");
             system("cls");
-            menuCliente();
+            main();
 
             break;
         case 2:
@@ -67,7 +67,7 @@ case 2:
 
            system("pause");
            system("cls");
-           menuCliente();
+           main();
 
             break;
         case 4:
