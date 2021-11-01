@@ -39,7 +39,6 @@ case 1:
 
 
 case 2:
-
    menuCliente();//chama a função menuCliente
     switch(op){
         case 1:
@@ -67,7 +66,7 @@ case 2:
 
            system("pause");
            system("cls");
-           main();
+           menuCliente();
 
             break;
         case 4:
@@ -450,7 +449,7 @@ int clubepet()
                     printf("|      R$ 89,90/mês        |--------|      R$ 139,90/mês      |--------|     R$ 169,90/mês       |------\n");
                     printf("--------------------------------------------------------------------------------------------------------\n");
                     printf("|Itens:                    |--------|Itens:                   |--------|Itens:                   |------\n");
-                    printf("|-Ração premium  (1 kg)    |--------|-Ração premium  (2 kg)   |--------|-Ração premium  (3  kg)  |------\n");
+                    printf("|-Ração premium  (5 kg)    |--------|-Ração premium  (8 kg)   |--------|-Ração premium  (12 kg)  |------\n");
                     printf("|-Petiscos (2 un)          |--------|-Petiscos (3 un)         |--------|-Petiscos (4 un)         |------\n");
                     printf("|-Brinquedo (1 un)         |--------|-Brinquedo (1 un)        |--------|-Brinquedo (1 un)        |------\n");
                     printf("|-Tapete higiênico (10 un) |--------|-Tapete higiênico (15 un)|--------|-Tapete higiênico (15 un)|------\n");
