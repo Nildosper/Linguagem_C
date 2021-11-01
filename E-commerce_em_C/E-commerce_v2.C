@@ -167,11 +167,11 @@ case 1:
     // Relatório com todos produtos cadastrados
   	printf("|                                     Relatório do estoque                                             |");
     printf("\n--------------------------------------------------------------------------------------------------------\n");
-  	printf("\nCódigo\t\tEstoque\t\tPreço\n");
+  	printf("Código\t\tEstoque\t\tPreço\n");
   	
 	  for (i=0; i<2;i++)
   	{
-  	printf("\n%d\t\t%d\t\t%.2f\n\n ",prodCod[i],prodQtd[i],prodPreco[i]);
+  	printf("%d\t\t%d\t\t%.2f\n",prodCod[i],prodQtd[i],prodPreco[i]);
   	}
 	    
    
@@ -211,7 +211,7 @@ case 2:
 
            system("pause");
            system("cls");
-           menuCliente();
+           main();
 
             break;
         case 4:
@@ -219,7 +219,7 @@ case 2:
 
            system("pause");
            system("cls");
-           menuCliente();
+           main();
 
             break;
         case 5:
@@ -227,15 +227,21 @@ case 2:
 
            system("pause");
            system("cls");
-           menuCliente();
+           main();
 
             break;
         case 6:
-            printf("Em contrução \n");
+        printf("---------------------------------------------------------------------------------------------------------\n");
+        printf("|                                            Corrinho de compras                                        |\n");
+        printf("---------------------------------------------------------------------------------------------------------\n");
+
+        printf("--------------------------------------------------------------------------------------------------------\n\n");
+        printf("Iten (s):\nPetBox Standard - Tamanho P - Para cães filhotes\n\n");
+        printf("Plano mensal: %.2f\nPlano Anual: %.2f\n\n", prodPreco[0], prodPreco[0]*0.9);
 
            system("pause");
            system("cls");
-          menuCliente();
+           main();
 
             break;
         case 0:
@@ -769,10 +775,16 @@ int clubepet()
                 printf("2 - Não                                                                                                 \n");
                 printf("\nOpção: ");
                 scanf("%d", opcarinho);
-
-
+                printf("Qual palno gostaria?\n");
+                printf("1 - Mensal                                                                                                 \n");
+                printf("2 - Anual                                                                                                \n");
+                printf("\nOpção: ");
+                
             }
               
 
 
 } 
+
+
+
