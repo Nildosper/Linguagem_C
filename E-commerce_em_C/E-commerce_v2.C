@@ -3,8 +3,8 @@
 #include <windows.h>
 
 // declaração de variáveis globais
-int menuPrincipal, op, opcao, opBox, opBoxCao,opBoxGato, categoriaCaoFilhotes, categoriaCaoAdultos, categoriaCaoIdosos, tamanhoBoxCaoFilhotes1, tamanhoBoxCaoFilhotes2, tamanhoBoxCaoFilhotes3, tamanhoBoxCaoAdultos1, tamanhoBoxCaoAdultos2, tamanhoBoxCaoAdultos3, tamanhoBoxCaoIdosos1, tamanhoBoxCaoIdosos2, tamanhoBoxCaoIdosos3;
-
+int menuPrincipal, op, opcao, opBox, opBoxCao,opBoxGato, categoriaCaoFilhotes, categoriaCaoAdultos, categoriaCaoIdosos, tamanhoBoxCaoFilhotes1, tamanhoBoxCaoFilhotes2, tamanhoBoxCaoFilhotes3, tamanhoBoxCaoAdultos1, tamanhoBoxCaoAdultos2, tamanhoBoxCaoAdultos3, tamanhoBoxCaoIdosos1, tamanhoBoxCaoIdosos2, tamanhoBoxCaoIdosos3, prodCod[59],prodQtd[59], i, opcarinho;
+float prodPreco[59];
 int menuCliente();
 int clubepet();
 
@@ -30,7 +30,151 @@ switch (menuPrincipal)
 
 {
 case 1:
-    printf("em contrução\n");
+    
+    printf("---------------------------------------------------------------------------------------------------------\n");
+    printf("|                                             Legenda de produtos                                       |\n");
+    printf("---------------------------------------------------------------------------------------------------------\n");
+    printf("|PetBox para cachorros |\n");
+    printf("-----------------------\n");
+    printf("Código 1: PetBox Filhotes standard - P\n");
+    printf("Código 2: PetBox Filhotes standard - M\n");
+    printf("Código 3: PetBox Filhotes standard - G\n");
+    printf("Código 4: PetBox Filhotes Premium - P\n");
+    printf("Código 5: PetBox Filhotes Premium - M\n");
+    printf("Código 6: PetBox Filhotes Premium - G\n");
+    printf("Código 7: PetBox Filhotes super premium - P\n");
+    printf("Código 8: PetBox Filhotes super premium - M\n");
+    printf("Código 9: PetBox Filhotes super premium - G\n");
+
+    printf("Código 10: PetBox Adultos standard - P\n");
+    printf("Código 11: PetBox Adultos standard - M\n");
+    printf("Código 12: PetBox Adultos standard - G\n");
+    printf("Código 13: PetBox Adultos Premium - P\n");
+    printf("Código 14: PetBox Adultos Premium - M\n");
+    printf("Código 15: PetBox Adultos Premium - G\n");
+    printf("Código 16: PetBox Adultos super premium - P\n");
+    printf("Código 17: PetBox Adultos super premium - M\n");
+    printf("Código 18: PetBox Adultos super premium - G\n");
+
+    printf("Código 19: PetBox Idosos standard - P\n");
+    printf("Código 20: PetBox Idosos standard - M\n");
+    printf("Código 21: PetBox Idosos standard - G\n");
+    printf("Código 22: PetBox Idosos Premium - P\n");
+    printf("Código 23: PetBox Idosos Premium - M\n");
+    printf("Código 24: PetBox Idosos Premium - G\n");
+    printf("Código 25: PetBox Idosos super premium - P\n");
+    printf("Código 26: PetBox Idosos super premium - M\n");
+    printf("Código 27: PetBox Idosos super premium - G\n");
+
+    printf("-----------------------\n");
+    printf("|PetBox para Gatos    |\n");
+    printf("-----------------------\n");
+    printf("Código 28: PetBox Filhotes standard - P\n");
+    printf("Código 29: PetBox Filhotes standard - M\n");
+    printf("Código 30: PetBox Filhotes standard - G\n");
+    printf("Código 31: PetBox Filhotes Premium - P\n");
+    printf("Código 32: PetBox Filhotes Premium - M\n");
+    printf("Código 33: PetBox Filhotes Premium - G\n");
+    printf("Código 34: PetBox Filhotes super premium - P\n");
+    printf("Código 35: PetBox Filhotes super premium - M\n");
+    printf("Código 36: PetBox Filhotes super premium - G\n");
+
+    printf("Código 37: PetBox Adultos standard - P\n");
+    printf("Código 38: PetBox Adultos standard - M\n");
+    printf("Código 39: PetBox Adultos standard - G\n");
+    printf("Código 40: PetBox Adultos Premium - P\n");
+    printf("Código 41: PetBox Adultos Premium - M\n");
+    printf("Código 42: PetBox Adultos Premium - G\n");
+    printf("Código 43: PetBox Adultos super premium - P\n");
+    printf("Código 44: PetBox Adultos super premium - M\n");
+    printf("Código 45: PetBox Adultos super premium - G\n");
+
+    printf("Código 46: PetBox Idosos standard - P\n");
+    printf("Código 47: PetBox Idosos standard - M\n");
+    printf("Código 48: PetBox Idosos standard - G\n");
+    printf("Código 49: PetBox Idosos Premium - P\n");
+    printf("Código 50: PetBox Idosos Premium - M\n");
+    printf("Código 51: PetBox Idosos Premium - G\n");
+    printf("Código 52: PetBox Idosos super premium - P\n");
+    printf("Código 53: PetBox Idosos super premium - M\n");
+    printf("Código 54: PetBox Idosos super premium - G\n");
+
+    printf("---------------------------\n");
+    printf("|PetBox escolha cachorros |\n");
+    printf("---------------------------\n");
+    printf("Código 19: Ração standard 1 kg\n");
+    printf("Código 20: Ração standard 2 kg\n");
+    printf("Código 21: Ração standard 3 kg\n");
+    printf("Código 22: Ração standard 5 kg\n");
+    printf("Código 23: Ração standard 8 kg\n");
+    printf("Código 24: Ração standard 12 kg\n");
+    printf("Código 25: Ração premium 1 kg\n");
+    printf("Código 26: Ração premium 2 kg\n");
+    printf("Código 27: Ração premium 3 kg\n");
+    printf("Código 28: Ração premium 5 kg\n");
+    printf("Código 29: Ração premium 8 kg\n");
+    printf("Código 30: Ração premium 12 kg\n");
+    printf("Código 31: Ração super premium 1 kg\n");
+    printf("Código 32: Ração super premium 2 kg\n");
+    printf("Código 33: Ração super premium 3 kg\n");
+    printf("Código 34: Ração super premium 5 kg\n");
+    printf("Código 35: Ração super premium 8 kg\n");
+    printf("Código 36: Ração super premium 12 kg\n");
+    printf("Código 37: petiscos\n");
+    printf("Código 38: Tapete higiênico 10 uni\n");
+    printf("Código 39: Tapete higiênico 15 uni\n");
+    printf("Código 40: Brinquedo\n");
+    printf("Código 41: sabonete\n");
+    printf("Código 42: Kit de Shampoo, Colônia e Condicionador\n");
+    printf("Código 43: Kit dental: escova + creme dental\n");
+    printf("---------------------------\n");
+    printf("|PetBox escolha Gatos     |\n");
+    printf("---------------------------\n");
+    printf("Código 44: Ração standard 1 kg\n");
+    printf("Código 45: Ração standard 2 kg\n");
+    printf("Código 46: Ração standard 3 kg\n");
+    printf("Código 47: Ração premium 1 kg\n");
+    printf("Código 48: Ração premium 2 kg\n");
+    printf("Código 49: Ração premium 3 kg\n");
+    printf("Código 50: Ração super premium 1 kg\n");
+    printf("Código 51: Ração super premium 2 kg\n");
+    printf("Código 52: Ração super premium 3 kg\n");
+    printf("Código 53: Areia 4 kg\n");
+    printf("Código 54: Areia 5 kg\n");
+    printf("Código 55: Areia 6 kg\n");
+    printf("Código 56: Arranhadores e brinquedos \n");
+    printf("Código 57: sabonete\n");
+    printf("Código 58: Kit de Shampoo, Colônia e Condicionador\n");
+    printf("Código 59: Kit dental: escova + creme dental\n");
+
+    
+	
+  	// entrada de dados
+    printf("---------------------------------------------------------------------------------------------------------\n");
+    printf("|                                             Cadastro de produtos                                       |\n");
+    printf("---------------------------------------------------------------------------------------------------------\n");
+  	for (i=0; i< 2; i++)
+  	{
+  		printf("Código: ");
+  		scanf("%d", &prodCod[i]);
+  		printf("Quantidade em estoque: ");
+  		scanf("%d", &prodQtd[i]);
+  		printf("Preço: ");
+  		scanf("%f", &prodPreco[i]);
+  		printf("\n--------------------------------------------------------------------------------------------------------\n");
+  	
+  	}
+    // Relatório com todos produtos cadastrados
+  	printf("|                                     Relatório do estoque                                             |");
+    printf("\n--------------------------------------------------------------------------------------------------------\n");
+  	printf("\nCódigo\t\tEstoque\t\tPreço\n");
+  	
+	  for (i=0; i<2;i++)
+  	{
+  	printf("\n%d\t\t%d\t\t%.2f\n\n ",prodCod[i],prodQtd[i],prodPreco[i]);
+  	}
+	    
+   
     system("pause");
     system("cls");
     main();
@@ -40,7 +184,7 @@ case 1:
 
 case 2:
    menuCliente();//chama a função menuCliente
-    switch(op){
+       switch(op){
         case 1:
             printf("\n---------------------------------------------------------------------------------------------------------\n\n");
             printf("|                                                BRPETS                                                 |\n\n");
@@ -52,6 +196,7 @@ case 2:
             printf("\n que seu pet precisa.                                                                                  \n");   
 	        printf("\n Faça parte do nosso Clube Pet  e aproveite o que há de melhor no mundo pet!                           \n");
             printf("---------------------------------------------------------------------------------------------------------\n\n");
+
             system("pause");
             system("cls");
             main();
@@ -100,6 +245,8 @@ case 2:
             system("pause");
             system("cls");
             main();
+        
+
     }
 
 case 0:
@@ -136,6 +283,8 @@ int menuCliente()
     printf("0 - Sair do site\n");
     printf("\nOpção: ");
     scanf("%d", &op);
+
+    
 }
 
 //função clubepet 
@@ -185,7 +334,7 @@ int clubepet()
                  else if (opcao==3)
                  	{
                  	system("cls");
-                 	menuCliente();
+                 	main();
                  	}
                  else
                     {
@@ -322,7 +471,7 @@ int clubepet()
                 printf("3 - Grande                                                                                              \n");
                 printf("Opção: ");
                 scanf("%d", &tamanhoBoxCaoFilhotes1);
-               
+                              
 
                 }
                     else if (categoriaCaoFilhotes==2)
@@ -609,7 +758,21 @@ int clubepet()
                              system("pause");
                              system("cls");
                              clubepet();  
-                             }    
+                             }  
+            if (tamanhoBoxCaoFilhotes1==1)
+            {
+                printf("--------------------------------------------------------------------------------------------------------\n\n");
+                printf("Você escolheu: PetBox Standard - Tamanho P - Para cães filhotes\n\n");
+                printf("Quantidade em estoque: %d\nPlano mensal: %.2f\nPlano Anual: %.2f\n\n", prodQtd[0], prodPreco[0], prodPreco[0]*0.9); 
+                printf("Deseja adicionar ao carinho de compras?\n");
+                printf("1 - Sim                                                                                                 \n");
+                printf("2 - Não                                                                                                 \n");
+                printf("\nOpção: ");
+                scanf("%d", opcarinho);
+
+
+            }
+              
 
 
 } 
