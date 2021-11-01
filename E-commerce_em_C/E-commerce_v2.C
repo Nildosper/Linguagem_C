@@ -3,7 +3,7 @@
 #include <windows.h>
 
 // declaração de variáveis globais
-int menuPrincipal, op, opcao, opBox, opBoxCao,opBoxGato, categoriaCaoFilhotes, categoriaCaoAdultos, categoriaCaoIdosos, tamanhoBoxCaoFilhotes1, tamanhoBoxCaoFilhotes2, tamanhoBoxCaoFilhotes3, tamanhoBoxCaoAdultos1, tamanhoBoxCaoAdultos2, tamanhoBoxCaoAdultos3, tamanhoBoxCaoIdosos1, tamanhoBoxCaoIdosos2, tamanhoBoxCaoIdosos3, prodCod[59],prodQtd[59], i, carrinhoCaoFilhotes1;
+int menuPrincipal, op, opcao, opBox, opBoxCao,opBoxGato, categoriaCaoFilhotes, categoriaCaoAdultos, categoriaCaoIdosos, tamanhoBoxCaoFilhotes1, tamanhoBoxCaoFilhotes2, tamanhoBoxCaoFilhotes3, tamanhoBoxCaoAdultos1, tamanhoBoxCaoAdultos2, tamanhoBoxCaoAdultos3, tamanhoBoxCaoIdosos1, tamanhoBoxCaoIdosos2, tamanhoBoxCaoIdosos3, prodCod[59],prodQtd[59], i, carrinhoCaoFilhotes1, carrinhoCaoFilhotes2, carrinhoCaoFilhotes3, carrinhoCaoFilhotes4, carrinhoCaoFilhotes5, carrinhoCaoFilhotes6, carrinhoCaoFilhotes7, carrinhoCaoFilhotes8, carrinhoCaoFilhotes9;
 float prodPreco[59];
 int menuCliente();
 int clubepet();
@@ -235,7 +235,7 @@ case 2:
         printf("|                                            Corrinho de compras                                        |\n");
         printf("---------------------------------------------------------------------------------------------------------\n");
         printf("Iten (s)");
-       // if (opcarrinhoCaoFilhotes1==1)
+        if (carrinhoCaoFilhotes1==1)
         {
         printf("\nPetBox Standard - Tamanho P - Para cães filhotes\n");
         printf("Plano mensal: %.2f\n\n", prodPreco[0]);
@@ -759,7 +759,7 @@ int clubepet()
                 printf("1 - Sim                                                                                                 \n");
                 printf("2 - Não                                                                                                 \n");
                 printf("\nOpção: ");
-                scanf("%d", carrinhoCaoFilhotes1);        
+                scanf("%d", &carrinhoCaoFilhotes1);        
             }
                 else if (tamanhoBoxCaoFilhotes1==2)
             {
@@ -770,7 +770,7 @@ int clubepet()
                 printf("1 - Sim                                                                                                 \n");
                 printf("2 - Não                                                                                                 \n");
                 printf("\nOpção: ");
-                scanf("%d", carrinhoCaoFilhotes1);        
+                scanf("%d", &carrinhoCaoFilhotes2);        
             }
                     else if (tamanhoBoxCaoFilhotes1==3)
                      {
@@ -781,7 +781,7 @@ int clubepet()
                      printf("1 - Sim                                                                                                 \n");
                      printf("2 - Não                                                                                                 \n");
                      printf("\nOpção: ");
-                     scanf("%d", carrinhoCaoFilhotes1);        
+                     scanf("%d", carrinhoCaoFilhotes3);        
             }
 
 
@@ -795,7 +795,7 @@ int clubepet()
                 printf("1 - Sim                                                                                                 \n");
                 printf("2 - Não                                                                                                 \n");
                 printf("\nOpção: ");
-                scanf("%d", carrinhoCaoFilhotes1);        
+                scanf("%d", carrinhoCaoFilhotes4);        
             }
                 else if (tamanhoBoxCaoFilhotes2==2)
             {
@@ -806,7 +806,7 @@ int clubepet()
                 printf("1 - Sim                                                                                                 \n");
                 printf("2 - Não                                                                                                 \n");
                 printf("\nOpção: ");
-                scanf("%d", carrinhoCaoFilhotes1);        
+                scanf("%d", carrinhoCaoFilhotes5);        
             }
                     else if (tamanhoBoxCaoFilhotes2==3)
                      {
@@ -817,7 +817,7 @@ int clubepet()
                      printf("1 - Sim                                                                                                 \n");
                      printf("2 - Não                                                                                                 \n");
                      printf("\nOpção: ");
-                     scanf("%d", carrinhoCaoFilhotes1); 
+                     scanf("%d", carrinhoCaoFilhotes6); 
                      }
        
         else if (tamanhoBoxCaoFilhotes3==1)
@@ -829,7 +829,7 @@ int clubepet()
                 printf("1 - Sim                                                                                                 \n");
                 printf("2 - Não                                                                                                 \n");
                 printf("\nOpção: ");
-                scanf("%d", carrinhoCaoFilhotes1);        
+                scanf("%d", carrinhoCaoFilhotes7);        
             }
                 else if (tamanhoBoxCaoFilhotes3==2)
             {
@@ -840,7 +840,7 @@ int clubepet()
                 printf("1 - Sim                                                                                                 \n");
                 printf("2 - Não                                                                                                 \n");
                 printf("\nOpção: ");
-                scanf("%d", carrinhoCaoFilhotes1);        
+                scanf("%d", carrinhoCaoFilhotes8);        
             }
                     else if (tamanhoBoxCaoFilhotes3==3)
                      {
@@ -851,7 +851,7 @@ int clubepet()
                      printf("1 - Sim                                                                                                 \n");
                      printf("2 - Não                                                                                                 \n");
                      printf("\nOpção: ");
-                     scanf("%d", carrinhoCaoFilhotes1); 
+                     scanf("%d", carrinhoCaoFilhotes9); 
                      }
 
  
@@ -1096,11 +1096,15 @@ int clubepet()
 
 
         
+if (carrinhoCaoFilhotes1==1)
+{
+    printf("\nAcesse o seu carrinho de compras\n");
+    printf("--------------------------------------------------------------------------------------------------------\n\n");
+    system("pause");
+    system("cls");
+    main ();
+}
 
-        if (carrinhoCaoFilhotes1==1)
-        {
-            printf("em contrução");
-        }
         
   
   
