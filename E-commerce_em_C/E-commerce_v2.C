@@ -781,7 +781,7 @@ int clubepet()
                      printf("1 - Sim                                                                                                 \n");
                      printf("2 - Não                                                                                                 \n");
                      printf("\nOpção: ");
-                     scanf("%d", carrinhoCaoFilhotes3);        
+                     scanf("%d", &carrinhoCaoFilhotes3);        
             }
 
 
@@ -795,7 +795,7 @@ int clubepet()
                 printf("1 - Sim                                                                                                 \n");
                 printf("2 - Não                                                                                                 \n");
                 printf("\nOpção: ");
-                scanf("%d", carrinhoCaoFilhotes4);        
+                scanf("%d", &carrinhoCaoFilhotes4);        
             }
                 else if (tamanhoBoxCaoFilhotes2==2)
             {
