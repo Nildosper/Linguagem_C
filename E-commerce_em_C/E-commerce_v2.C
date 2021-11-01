@@ -770,24 +770,341 @@ int clubepet()
                 printf("1 - Sim                                                                                                 \n");
                 printf("2 - Não                                                                                                 \n");
                 printf("\nOpção: ");
-                //scanf("%d", opcarrinhoCaoFilhotes1);        
+                scanf("%d", carrinhoCaoFilhotes1);        
             }
                     else if (tamanhoBoxCaoFilhotes1==3)
                      {
                      printf("--------------------------------------------------------------------------------------------------------\n\n");
-                     printf("Você escolheu: PetBox Standard - Tamanho M - Para cães filhotes\n\n");
+                     printf("Você escolheu: PetBox Standard - Tamanho G - Para cães filhotes\n\n");
                      printf("Quantidade em estoque: %d\nPlano mensal:R$%.2f\n\n", prodQtd[2], prodPreco[2]); 
                      printf("Deseja adicionar ao carinho de compras?\n");
                      printf("1 - Sim                                                                                                 \n");
                      printf("2 - Não                                                                                                 \n");
                      printf("\nOpção: ");
-                     //scanf("%d", opcarrinhoCaoFilhotes1);        
+                     scanf("%d", carrinhoCaoFilhotes1);        
             }
 
-    if (carrinhoCaoFilhotes1==1)
-    {
-        printf("Você escolheu: PetBox Standard - Tamanho M - Para cães filhotes\n\n");
-    }
+
+
+            else if (tamanhoBoxCaoFilhotes2==1)
+            {
+                printf("--------------------------------------------------------------------------------------------------------\n\n");
+                printf("Você escolheu: PetBox Premium - Tamanho P - Para cães filhotes\n\n");
+                printf("Quantidade em estoque: %d\nPlano mensal:R$%.2f\n\n", prodQtd[3], prodPreco[3]); 
+                printf("Deseja adicionar ao carinho de compras?\n");
+                printf("1 - Sim                                                                                                 \n");
+                printf("2 - Não                                                                                                 \n");
+                printf("\nOpção: ");
+                scanf("%d", carrinhoCaoFilhotes1);        
+            }
+                else if (tamanhoBoxCaoFilhotes2==2)
+            {
+                printf("--------------------------------------------------------------------------------------------------------\n\n");
+                printf("Você escolheu: PetBox Premium - Tamanho M - Para cães filhotes\n\n");
+                printf("Quantidade em estoque: %d\nPlano mensal:R$%.2f\n\n", prodQtd[4], prodPreco[4]); 
+                printf("Deseja adicionar ao carinho de compras?\n");
+                printf("1 - Sim                                                                                                 \n");
+                printf("2 - Não                                                                                                 \n");
+                printf("\nOpção: ");
+                scanf("%d", carrinhoCaoFilhotes1);        
+            }
+                    else if (tamanhoBoxCaoFilhotes2==3)
+                     {
+                     printf("--------------------------------------------------------------------------------------------------------\n\n");
+                     printf("Você escolheu: PetBox Premium - Tamanho G - Para cães filhotes\n\n");
+                     printf("Quantidade em estoque: %d\nPlano mensal:R$%.2f\n\n", prodQtd[5], prodPreco[5]); 
+                     printf("Deseja adicionar ao carinho de compras?\n");
+                     printf("1 - Sim                                                                                                 \n");
+                     printf("2 - Não                                                                                                 \n");
+                     printf("\nOpção: ");
+                     scanf("%d", carrinhoCaoFilhotes1); 
+                     }
+       
+        else if (tamanhoBoxCaoFilhotes3==1)
+            {
+                printf("--------------------------------------------------------------------------------------------------------\n\n");
+                printf("Você escolheu: PetBox Super Premium - Tamanho P - Para cães filhotes\n\n");
+                printf("Quantidade em estoque: %d\nPlano mensal:R$%.2f\n\n", prodQtd[6], prodPreco[6]); 
+                printf("Deseja adicionar ao carinho de compras?\n");
+                printf("1 - Sim                                                                                                 \n");
+                printf("2 - Não                                                                                                 \n");
+                printf("\nOpção: ");
+                scanf("%d", carrinhoCaoFilhotes1);        
+            }
+                else if (tamanhoBoxCaoFilhotes3==2)
+            {
+                printf("--------------------------------------------------------------------------------------------------------\n\n");
+                printf("Você escolheu: PetBox Super Premium - Tamanho M - Para cães filhotes\n\n");
+                printf("Quantidade em estoque: %d\nPlano mensal:R$%.2f\n\n", prodQtd[7], prodPreco[7]); 
+                printf("Deseja adicionar ao carinho de compras?\n");
+                printf("1 - Sim                                                                                                 \n");
+                printf("2 - Não                                                                                                 \n");
+                printf("\nOpção: ");
+                scanf("%d", carrinhoCaoFilhotes1);        
+            }
+                    else if (tamanhoBoxCaoFilhotes3==3)
+                     {
+                     printf("--------------------------------------------------------------------------------------------------------\n\n");
+                     printf("Você escolheu: PetBox Super Premium - Tamanho G - Para cães filhotes\n\n");
+                     printf("Quantidade em estoque: %d\nPlano mensal:R$%.2f\n\n", prodQtd[8], prodPreco[8]); 
+                     printf("Deseja adicionar ao carinho de compras?\n");
+                     printf("1 - Sim                                                                                                 \n");
+                     printf("2 - Não                                                                                                 \n");
+                     printf("\nOpção: ");
+                     scanf("%d", carrinhoCaoFilhotes1); 
+                     }
+
+ 
+
+
+
+
+
+
+        else if (tamanhoBoxCaoAdultos1==1)
+            {
+                printf("--------------------------------------------------------------------------------------------------------\n\n");
+                printf("Você escolheu: PetBox Standard - Tamanho P - Para cães Adultos\n\n");
+                printf("Quantidade em estoque: %d\nPlano mensal:R$%.2f\n\n", prodQtd[9], prodPreco[9]); 
+                printf("Deseja adicionar ao carinho de compras?\n");
+                printf("1 - Sim                                                                                                 \n");
+                printf("2 - Não                                                                                                 \n");
+                printf("\nOpção: ");
+                scanf("%d", carrinhoCaoFilhotes1);        
+            }
+                else if (tamanhoBoxCaoAdultos1==2)
+            {
+                printf("--------------------------------------------------------------------------------------------------------\n\n");
+                printf("Você escolheu: PetBox Standard - Tamanho M - Para cães Adultos\n\n");
+                printf("Quantidade em estoque: %d\nPlano mensal:R$%.2f\n\n", prodQtd[10], prodPreco[10]); 
+                printf("Deseja adicionar ao carinho de compras?\n");
+                printf("1 - Sim                                                                                                 \n");
+                printf("2 - Não                                                                                                 \n");
+                printf("\nOpção: ");
+                scanf("%d", carrinhoCaoFilhotes1);        
+            }
+                    else if (tamanhoBoxCaoAdultos1==3)
+                     {
+                     printf("--------------------------------------------------------------------------------------------------------\n\n");
+                     printf("Você escolheu: PetBox Standard - Tamanho G - Para cães Adultos\n\n");
+                     printf("Quantidade em estoque: %d\nPlano mensal:R$%.2f\n\n", prodQtd[11], prodPreco[11]); 
+                     printf("Deseja adicionar ao carinho de compras?\n");
+                     printf("1 - Sim                                                                                                 \n");
+                     printf("2 - Não                                                                                                 \n");
+                     printf("\nOpção: ");
+                     scanf("%d", carrinhoCaoFilhotes1);        
+            }
+
+
+
+        else if (tamanhoBoxCaoAdultos2==1)
+            {
+                printf("--------------------------------------------------------------------------------------------------------\n\n");
+                printf("Você escolheu: PetBox Premium - Tamanho P - Para cães Adultos\n\n");
+                printf("Quantidade em estoque: %d\nPlano mensal:R$%.2f\n\n", prodQtd[12], prodPreco[12]); 
+                printf("Deseja adicionar ao carinho de compras?\n");
+                printf("1 - Sim                                                                                                 \n");
+                printf("2 - Não                                                                                                 \n");
+                printf("\nOpção: ");
+                scanf("%d", carrinhoCaoFilhotes1);        
+            }
+                else if (tamanhoBoxCaoAdultos2==2)
+            {
+                printf("--------------------------------------------------------------------------------------------------------\n\n");
+                printf("Você escolheu: PetBox Premium - Tamanho M - Para cães Adultos\n\n");
+                printf("Quantidade em estoque: %d\nPlano mensal:R$%.2f\n\n", prodQtd[13], prodPreco[13]); 
+                printf("Deseja adicionar ao carinho de compras?\n");
+                printf("1 - Sim                                                                                                 \n");
+                printf("2 - Não                                                                                                 \n");
+                printf("\nOpção: ");
+                scanf("%d", carrinhoCaoFilhotes1);        
+            }
+                    else if (tamanhoBoxCaoAdultos2==3)
+                     {
+                     printf("--------------------------------------------------------------------------------------------------------\n\n");
+                     printf("Você escolheu: PetBox Premium - Tamanho G - Para cães Adultoss\n\n");
+                     printf("Quantidade em estoque: %d\nPlano mensal:R$%.2f\n\n", prodQtd[14], prodPreco[14]); 
+                     printf("Deseja adicionar ao carinho de compras?\n");
+                     printf("1 - Sim                                                                                                 \n");
+                     printf("2 - Não                                                                                                 \n");
+                     printf("\nOpção: ");
+                     scanf("%d", carrinhoCaoFilhotes1); 
+                     }
+
+
+
+        else if (tamanhoBoxCaoAdultos3==1)
+            {
+                printf("--------------------------------------------------------------------------------------------------------\n\n");
+                printf("Você escolheu: PetBox Super Premium - Tamanho P - Para cães Adultos\n\n");
+                printf("Quantidade em estoque: %d\nPlano mensal:R$%.2f\n\n", prodQtd[15], prodPreco[15]); 
+                printf("Deseja adicionar ao carinho de compras?\n");
+                printf("1 - Sim                                                                                                 \n");
+                printf("2 - Não                                                                                                 \n");
+                printf("\nOpção: ");
+                scanf("%d", carrinhoCaoFilhotes1);        
+            }
+                else if (tamanhoBoxCaoAdultos3==2)
+            {
+                printf("--------------------------------------------------------------------------------------------------------\n\n");
+                printf("Você escolheu: PetBox Super Premium - Tamanho M - Para cães Adultos\n\n");
+                printf("Quantidade em estoque: %d\nPlano mensal:R$%.2f\n\n", prodQtd[16], prodPreco[16]); 
+                printf("Deseja adicionar ao carinho de compras?\n");
+                printf("1 - Sim                                                                                                 \n");
+                printf("2 - Não                                                                                                 \n");
+                printf("\nOpção: ");
+                scanf("%d", carrinhoCaoFilhotes1);        
+            }
+                    else if (tamanhoBoxCaoAdultos3==3)
+                     {
+                     printf("--------------------------------------------------------------------------------------------------------\n\n");
+                     printf("Você escolheu: PetBox Super Premium - Tamanho G - Para cães Adultos\n\n");
+                     printf("Quantidade em estoque: %d\nPlano mensal:R$%.2f\n\n", prodQtd[17], prodPreco[17]); 
+                     printf("Deseja adicionar ao carinho de compras?\n");
+                     printf("1 - Sim                                                                                                 \n");
+                     printf("2 - Não                                                                                                 \n");
+                     printf("\nOpção: ");
+                     scanf("%d", carrinhoCaoFilhotes1); 
+                     }
+
+
+
+
+        else if (tamanhoBoxCaoIdosos1==1)
+            {
+                printf("--------------------------------------------------------------------------------------------------------\n\n");
+                printf("Você escolheu: PetBox Standard - Tamanho P - Para cães Idosos\n\n");
+                printf("Quantidade em estoque: %d\nPlano mensal:R$%.2f\n\n", prodQtd[18], prodPreco[18]); 
+                printf("Deseja adicionar ao carinho de compras?\n");
+                printf("1 - Sim                                                                                                 \n");
+                printf("2 - Não                                                                                                 \n");
+                printf("\nOpção: ");
+                scanf("%d", carrinhoCaoFilhotes1);        
+            }
+                else if (tamanhoBoxCaoIdosos1==2)
+            {
+                printf("--------------------------------------------------------------------------------------------------------\n\n");
+                printf("Você escolheu: PetBox Standard - Tamanho M - Para cães Idosos\n\n");
+                printf("Quantidade em estoque: %d\nPlano mensal:R$%.2f\n\n", prodQtd[19], prodPreco[19]); 
+                printf("Deseja adicionar ao carinho de compras?\n");
+                printf("1 - Sim                                                                                                 \n");
+                printf("2 - Não                                                                                                 \n");
+                printf("\nOpção: ");
+                scanf("%d", carrinhoCaoFilhotes1);        
+            }
+                    else if (tamanhoBoxCaoIdosos1==3)
+                     {
+                     printf("--------------------------------------------------------------------------------------------------------\n\n");
+                     printf("Você escolheu: PetBox Standard - Tamanho G - Para cães Idosos\n\n");
+                     printf("Quantidade em estoque: %d\nPlano mensal:R$%.2f\n\n", prodQtd[20], prodPreco[20]); 
+                     printf("Deseja adicionar ao carinho de compras?\n");
+                     printf("1 - Sim                                                                                                 \n");
+                     printf("2 - Não                                                                                                 \n");
+                     printf("\nOpção: ");
+                     scanf("%d", carrinhoCaoFilhotes1);        
+            }
+        
+
+
+
+
+
+
+        else if (tamanhoBoxCaoIdosos2==1)
+            {
+                printf("--------------------------------------------------------------------------------------------------------\n\n");
+                printf("Você escolheu: PetBox Premium - Tamanho P - Para cães Idosos\n\n");
+                printf("Quantidade em estoque: %d\nPlano mensal:R$%.2f\n\n", prodQtd[21], prodPreco[21]); 
+                printf("Deseja adicionar ao carinho de compras?\n");
+                printf("1 - Sim                                                                                                 \n");
+                printf("2 - Não                                                                                                 \n");
+                printf("\nOpção: ");
+                scanf("%d", carrinhoCaoFilhotes1);        
+            }
+                else if (tamanhoBoxCaoIdosos2==2)
+            {
+                printf("--------------------------------------------------------------------------------------------------------\n\n");
+                printf("Você escolheu: PetBox Premium - Tamanho M - Para cães Adultos\n\n");
+                printf("Quantidade em estoque: %d\nPlano mensal:R$%.2f\n\n", prodQtd[22], prodPreco[22]); 
+                printf("Deseja adicionar ao carinho de compras?\n");
+                printf("1 - Sim                                                                                                 \n");
+                printf("2 - Não                                                                                                 \n");
+                printf("\nOpção: ");
+                //scanf("%d", opcarrinhoCaoFilhotes1);        
+            }
+                    else if (tamanhoBoxCaoIdosos2==3)
+                     {
+                     printf("--------------------------------------------------------------------------------------------------------\n\n");
+                     printf("Você escolheu: PetBox Premium - Tamanho G - Para cães Idosos\n\n");
+                     printf("Quantidade em estoque: %d\nPlano mensal:R$%.2f\n\n", prodQtd[23], prodPreco[23]); 
+                     printf("Deseja adicionar ao carinho de compras?\n");
+                     printf("1 - Sim                                                                                                 \n");
+                     printf("2 - Não                                                                                                 \n");
+                     printf("\nOpção: ");
+                     scanf("%d", carrinhoCaoFilhotes1); 
+                     }
+
+
+
+
+
+
+         else if (tamanhoBoxCaoIdosos3==1)
+            {
+                printf("--------------------------------------------------------------------------------------------------------\n\n");
+                printf("Você escolheu: PetBox Super Premium - Tamanho P - Para cães Idosos\n\n");
+                printf("Quantidade em estoque: %d\nPlano mensal:R$%.2f\n\n", prodQtd[24], prodPreco[24]); 
+                printf("Deseja adicionar ao carinho de compras?\n");
+                printf("1 - Sim                                                                                                 \n");
+                printf("2 - Não                                                                                                 \n");
+                printf("\nOpção: ");
+                scanf("%d", carrinhoCaoFilhotes1);        
+            }
+                else if (tamanhoBoxCaoIdosos3==2)
+            {
+                printf("--------------------------------------------------------------------------------------------------------\n\n");
+                printf("Você escolheu: PetBox Super Premium - Tamanho M - Para cães Idosos\n\n");
+                printf("Quantidade em estoque: %d\nPlano mensal:R$%.2f\n\n", prodQtd[25], prodPreco[25]); 
+                printf("Deseja adicionar ao carinho de compras?\n");
+                printf("1 - Sim                                                                                                 \n");
+                printf("2 - Não                                                                                                 \n");
+                printf("\nOpção: ");
+                scanf("%d", carrinhoCaoFilhotes1);        
+            }
+                    else if (tamanhoBoxCaoIdosos3==3)
+                     {
+                     printf("--------------------------------------------------------------------------------------------------------\n\n");
+                     printf("Você escolheu: PetBox Super Premium - Tamanho G - Para cães Idosos\n\n");
+                     printf("Quantidade em estoque: %d\nPlano mensal:R$%.2f\n\n", prodQtd[26], prodPreco[26]); 
+                     printf("Deseja adicionar ao carinho de compras?\n");
+                     printf("1 - Sim                                                                                                 \n");
+                     printf("2 - Não                                                                                                 \n");
+                     printf("\nOpção: ");
+                     scanf("%d", carrinhoCaoFilhotes1); 
+                     }
+
+                    
+                    
+                     else 
+                             {
+                             printf("Número inválido\n");
+                             printf("--------------------------------------------------------------------------------------------------------\n\n");
+                             system("pause");
+                             system("cls");
+                             clubepet(); 
+                             }
+
+
+        
+
+        if (carrinhoCaoFilhotes1==1)
+        {
+            printf("em contrução");
+        }
+        
+  
+  
+    
     
             
             
