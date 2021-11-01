@@ -3,7 +3,7 @@
 #include <windows.h>
 
 // declaração de variáveis globais
-int menuPrincipal, op, opcao, opBox, opBoxCao,opBoxGato, categoriaCaoFilhotes, categoriaCaoAdultos, categoriaCaoIdosos, tamanhoBoxCaoFilhotes1, tamanhoBoxCaoFilhotes2, tamanhoBoxCaoFilhotes3, tamanhoBoxCaoAdultos1, tamanhoBoxCaoAdultos2, tamanhoBoxCaoAdultos3, tamanhoBoxCaoIdosos1, tamanhoBoxCaoIdosos2, tamanhoBoxCaoIdosos3, prodCod[59],prodQtd[59], i, opcarinho;
+int menuPrincipal, op, opcao, opBox, opBoxCao,opBoxGato, categoriaCaoFilhotes, categoriaCaoAdultos, categoriaCaoIdosos, tamanhoBoxCaoFilhotes1, tamanhoBoxCaoFilhotes2, tamanhoBoxCaoFilhotes3, tamanhoBoxCaoAdultos1, tamanhoBoxCaoAdultos2, tamanhoBoxCaoAdultos3, tamanhoBoxCaoIdosos1, tamanhoBoxCaoIdosos2, tamanhoBoxCaoIdosos3, prodCod[59],prodQtd[59], i, carrinhoCaoFilhotes1;
 float prodPreco[59];
 int menuCliente();
 int clubepet();
@@ -153,7 +153,7 @@ case 1:
     printf("---------------------------------------------------------------------------------------------------------\n");
     printf("|                                             Cadastro de produtos                                       |\n");
     printf("---------------------------------------------------------------------------------------------------------\n");
-  	for (i=0; i< 2; i++)
+  	for (i=0; i< 3; i++)
   	{
   		printf("Código: ");
   		scanf("%d", &prodCod[i]);
@@ -169,7 +169,7 @@ case 1:
     printf("\n--------------------------------------------------------------------------------------------------------\n");
   	printf("Código\t\tEstoque\t\tPreço\n");
   	
-	  for (i=0; i<2;i++)
+	  for (i=0; i<3;i++)
   	{
   	printf("%d\t\t%d\t\t%.2f\n",prodCod[i],prodQtd[i],prodPreco[i]);
   	}
@@ -234,16 +234,19 @@ case 2:
         printf("---------------------------------------------------------------------------------------------------------\n");
         printf("|                                            Corrinho de compras                                        |\n");
         printf("---------------------------------------------------------------------------------------------------------\n");
+        printf("Iten (s)");
+       // if (opcarrinhoCaoFilhotes1==1)
+        {
+        printf("\nPetBox Standard - Tamanho P - Para cães filhotes\n");
+        printf("Plano mensal: %.2f\n\n", prodPreco[0]);
+        }
+        
+        system("pause");
+        system("cls");
+        main();
+        break;
 
-        printf("--------------------------------------------------------------------------------------------------------\n\n");
-        printf("Iten (s):\nPetBox Standard - Tamanho P - Para cães filhotes\n\n");
-        printf("Plano mensal: %.2f\nPlano Anual: %.2f\n\n", prodPreco[0], prodPreco[0]*0.9);
 
-           system("pause");
-           system("cls");
-           main();
-
-            break;
         case 0:
             exit(0);
         default:
@@ -458,8 +461,6 @@ int clubepet()
                 printf("|     PetBOX: Pequeno      |--------|      PetBOX: Médio      |--------|     PetBOX: Grande      |------\n");
                 printf("|      Plano mensal        |--------|      Plano mensal       |--------|      Plano mensal       |------\n");
                 printf("|      R$ 69,90/mês        |--------|      R$ 99,90/mês       |--------|     R$ 119,90/mês       |------\n");
-                printf("|       Plano anual        |--------|      Plano anual        |--------|      Plano anual        |------\n");
-                printf("|      R$ 59,90/mês        |--------|      R$ 89,90/mês       |--------|     R$ 109,90/mês       |------\n");
                 printf("--------------------------------------------------------------------------------------------------------\n");
                 printf("|Itens:                    |--------|Itens:                   |--------|Itens:                   |------\n");
                 printf("|-Ração standard (1 kg)    |--------|-Ração standard (2 kg)   |--------|-Ração standard (3 kg)   |------\n");
@@ -494,8 +495,6 @@ int clubepet()
                     printf("|     PetBOX: Pequeno      |--------|      PetBOX: Médio      |--------|     PetBOX: Grande      |------\n");
                     printf("|      Plano mensal        |--------|      Plano mensal       |--------|      Plano mensal       |------\n");
                     printf("|      R$ 89,90/mês        |--------|      R$ 119,90/mês      |--------|     R$ 149,90/mês       |------\n");
-                    printf("|       Plano anual        |--------|      Plano anual        |--------|      Plano anual        |------\n");
-                    printf("|      R$ 79,90/mês        |--------|      R$ 109,90/mês      |--------|     R$ 139,90/mês       |------\n");
                     printf("--------------------------------------------------------------------------------------------------------\n");
                     printf("|Itens:                    |--------|Itens:                   |--------|Itens:                   |------\n");
                     printf("|-Ração premium  (1 kg)    |--------|-Ração premium  (2 kg)   |--------|-Ração premium  (3  kg)  |------\n");
@@ -528,8 +527,6 @@ int clubepet()
                         printf("|     PetBOX: Pequeno      |--------|      PetBOX: Médio       |--------|     PetBOX: Grande        |----\n");
                         printf("|      Plano mensal        |--------|      Plano mensal        |--------|      Plano mensal         |----\n");
                         printf("|      R$ 99,90/mês        |--------|      R$ 129,90/mês       |--------|     R$ 169,90/mês         |----\n");
-                        printf("|       Plano anual        |--------|      Plano anual         |--------|      Plano anual          |----\n");
-                        printf("|      R$ 89,90/mês        |--------|      R$ 119,90/mês       |--------|     R$ 159,90/mês         |----\n");
                         printf("--------------------------------------------------------------------------------------------------------\n");
                         printf("|Itens:                    |--------|Itens:                    |--------|Itens:                     |----\n");
                         printf("|-Ração super premium(5 kg)|--------|-Ração super premium(8 kg)|--------|-Ração super premium(12 kg)|----\n");
@@ -564,8 +561,6 @@ int clubepet()
                 printf("|     PetBOX: Pequeno      |--------|      PetBOX: Médio      |--------|     PetBOX: Grande      |------\n");
                 printf("|      Plano mensal        |--------|      Plano mensal       |--------|      Plano mensal       |------\n");
                 printf("|      R$ 89,90/mês        |--------|      R$ 129,90/mês      |--------|     R$ 159,90/mês       |------\n");
-                printf("|       Plano anual        |--------|      Plano anual        |--------|      Plano anual        |------\n");
-                printf("|      R$ 79,90/mês        |--------|      R$ 119,90/mês      |--------|     R$ 149,90/mês       |------\n");
                 printf("--------------------------------------------------------------------------------------------------------\n");
                 printf("|Itens:                    |--------|Itens:                   |--------|Itens:                   |------\n");
                 printf("|-Ração standard (5 kg)    |--------|-Ração standard (8 kg)   |--------|-Ração standard (12 kg)  |------\n");
@@ -600,8 +595,6 @@ int clubepet()
                     printf("|     PetBOX: Pequeno      |--------|      PetBOX: Médio      |--------|     PetBOX: Grande      |------\n");
                     printf("|      Plano mensal        |--------|      Plano mensal       |--------|      Plano mensal       |------\n");
                     printf("|      R$ 99,90/mês        |--------|      R$ 149,90/mês      |--------|     R$ 179,90/mês       |------\n");
-                    printf("|       Plano anual        |--------|      Plano anual        |--------|      Plano anual        |------\n");
-                    printf("|      R$ 89,90/mês        |--------|      R$ 139,90/mês      |--------|     R$ 169,90/mês       |------\n");
                     printf("--------------------------------------------------------------------------------------------------------\n");
                     printf("|Itens:                    |--------|Itens:                   |--------|Itens:                   |------\n");
                     printf("|-Ração premium  (5 kg)    |--------|-Ração premium  (8 kg)   |--------|-Ração premium  (12 kg)  |------\n");
@@ -634,8 +627,6 @@ int clubepet()
                         printf("|     PetBOX: Pequeno      |--------|      PetBOX: Médio        |--------|     PetBOX: Grande         |---\n");
                         printf("|      Plano mensal        |--------|      Plano mensal         |--------|      Plano mensal          |---\n");
                         printf("|      R$ 109,90/mês       |--------|      R$ 169,90/mês        |--------|     R$ 199,90/mês          |---\n");
-                        printf("|       Plano anual        |--------|      Plano anual          |--------|      Plano anual           |---\n");
-                        printf("|      R$ 99,90/mês        |--------|      R$ 159,90/mês        |--------|     R$ 189,90/mês          |---\n");
                         printf("----------------------------------------------------------------------------------------------------------\n");
                         printf("|Itens:                    |--------|Itens:                     |--------|Itens:                      |---\n");
                         printf("|-Ração super premium(5 kg)|--------|-Ração super premium (8 kg)|--------|-Ração super premium (12 kg)|---\n");
@@ -668,8 +659,6 @@ int clubepet()
                 printf("|     PetBOX: Pequeno      |--------|      PetBOX: Médio      |--------|     PetBOX: Grande      |------\n");
                 printf("|      Plano mensal        |--------|      Plano mensal       |--------|      Plano mensal       |------\n");
                 printf("|      R$ 89,90/mês        |--------|      R$ 129,90/mês      |--------|     R$ 159,90/mês       |------\n");
-                printf("|       Plano anual        |--------|      Plano anual        |--------|      Plano anual        |------\n");
-                printf("|      R$ 79,90/mês        |--------|      R$ 119,90/mês      |--------|     R$ 149,90/mês       |------\n");
                 printf("--------------------------------------------------------------------------------------------------------\n");
                 printf("|Itens:                    |--------|Itens:                   |--------|Itens:                   |------\n");
                 printf("|-Ração standard (5 kg)    |--------|-Ração standard (8 kg)   |--------|-Ração standard (12 kg)  |------\n");
@@ -703,8 +692,6 @@ int clubepet()
                     printf("|     PetBOX: Pequeno      |--------|      PetBOX: Médio      |--------|     PetBOX: Grande      |------\n");
                     printf("|      Plano mensal        |--------|      Plano mensal       |--------|      Plano mensal       |------\n");
                     printf("|      R$ 99,90/mês        |--------|      R$ 149,90/mês      |--------|     R$ 179,90/mês       |------\n");
-                    printf("|       Plano anual        |--------|      Plano anual        |--------|      Plano anual        |------\n");
-                    printf("|      R$ 89,90/mês        |--------|      R$ 139,90/mês      |--------|     R$ 169,90/mês       |------\n");
                     printf("--------------------------------------------------------------------------------------------------------\n");
                     printf("|Itens:                    |--------|Itens:                   |--------|Itens:                   |------\n");
                     printf("|-Ração premium  (1 kg)    |--------|-Ração premium  (2 kg)   |--------|-Ração premium  (3  kg)  |------\n");
@@ -737,8 +724,6 @@ int clubepet()
                         printf("|     PetBOX: Pequeno      |--------|      PetBOX: Médio       |--------|     PetBOX: Grande        |----\n");
                         printf("|      Plano mensal        |--------|      Plano mensal        |--------|      Plano mensal         |----\n");
                         printf("|      R$ 109,90/mês       |--------|      R$ 169,90/mês       |--------|     R$ 199,90/mês         |----\n");
-                        printf("|       Plano anual        |--------|      Plano anual         |--------|      Plano anual          |----\n");
-                        printf("|      R$ 99,90/mês        |--------|      R$ 159,90/mês       |--------|     R$ 189,90/mês         |----\n");
                         printf("---------------------------------------------------------------------------------------------------------\n");
                         printf("|Itens:                    |--------|Itens:                    |--------|Itens:                     |----\n");
                         printf("|-Ração super premium(5 kg)|--------|-Ração super premium(8 kg)|--------|-Ração super premium(12 kg)|----\n");
@@ -769,18 +754,44 @@ int clubepet()
             {
                 printf("--------------------------------------------------------------------------------------------------------\n\n");
                 printf("Você escolheu: PetBox Standard - Tamanho P - Para cães filhotes\n\n");
-                printf("Quantidade em estoque: %d\nPlano mensal: %.2f\nPlano Anual: %.2f\n\n", prodQtd[0], prodPreco[0], prodPreco[0]*0.9); 
+                printf("Quantidade em estoque: %d\nPlano mensal:R$%.2f\n\n", prodQtd[0], prodPreco[0]); 
                 printf("Deseja adicionar ao carinho de compras?\n");
                 printf("1 - Sim                                                                                                 \n");
                 printf("2 - Não                                                                                                 \n");
                 printf("\nOpção: ");
-                scanf("%d", opcarinho);
-                printf("Qual palno gostaria?\n");
-                printf("1 - Mensal                                                                                                 \n");
-                printf("2 - Anual                                                                                                \n");
-                printf("\nOpção: ");
-                
+                scanf("%d", carrinhoCaoFilhotes1);        
             }
+                else if (tamanhoBoxCaoFilhotes1==2)
+            {
+                printf("--------------------------------------------------------------------------------------------------------\n\n");
+                printf("Você escolheu: PetBox Standard - Tamanho M - Para cães filhotes\n\n");
+                printf("Quantidade em estoque: %d\nPlano mensal:R$%.2f\n\n", prodQtd[1], prodPreco[1]); 
+                printf("Deseja adicionar ao carinho de compras?\n");
+                printf("1 - Sim                                                                                                 \n");
+                printf("2 - Não                                                                                                 \n");
+                printf("\nOpção: ");
+                //scanf("%d", opcarrinhoCaoFilhotes1);        
+            }
+                    else if (tamanhoBoxCaoFilhotes1==3)
+                     {
+                     printf("--------------------------------------------------------------------------------------------------------\n\n");
+                     printf("Você escolheu: PetBox Standard - Tamanho M - Para cães filhotes\n\n");
+                     printf("Quantidade em estoque: %d\nPlano mensal:R$%.2f\n\n", prodQtd[2], prodPreco[2]); 
+                     printf("Deseja adicionar ao carinho de compras?\n");
+                     printf("1 - Sim                                                                                                 \n");
+                     printf("2 - Não                                                                                                 \n");
+                     printf("\nOpção: ");
+                     //scanf("%d", opcarrinhoCaoFilhotes1);        
+            }
+
+    if (carrinhoCaoFilhotes1==1)
+    {
+        printf("Você escolheu: PetBox Standard - Tamanho M - Para cães filhotes\n\n");
+    }
+    
+            
+            
+            
               
 
 
