@@ -153,7 +153,7 @@ case 1:
     printf("---------------------------------------------------------------------------------------------------------\n");
     printf("|                                             Cadastro de produtos                                       |\n");
     printf("---------------------------------------------------------------------------------------------------------\n");
-  	for (i=0; i< 3; i++)
+  	for (i=0; i< 2; i++)
   	{
   		printf("Código: ");
   		scanf("%d", &prodCod[i]);
@@ -169,7 +169,7 @@ case 1:
     printf("\n--------------------------------------------------------------------------------------------------------\n");
   	printf("Código\t\tEstoque\t\tPreço\n");
   	
-	  for (i=0; i<3;i++)
+	  for (i=0; i<2;i++)
   	{
   	printf("%d\t\t%d\t\t%.2f\n",prodCod[i],prodQtd[i],prodPreco[i]);
   	}
@@ -240,7 +240,7 @@ case 2:
         printf("\nPetBox Standard - Tamanho P - Para cães filhotes\n");
         printf("Plano mensal: %.2f\n\n", prodPreco[0]);
         } 
-        if (carrinhoCaoFilhotes1==2)
+        if (carrinhoCaoFilhotes2==1)
         {
         printf("\nPetBox Standard - Tamanho M - Para cães filhotes\n");
         printf("Plano mensal: %.2f\n\n", prodPreco[1]);
@@ -1110,7 +1110,14 @@ if (carrinhoCaoFilhotes1==1)
     system("cls");
     main ();
 }
-
+    else if (carrinhoCaoFilhotes2==1)
+    {
+    printf("\nAcesse o seu carrinho de compras\n");
+    printf("--------------------------------------------------------------------------------------------------------\n\n");
+    system("pause");
+    system("cls");
+    main ();
+    }
         
   
   
