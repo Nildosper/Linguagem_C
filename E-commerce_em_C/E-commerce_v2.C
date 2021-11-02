@@ -239,7 +239,13 @@ case 2:
         {
         printf("\nPetBox Standard - Tamanho P - Para cães filhotes\n");
         printf("Plano mensal: %.2f\n\n", prodPreco[0]);
+        } 
+        if (carrinhoCaoFilhotes1==2)
+        {
+        printf("\nPetBox Standard - Tamanho M - Para cães filhotes\n");
+        printf("Plano mensal: %.2f\n\n", prodPreco[1]);
         }
+
         
         system("pause");
         system("cls");
