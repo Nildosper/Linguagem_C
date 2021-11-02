@@ -245,8 +245,12 @@ case 2:
         printf("\nPetBox Standard - Tamanho M - Para cães filhotes\n");
         printf("Plano mensal: %.2f\n\n", prodPreco[1]);
         }
-
-        
+        if (carrinhoCaoFilhotes3==1)
+        {
+        printf("\nPetBox Standard - Tamanho G - Para cães filhotes\n");
+        printf("Plano mensal: %.2f\n\n", prodPreco[2]);
+        }
+       
         system("pause");
         system("cls");
         main();
@@ -1118,7 +1122,73 @@ if (carrinhoCaoFilhotes1==1)
     system("cls");
     main ();
     }
-        
+    else if (carrinhoCaoFilhotes3==1)
+    {
+    printf("\nAcesse o seu carrinho de compras\n");
+    printf("--------------------------------------------------------------------------------------------------------\n\n");
+    system("pause");
+    system("cls");
+    main ();
+    }                
+    else if (carrinhoCaoFilhotes4==1)
+    {
+    printf("\nAcesse o seu carrinho de compras\n");
+    printf("--------------------------------------------------------------------------------------------------------\n\n");
+    system("pause");
+    system("cls");
+    main ();
+    }                 
+    else if (carrinhoCaoFilhotes5==1)
+    {
+    printf("\nAcesse o seu carrinho de compras\n");
+    printf("--------------------------------------------------------------------------------------------------------\n\n");
+    system("pause");
+    system("cls");
+    main ();
+    } 
+    else if (carrinhoCaoFilhotes6==1)
+    {
+    printf("\nAcesse o seu carrinho de compras\n");
+    printf("--------------------------------------------------------------------------------------------------------\n\n");
+    system("pause");
+    system("cls");
+    main ();
+    }  
+    else if (carrinhoCaoFilhotes7==1)
+    {
+    printf("\nAcesse o seu carrinho de compras\n");
+    printf("--------------------------------------------------------------------------------------------------------\n\n");
+    system("pause");
+    system("cls");
+    main ();
+    } 
+    else if (carrinhoCaoFilhotes8==1)
+    {
+    printf("\nAcesse o seu carrinho de compras\n");
+    printf("--------------------------------------------------------------------------------------------------------\n\n");
+    system("pause");
+    system("cls");
+    main ();
+    } 
+    else if (carrinhoCaoFilhotes9==1)
+    {
+    printf("\nAcesse o seu carrinho de compras\n");
+    printf("--------------------------------------------------------------------------------------------------------\n\n");
+    system("pause");
+    system("cls");
+    main ();
+    }   
+
+
+    //FALTA ADICIONAR O RESTANTE DOS IFS                            
+                            else 
+                             {
+                             printf("Número inválido\n");
+                             printf("--------------------------------------------------------------------------------------------------------\n\n");
+                             system("pause");
+                             system("cls");
+                             clubepet(); 
+                             } 
   
   
     
