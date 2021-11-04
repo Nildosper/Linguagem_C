@@ -184,90 +184,7 @@ case 1:
 
 case 2:
    menuCliente();//chama a função menuCliente
-       switch(op){
-        case 1:
-            printf("\n---------------------------------------------------------------------------------------------------------\n\n");
-            printf("|                                                BRPETS                                                 |\n\n");
-            printf("---------------------------------------------------------------------------------------------------------\n\n");
-            printf("\n A BRPet é uma empresa que surgiu para fazer a relação entre você e seu pet ser melhor a cada dia!     \n");
-	        printf("\n Somos apaixonados por pets e , por isso, a nossa loja foi preparada e organizada para você encontrar  \n"); 
-            printf("\n facilmente o que procura a qualquer hora e em qualquer lugar.                                         \n");
-	        printf("\n Os nossos principais produtos são as PetBOX, uma maneira inovadora de ter todo mês na sua casa tudo   \n");
-            printf("\n que seu pet precisa.                                                                                  \n");   
-	        printf("\n Faça parte do nosso Clube Pet  e aproveite o que há de melhor no mundo pet!                           \n");
-            printf("---------------------------------------------------------------------------------------------------------\n\n");
-
-            system("pause");
-            system("cls");
-            main();
-
-            break;
-        case 2:
-    		clubepet(); //chama função clubepet 
-             break;
-      
-        case 3:
-           printf("Em contrução \n");
-
-           system("pause");
-           system("cls");
-           main();
-
-            break;
-        case 4:
-            printf("Em contrução \n");
-
-           system("pause");
-           system("cls");
-           main();
-
-            break;
-        case 5:
-           printf("Em contrução \n");
-
-           system("pause");
-           system("cls");
-           main();
-
-            break;
-        case 6:
-        printf("---------------------------------------------------------------------------------------------------------\n");
-        printf("|                                            Corrinho de compras                                        |\n");
-        printf("---------------------------------------------------------------------------------------------------------\n");
-        printf("Iten (s)");
-        if (carrinhoCaoFilhotes1==1)
-        {
-        printf("\nPetBox Standard - Tamanho P - Para cães filhotes\n");
-        printf("Plano mensal: %.2f\n\n", prodPreco[0]);
-        } 
-        if (carrinhoCaoFilhotes2==1)
-        {
-        printf("\nPetBox Standard - Tamanho M - Para cães filhotes\n");
-        printf("Plano mensal: %.2f\n\n", prodPreco[1]);
-        }
-        if (carrinhoCaoFilhotes3==1)
-        {
-        printf("\nPetBox Standard - Tamanho G - Para cães filhotes\n");
-        printf("Plano mensal: %.2f\n\n", prodPreco[2]);
-        }
        
-        system("pause");
-        system("cls");
-        main();
-        break;
-
-
-        case 0:
-            exit(0);
-        default:
-            printf("Digite uma opção valida: \n");
-            system("pause");
-            system("cls");
-            main();
-        
-
-    }
-
 case 0:
 exit(0);
 default:
@@ -302,6 +219,91 @@ int menuCliente()
     printf("0 - Sair do site\n");
     printf("\nOpção: ");
     scanf("%d", &op);
+
+
+    switch(op){
+        case 1:
+            printf("\n---------------------------------------------------------------------------------------------------------\n\n");
+            printf("|                                                BRPETS                                                 |\n\n");
+            printf("---------------------------------------------------------------------------------------------------------\n\n");
+            printf("\n A BRPet é uma empresa que surgiu para fazer a relação entre você e seu pet ser melhor a cada dia!     \n");
+	        printf("\n Somos apaixonados por pets e , por isso, a nossa loja foi preparada e organizada para você encontrar  \n"); 
+            printf("\n facilmente o que procura a qualquer hora e em qualquer lugar.                                         \n");
+	        printf("\n Os nossos principais produtos são as PetBOX, uma maneira inovadora de ter todo mês na sua casa tudo   \n");
+            printf("\n que seu pet precisa.                                                                                  \n");   
+	        printf("\n Faça parte do nosso Clube Pet  e aproveite o que há de melhor no mundo pet!                           \n");
+            printf("---------------------------------------------------------------------------------------------------------\n\n");
+
+            system("pause");
+            system("cls");
+            menuCliente();
+
+            break;
+        case 2:
+    		clubepet(); //chama função clubepet 
+             break;
+      
+        case 3:
+           printf("Em contrução \n");
+
+           system("pause");
+           system("cls");
+           menuCliente();
+
+            break;
+        case 4:
+            printf("Em contrução \n");
+
+           system("pause");
+           system("cls");
+           menuCliente();
+
+            break;
+        case 5:
+           printf("Em contrução \n");
+
+           system("pause");
+           system("cls");
+           menuCliente();
+
+            break;
+        case 6:
+        printf("---------------------------------------------------------------------------------------------------------\n");
+        printf("|                                            Corrinho de compras                                        |\n");
+        printf("---------------------------------------------------------------------------------------------------------\n");
+        printf("Iten (s)");
+        if (carrinhoCaoFilhotes1==1)
+        {
+        printf("\nPetBox Standard - Tamanho P - Para cães filhotes\n");
+        printf("Plano mensal: %.2f\n\n", prodPreco[0]);
+        } 
+        if (carrinhoCaoFilhotes2==1)
+        {
+        printf("\nPetBox Standard - Tamanho M - Para cães filhotes\n");
+        printf("Plano mensal: %.2f\n\n", prodPreco[1]);
+        }
+        if (carrinhoCaoFilhotes3==1)
+        {
+        printf("\nPetBox Standard - Tamanho G - Para cães filhotes\n");
+        printf("Plano mensal: %.2f\n\n", prodPreco[2]);
+        }
+       
+        system("pause");
+        system("cls");
+        menuCliente();
+        break;
+
+
+        case 0:
+            exit(0);
+        default:
+        printf("Digite uma opção valida: \n");
+        system("pause");
+        system("cls");
+        menuCliente();
+        
+
+    }
 
     
 }
@@ -1112,7 +1114,7 @@ if (carrinhoCaoFilhotes1==1)
     printf("--------------------------------------------------------------------------------------------------------\n\n");
     system("pause");
     system("cls");
-    main ();
+    menuCliente();
 }
     else if (carrinhoCaoFilhotes2==1)
     {
@@ -1120,7 +1122,7 @@ if (carrinhoCaoFilhotes1==1)
     printf("--------------------------------------------------------------------------------------------------------\n\n");
     system("pause");
     system("cls");
-    main ();
+    menuCliente();
     }
     else if (carrinhoCaoFilhotes3==1)
     {
@@ -1128,7 +1130,7 @@ if (carrinhoCaoFilhotes1==1)
     printf("--------------------------------------------------------------------------------------------------------\n\n");
     system("pause");
     system("cls");
-    main ();
+    menuCliente();
     }                
     else if (carrinhoCaoFilhotes4==1)
     {
@@ -1136,7 +1138,7 @@ if (carrinhoCaoFilhotes1==1)
     printf("--------------------------------------------------------------------------------------------------------\n\n");
     system("pause");
     system("cls");
-    main ();
+    menuCliente();
     }                 
     else if (carrinhoCaoFilhotes5==1)
     {
@@ -1144,7 +1146,7 @@ if (carrinhoCaoFilhotes1==1)
     printf("--------------------------------------------------------------------------------------------------------\n\n");
     system("pause");
     system("cls");
-    main ();
+    menuCliente();
     } 
     else if (carrinhoCaoFilhotes6==1)
     {
