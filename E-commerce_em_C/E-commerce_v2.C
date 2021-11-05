@@ -355,7 +355,7 @@ int clubepet()
                  else if (opcao==3)
                  	{
                  	system("cls");
-                 	main();
+                 	menuCliente();
                  	}
                  else
                     {
