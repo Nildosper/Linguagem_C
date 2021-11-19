@@ -3,7 +3,7 @@
 #include <windows.h>
 
 // declaração de variáveis globais
-int menuPrincipal, op, opcao, opBox, opBoxCao,opBoxGato, categoriaCaoFilhotes, categoriaCaoAdultos, categoriaCaoIdosos, tamanhoBoxCaoFilhotes1, tamanhoBoxCaoFilhotes2, tamanhoBoxCaoFilhotes3, tamanhoBoxCaoAdultos1, tamanhoBoxCaoAdultos2, tamanhoBoxCaoAdultos3, tamanhoBoxCaoIdosos1, tamanhoBoxCaoIdosos2, tamanhoBoxCaoIdosos3, prodCod[59],prodQtd[59], i, carrinhoCaoFilhotes1, carrinhoCaoFilhotes2, carrinhoCaoFilhotes3, carrinhoCaoFilhotes4, carrinhoCaoFilhotes5, carrinhoCaoFilhotes6, carrinhoCaoFilhotes7, carrinhoCaoFilhotes8, carrinhoCaoFilhotes9,carrinhoCaoFilhotes10, carrinhoCaoFilhotes11, carrinhoCaoFilhotes12, carrinhoCaoFilhotes13, carrinhoCaoFilhotes14, carrinhoCaoFilhotes15, carrinhoCaoFilhotes16, carrinhoCaoFilhotes17, carrinhoCaoFilhotes18, carrinhoCaoFilhotes19, carrinhoCaoFilhotes20, carrinhoCaoFilhotes21, carrinhoCaoFilhotes22, carrinhoCaoFilhotes23, carrinhoCaoFilhotes24, carrinhoCaoFilhotes25, carrinhoCaoFilhotes26, carrinhoCaoFilhotes27;
+int menuPrincipal, op, opcao, opBox, opBoxCao, categoriaCaoFilhotes, categoriaCaoAdultos, categoriaCaoIdosos, tamanhoBoxCaoFilhotes1, tamanhoBoxCaoFilhotes2, tamanhoBoxCaoFilhotes3, tamanhoBoxCaoAdultos1, tamanhoBoxCaoAdultos2, tamanhoBoxCaoAdultos3, tamanhoBoxCaoIdosos1, tamanhoBoxCaoIdosos2, tamanhoBoxCaoIdosos3, prodCod[59],prodQtd[59], i, carrinhoCaoFilhotes1, carrinhoCaoFilhotes2, carrinhoCaoFilhotes3, carrinhoCaoFilhotes4, carrinhoCaoFilhotes5, carrinhoCaoFilhotes6, carrinhoCaoFilhotes7, carrinhoCaoFilhotes8, carrinhoCaoFilhotes9,carrinhoCaoFilhotes10, carrinhoCaoFilhotes11, carrinhoCaoFilhotes12, carrinhoCaoFilhotes13, carrinhoCaoFilhotes14, carrinhoCaoFilhotes15, carrinhoCaoFilhotes16, carrinhoCaoFilhotes17, carrinhoCaoFilhotes18, carrinhoCaoFilhotes19, carrinhoCaoFilhotes20, carrinhoCaoFilhotes21, carrinhoCaoFilhotes22, carrinhoCaoFilhotes23, carrinhoCaoFilhotes24, carrinhoCaoFilhotes25, carrinhoCaoFilhotes26, carrinhoCaoFilhotes27;
 float prodPreco[59];
 int menuCliente();
 int clubepet();
@@ -66,39 +66,6 @@ case 1:
     printf("Código 26: PetBox Idosos super premium - M\n");
     printf("Código 27: PetBox Idosos super premium - G\n");
 
-    printf("-----------------------\n");
-    printf("|PetBox para Gatos    |\n");
-    printf("-----------------------\n");
-    printf("Código 28: PetBox Filhotes standard - P\n");
-    printf("Código 29: PetBox Filhotes standard - M\n");
-    printf("Código 30: PetBox Filhotes standard - G\n");
-    printf("Código 31: PetBox Filhotes Premium - P\n");
-    printf("Código 32: PetBox Filhotes Premium - M\n");
-    printf("Código 33: PetBox Filhotes Premium - G\n");
-    printf("Código 34: PetBox Filhotes super premium - P\n");
-    printf("Código 35: PetBox Filhotes super premium - M\n");
-    printf("Código 36: PetBox Filhotes super premium - G\n");
-
-    printf("Código 37: PetBox Adultos standard - P\n");
-    printf("Código 38: PetBox Adultos standard - M\n");
-    printf("Código 39: PetBox Adultos standard - G\n");
-    printf("Código 40: PetBox Adultos Premium - P\n");
-    printf("Código 41: PetBox Adultos Premium - M\n");
-    printf("Código 42: PetBox Adultos Premium - G\n");
-    printf("Código 43: PetBox Adultos super premium - P\n");
-    printf("Código 44: PetBox Adultos super premium - M\n");
-    printf("Código 45: PetBox Adultos super premium - G\n");
-
-    printf("Código 46: PetBox Idosos standard - P\n");
-    printf("Código 47: PetBox Idosos standard - M\n");
-    printf("Código 48: PetBox Idosos standard - G\n");
-    printf("Código 49: PetBox Idosos Premium - P\n");
-    printf("Código 50: PetBox Idosos Premium - M\n");
-    printf("Código 51: PetBox Idosos Premium - G\n");
-    printf("Código 52: PetBox Idosos super premium - P\n");
-    printf("Código 53: PetBox Idosos super premium - M\n");
-    printf("Código 54: PetBox Idosos super premium - G\n");
-
     printf("---------------------------\n");
     printf("|PetBox escolha cachorros |\n");
     printf("---------------------------\n");
@@ -127,25 +94,7 @@ case 1:
     printf("Código 41: sabonete\n");
     printf("Código 42: Kit de Shampoo, Colônia e Condicionador\n");
     printf("Código 43: Kit dental: escova + creme dental\n");
-    printf("---------------------------\n");
-    printf("|PetBox escolha Gatos     |\n");
-    printf("---------------------------\n");
-    printf("Código 44: Ração standard 1 kg\n");
-    printf("Código 45: Ração standard 2 kg\n");
-    printf("Código 46: Ração standard 3 kg\n");
-    printf("Código 47: Ração premium 1 kg\n");
-    printf("Código 48: Ração premium 2 kg\n");
-    printf("Código 49: Ração premium 3 kg\n");
-    printf("Código 50: Ração super premium 1 kg\n");
-    printf("Código 51: Ração super premium 2 kg\n");
-    printf("Código 52: Ração super premium 3 kg\n");
-    printf("Código 53: Areia 4 kg\n");
-    printf("Código 54: Areia 5 kg\n");
-    printf("Código 55: Areia 6 kg\n");
-    printf("Código 56: Arranhadores e brinquedos \n");
-    printf("Código 57: sabonete\n");
-    printf("Código 58: Kit de Shampoo, Colônia e Condicionador\n");
-    printf("Código 59: Kit dental: escova + creme dental\n");
+   
 
     
 	
@@ -344,8 +293,8 @@ int clubepet()
                     printf("\n--------------------------------------------------------------------------------------------------------\n");
                     printf("| Escolha a PetBOX ideal para o seu Pet                                                                |\n");
                     printf("--------------------------------------------------------------------------------------------------------\n");
-                    printf("1 - PetBox para Cachoros                                                                                \n");
-                    printf("2 - PetBox para gatos                                                                                   \n");
+                    printf("1 - PetBox Fixa                                                                                         \n");
+                    printf("2 - PetBox Escolha                                                                                      \n");
                     printf("\nOpção: ");
                     scanf("%d", &opBox);              
                     }             
@@ -365,7 +314,7 @@ int clubepet()
                 if (opBox==1)
                 {
                 printf("\n--------------------------------------------------------------------------------------------------------\n");
-                printf("| PetBox para Cachoros                                                                                 |\n");
+                printf("| PetBox Fixa                                                                                          |\n");
                 printf("--------------------------------------------------------------------------------------------------------\n");
                 printf("\n1 - PetBox para filhotes                                                                              \n");
                 printf("\nIdeal para seu Pet entre 40 dias e 1 ano vida!                                                       \n");
@@ -379,14 +328,12 @@ int clubepet()
                 else if (opBox==2)
                 {
                 printf("\n--------------------------------------------------------------------------------------------------------\n");
-                printf("| PetBox para gatos                                                                                    |\n");
+                printf("| PetBox Escolha                                                                                      |\n");
                 printf("--------------------------------------------------------------------------------------------------------\n");
-                printf("1 - PetBox para filhotes                                                                                \n");
-                printf("2 - PetBox para adultos                                                                                 \n");
-                printf("3 - PetBox para idosos                                                                                  \n");
-                printf("\nOpção: ");
-                scanf("%d", &opBoxGato); 
+                printf("EM CONSTRUÇÃO                                                                                          \n");
+                
                 }
+
                 else 
                 {
                 printf("\nNúmero inválido\n");
