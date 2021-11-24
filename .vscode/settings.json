@@ -18,5 +18,6 @@
         "oamor.C": "cpp",
         "E-commerce_v2.C": "cpp",
         "E-commerce_VRafael.C": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
 }

@@ -623,8 +623,9 @@ int menuCliente(){
     	 	   system("pause");	
 	 	 }
 	  fflush(stdin);// limpeza do buffer do teclado para não pular leituras
-	 }while(continua);
-    }	
+	 }
+   while(continua);
+	
 
 // Menu Cadastro Produtos
 int menuSup() {
