@@ -9,6 +9,7 @@ int cadastroCliente();
 int menuCliente();
 int menuClube();
 int menuSup();
+int menuPetbox();
 int petboxFixa();
 
 #define TAMANHO 5
@@ -500,7 +501,7 @@ int menuClube()
 {
   system("cls");
   int opcao;
-	printf("\n---------------------------------------------------------------------------------------------------------\n");
+  printf("\n---------------------------------------------------------------------------------------------------------\n");
   printf("|                                                BRPETS                                                 |\n");
   printf("---------------------------------------------------------------------------------------------------------\n");
   printf("| Clube Pet |\n");
@@ -520,14 +521,14 @@ int menuClube()
       printf("| Como funciona a PetBox                                                                                |\n");
       printf("---------------------------------------------------------------------------------------------------------\n");
       printf("\n         No Clube Pet você recebe, todo mês, uma PetBOX com tudo que o seu bichinho precisa!         \n\n");
-		  printf("\n                                 PASSOS PARA ADQUIRIR SUA PET BOX                                      \n");
-		  printf("\n                                        1 - Você escolhe!                                              \n");
+	  printf("\n                                 PASSOS PARA ADQUIRIR SUA PET BOX                                      \n");
+	  printf("\n                                        1 - Você escolhe!                                              \n");
       printf("\n         São vários clubes diferentes, e você escolhe a PetBOX que mais combina com o seu pet.         \n");
-		  printf("\n                                        2 - Nós selecionamos                                           \n"); 
+	  printf("\n                                        2 - Nós selecionamos                                           \n"); 
       printf("\n  Nossos especialistas  se encarregam em selecionar os melhores produtos que farão parte de cada PetBOX\n");
-		  printf("\n                                        3 - Comodidade                                                 \n");
+	  printf("\n                                        3 - Comodidade                                                 \n");
       printf("\n                Todo mês, você recebe a sua PetBOX no conforto da sua casa.                            \n");
-		  printf("\n                                        4 - Aproveite                                                  \n");
+	  printf("\n                                        4 - Aproveite                                                  \n");
       printf("\n                            O seu bichinho com o melhor do mundo Pet!                                  \n");
       printf("--------------------------------------------------------------------------------------------------------\n\n");
       system("pause");
@@ -538,8 +539,8 @@ int menuClube()
 
     case 2: //menupetbox
     {
-      system("cls"); 
-      petboxFixa();
+      //system("cls"); 
+      menuPetbox();
       break;
 
     }
@@ -564,7 +565,7 @@ return(0);
 //Função Menu Pet Box
 int menuPetbox()
 {
-  int opcao;
+  int opmenuPetbox;
   printf("\n--------------------------------------------------------------------------------------------------------\n");
   printf("| Escolha a PetBOX ideal para o seu Pet                                                                |\n");
   printf("--------------------------------------------------------------------------------------------------------\n");
@@ -572,20 +573,29 @@ int menuPetbox()
   printf("2 - PetBox Escolha\n");
   printf("3 - Retornar ao Menu Principal\n");
   printf("\n Digite a Opção Desejada [1, 2, 3]: ");
-  scanf("%d", &opcao);   
+  scanf("%d",&opmenuPetbox);
+  
 
-  switch (opcao)
+  if (opmenuPetbox=1)
+  {
+      printf("aaaaaaaaaaaaaaaa");
+  }
+  
+/* 
+  switch (opMenu)
   {
     case 1: //petbox fixa
     {
+      printf("Aquiiiiiiiiiiiiiiiii 1111111111111");
     system("cls");
-    //petboxFixa();
+    petboxFixa();
     break;
     }
-
+   
     case 2: //petbox escolha
     {
-    system("cls");
+     printf("Aquiiiiiiiiiiiiiiiii 2222222222222222");
+    //system("cls");
     //petboxEscolha();
     break;
     }
@@ -603,14 +613,14 @@ int menuPetbox()
   	printf("\n\n");
     system("pause");
     }
-  }
+  }*/
   return(0);
 }
 
 //Função Petbox Fixa
 int petboxFixa()
 {
-  int opcao, opValor;
+  
   system("cls");
   printf("\n--------------------------------------------------------------------------------------------------------\n");
   printf("| PetBox Fixa                                                                                          |\n");
@@ -620,29 +630,15 @@ int petboxFixa()
   printf("\n2 --------------------------------------PetBox para adultos---------------------------------------------\n");
   printf("\nIdeal para seu Pet entre 1 a 7 anos de vida!                                                            \n");
   printf("\n3 ------------------------------------------PetBox para idosos-------------------------------------------\n");
-  printf("\nIdeal para seu Pet com mais de 7 (grande porte) e 12 (pequeno porte) anos de vida!                    \n");
-  printf("\n--------------------------------------------------------------------------------------------------------\n");
-  printf("\n4 - Retornar ao Menu Principal\n");
-  printf("\n\n Digite a Opção Desejada [1, 2, 3, 4]: ");
-  scanf("%d", &opcao);   
-
-  switch (opcao)
-  {
-    case 1: //petbox fixa filhote 
-    {
-      system("cls");
-      printf("\n----------------------------------------------------------------------------------------------------------\n");
-      printf("| PetBox para filhotes                                                                                   |\n");
-      printf("----------------------------------------------------------------------------------------------------------\n");
-      printf("\n1 -- Standard --                                                                                       \n");
-      printf("\nAcompanha ração balanceada com proteínas de boa qualidade preparadas por empresas de renome no mercado \n");
-      printf("\nNa composição da ração você encontrar farinha de carne, gordura animal, glúten  e outros ingredientes  \n");
-      printf("\n2 -- Premium --                                                                                        \n");
-      printf("\nAcompanha rações de primeira qualidade ricas em proteínas de alta digestibilidade, as quais            \n");         
-      printf("\nproporcionaram um melhor funcionamento do organismo do seu Pet.                                        \n");     
-      printf("\nDigite a Opção Desejada [1, 2]: ");
-      scanf("%d", &opValor); 
-
+  printf("\nIdeal para seu Pet com mais de 7 (grande porte) e 12 (pequeno porte) anos de vida!                    \n\n");
+  printf("\n----------------------------------------------OPÇÕES----------------------------------------------------\n\n");
+  printf("\n1 ------------------------------------------Standard----------------------------------------------------\n");
+  printf("\nAcompanha ração balanceada com proteínas de boa qualidade preparadas por empresas de renome no mercado \n");
+  printf("\nNa composição da ração você encontrar farinha de carne, gordura animal, glúten  e outros ingredientes  \n");
+  printf("\n2 -------------------------------------------Premium----------------------------------------------------\n");
+  printf("\nAcompanha rações de primeira qualidade ricas em proteínas de alta digestibilidade, as quais            \n");         
+  printf("\nproporcionaram um melhor funcionamento do organismo do seu Pet.                                        \n");     
+      
 
 
 
@@ -685,68 +681,18 @@ int petboxFixa()
 resp = VERD;
 return resp;
         }
-        */
+      
 
 
 
 
 
 
-
-      break;    
-    }
-
-    case 2: //petbox fixa adulto
-    {
-      system("cls");
-      printf("\n----------------------------------------------------------------------------------------------------------\n");
-      printf("| PetBox para Adultos                                                                                    |\n");
-      printf("----------------------------------------------------------------------------------------------------------\n");
-      printf("\n1 -- Standard --                                                                                       \n");
-      printf("\nAcompanha ração balanceada com proteínas de boa qualidade preparadas por empresas de renome no mercado \n");
-      printf("\nNa composição da ração você encontrar farinha de carne, gordura animal, glúten  e outros ingredientes  \n");
-      printf("\n2 -- Premium --                                                                                        \n");
-      printf("\nAcompanha rações de primeira qualidade ricas em proteínas de alta digestibilidade, as quais            \n");         
-      printf("\nproporcionaram um melhor funcionamento do organismo do seu Pet.                                        \n");
-      printf("\nDigite a Opção Desejada [1, 2]: ");
-      scanf("%d", &opValor);     
-      break;
-    }
-
-    case 3: //petbox fixa idoso
-    {
-      system("cls"); 
-      printf("\n----------------------------------------------------------------------------------------------------------\n");
-      printf("| PetBox para Idosos                                                                                     |\n");
-      printf("----------------------------------------------------------------------------------------------------------\n");
-      printf("\n1 -- Standard --                                                                                       \n");
-      printf("\nAcompanha ração balanceada com proteínas de boa qualidade preparadas por empresas de renome no mercado \n");
-      printf("\nNa composição da ração você encontrar farinha de carne, gordura animal, glúten  e outros ingredientes  \n");
-      printf("\n2 -- Premium --                                                                                        \n");
-      printf("\nAcompanha rações de primeira qualidade ricas em proteínas de alta digestibilidade, as quais            \n");         
-      printf("\nproporcionaram um melhor funcionamento do organismo do seu Pet.                                        \n");
-      printf("\nDigite a Opção Desejada [1, 2]: ");
-      scanf("%d", &opValor);     
-      break;
-    }
-
-    case 4: //retornar menu cliente
-    {
-    system("cls");
-    menuCliente();
-    break;
-    }  
-
-    default: //erro de digitação
-    {
-    printf("\nOpção inválida!!!");
-  	printf("\n\n");
-    system("pause");
-    }
-  }
+  */
+  return 0;
 }
 
-
+  
 //Função Carrinho
 int clienteCarrinho()
 {
@@ -833,12 +779,18 @@ int main()
 	  do 
 	  {
 	  system("cls");
-	  printf("---------------------------------------------------------------------------------------------------------\n\n");
-      printf("|                                            Bem-vindo a BRPETS                                         |\n\n");
-      printf("---------------------------------------------------------------------------------------------------------\n\n");
+	  printf("-------------------------------------------------------------------------------------------------------\n");
+      printf("--------------------------******   ******  ******   ******* ***********  ******------------------------\n");
+      printf("-------------------------*      * *      * *      * *            *      *      ------------------------\n");
+      printf("-------------------------*      * *      * *      * *            *      *      ------------------------\n");
+      printf("-------------------------*    *   *    *   ******   ******       *       ***** ------------------------\n");
+      printf("-------------------------*      * *   *    *        *            *             *-----------------------\n");
+      printf("-------------------------*      * *     *  *        *            *             *-----------------------\n");
+      printf("--------------------------******  *      * *        *******      *       ******------------------------\n");
+      printf("-------------------------------------------------------------------------------------------------------\n");
 	  printf("\n1 - Administrador");
 	  printf("\n2 - Cliente");
-	  printf("\n3 - Fechar Programa");
+	  printf("\n3 - Fechar Programa\n");
 	  printf("\nEscolha sua opção [1, 2, 3]:");
 	  scanf("%d", &opcao);
 	
@@ -880,7 +832,6 @@ int menuCliente(){
     printf("-------------------------*      * *     *  *        *            *             *-----------------------\n");
     printf("--------------------------******  *      * *        *******      *       ******------------------------\n");
     printf("-------------------------------------------------------------------------------------------------------\n\n");
-
     printf("1 - Conheça a BRPets\n");
     printf("2 - Clube Pet\n");
     printf("3 - Loja\n");
@@ -895,16 +846,16 @@ int menuCliente(){
 	  switch(opcao)
  	 	{
 	  case 1 :  
-	  	  		system("cls");
-		        printf("\n---------------------------------------------------------------------------------------------------------\n\n");
+	  	  	system("cls");
+		    printf("\n---------------------------------------------------------------------------------------------------------\n\n");
             printf("|                                                BRPETS                                                 |\n\n");
             printf("---------------------------------------------------------------------------------------------------------\n\n");
             printf("\n A BRPet é uma empresa que surgiu para fazer a relação entre você e seu pet ser melhor a cada dia!     \n");
-	          printf("\n Somos apaixonados por pets e , por isso, a nossa loja foi preparada e organizada para você encontrar  \n"); 
+	        printf("\n Somos apaixonados por pets e , por isso, a nossa loja foi preparada e organizada para você encontrar  \n"); 
             printf("\n facilmente o que procura a qualquer hora e em qualquer lugar.                                         \n");
-	          printf("\n Os nossos principais produtos são as PetBOX, uma maneira inovadora de ter todo mês na sua casa tudo   \n");
+	        printf("\n Os nossos principais produtos são as PetBOX, uma maneira inovadora de ter todo mês na sua casa tudo   \n");
             printf("\n que seu pet precisa.                                                                                  \n");   
-	          printf("\n Faça parte do nosso Clube Pet  e aproveite o que há de melhor no mundo pet!                           \n");
+	        printf("\n Faça parte do nosso Clube Pet  e aproveite o que há de melhor no mundo pet!                           \n");
             printf("---------------------------------------------------------------------------------------------------------\n\n");
             system("pause");
             system("cls");
