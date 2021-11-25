@@ -736,10 +736,10 @@ int menuSup() {
 
   }
   fflush(stdin);// limpeza do buffer do teclado para não pular leituras
- }while(continua);
+ }
+ while(continua);
 
-	
-	return 0;
+		return 0;
 }
 
 // F I M  F U N Ç Õ E S  M E N U
