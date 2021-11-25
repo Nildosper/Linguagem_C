@@ -145,7 +145,7 @@ void limpa_linha()
 //Função entradaCad()
 int entradaCad(int pos){ // posição livre para a inclusão
    int resp = FALSO;
-   printf("\n**********Inclusão de novo produto!********");
+   printf("\n----------------------------------------Inclusão de novo produto------------------------------------------");
    printf("\nIdentificador: %d", pos);
    vetCad[pos].id = pos;
    printf("\nNome        : ");
@@ -171,7 +171,7 @@ int listarCad(){
   int i;
   for(i=0;i<TAMANHO; i++){
     if(vetCad[i].id != -1){
-      printf("\n***************************************");
+      printf("\n------------------------------------------Listagem de produtos -------------------------------------------");
       printf("\nIdentificador: %d", vetCad[i].id);
       printf("\nNome         : %s", vetCad[i].nomeProd);
     //  printf("\nData Nasc.   : %02d/%02d/%04d", vetAgenda[i].dataNasc.dia, 
@@ -186,13 +186,17 @@ int listarCad(){
 }
 
 
+
+
+
+
 //Função listarCliente
 int listarCliente(){
   int resp = FALSO;
   int i;
   for(i=0;i<TAMANHO; i++){
     if(vetCad[i].id != -1){
-      printf("\n***************************************");
+      printf("\n------------------------------------------Listagem de produtos -------------------------------------------");
       printf("\nIdentificador: %d", vetCad[i].id);
       printf("\nNome         : %s", vetCad[i].nomeProd);
     //  printf("\nData Nasc.   : %02d/%02d/%04d", vetAgenda[i].dataNasc.dia, 
@@ -214,7 +218,7 @@ return resp;
 // buscarCad()
 int buscarCad(int pos){
   int resp = FALSO;
-  printf("\n***************************************");
+  printf("\n-------------------------------------------Busca por produtos---------------------------------------------");
   printf("\nIdentificador: %d", vetCad[pos].id);
   printf("\nNome         : %s", vetCad[pos].nomeProd);
  // printf("\nData Nasc.   : %02d/%02d/%04d", vetAgenda[pos].dataNasc.dia, 
@@ -255,7 +259,7 @@ int alterarCad(){
   int pos=-1;
   char confirma;
   listarCad();
-  printf("\n**************ALTERAÇÃO*********************");
+  printf("\n------------------------------------------Alteração de produtos ------------------------------------------");
   printf("\nQual é o identificador do Produto?");
   scanf("%d", &pos);
   fflush(stdin);// limpeza do buffer do teclado para nãopular leituras
@@ -276,7 +280,7 @@ int excluirCad(){
   int pos=-1;
   char confirma;
   listarCad();
-  printf("\n**************EXCLUSÃO*********************");
+  printf("\n------------------------------------------Exclusão de produtos--------------------------------------------");
   printf("\nQual é o identificador do Registro do Produto?");
   scanf("%d", &pos);
   fflush(stdin);// limpeza do buffer do teclado para nãopular leituras
@@ -463,9 +467,9 @@ int menuClube()
   printf("---------------------------------------------------------------------------------------------------------\n");
   printf("| Clube Pet |\n");
   printf("-------------\n");
-  printf("1 - Como funciona a PetBox.\n");
-  printf("2 - Escolha a PetBOX Ideal Para o Seu Pet.\n");
-  printf("3 - Voltar ao menu.\n");
+  printf("1 - Como funciona a PetBox\n");
+  printf("2 - Escolha a PetBOX Ideal Para o Seu Pet\n");
+  printf("3 - Voltar ao menu\n");
   printf("\n Digite a Opção Desejada [1, 2, 3]: ");
   scanf("%d", &opcao);
 
@@ -526,9 +530,9 @@ int menuPetbox()
   printf("\n--------------------------------------------------------------------------------------------------------\n");
   printf("| Escolha a PetBOX ideal para o seu Pet                                                                |\n");
   printf("--------------------------------------------------------------------------------------------------------\n");
-  printf("1 - PetBox Fixa.\n");
-  printf("2 - PetBox Escolha.\n");
-  printf("3 - Retornar ao Menu Principal.\n");
+  printf("1 - PetBox Fixa\n");
+  printf("2 - PetBox Escolha\n");
+  printf("3 - Retornar ao Menu Principal\n");
   printf("\n Digite a Opção Desejada [1, 2, 3]: ");
   scanf("%d", &opcao);   
 
@@ -786,7 +790,7 @@ int menuCliente(){
     printf("-------------------------*      * *   *    *        *            *             *-----------------------\n");
     printf("-------------------------*      * *     *  *        *            *             *-----------------------\n");
     printf("--------------------------******  *      * *        *******      *       ******------------------------\n");
-    printf("-------------------------------------------------------------------------------------------------------\n");
+    printf("-------------------------------------------------------------------------------------------------------\n\n");
 
     printf("1 - Conheça a BRPets\n");
     printf("2 - Clube Pet\n");
@@ -795,7 +799,7 @@ int menuCliente(){
     printf("5 - Carrinho\n");
     printf("6 - Volta ao Menu Anterior\n");
     printf("0 - Sair do Site\n");
-    printf("\n Escolha a Opção Desejada [0, 1, 2, 3, 4, 5, 6]: ");
+    printf("\nEscolha a Opção Desejada [0, 1, 2, 3, 4, 5, 6]: ");
 
 	  scanf("%d", &opcao);
 	
@@ -852,50 +856,49 @@ int menuSup() {
   int opcao;
   // menu principal
   do {
-  //system("cls");
-  printf("\n\n---------------------------------------------------------------------------------------------------------\n\n");
-  printf("|                                         Gerenciamento de Estoque                                               |\n\n");	
-  printf("---------------------------------------------------------------------------------------------------------\n\n");
-  printf("\nListagem de Produtos.");
+  printf("-------------------------------------------------------------------------------------------------------------\n");
+  printf("|                                         Gerenciamento de Estoque                                           |\n");	
+  printf("--------------------------------------------------------------------------------------------------------------\n");
+  printf("\nListagem de Produtos\n");
   printf("\n1 - Inclusão");
   printf("\n2 - Alteração");
   printf("\n3 - Exclusão");
   printf("\n4 - Listar");
-  printf("\n5 - Voltar ao Menu Anterior");
+  printf("\n5 - Voltar ao Menu Anterior\n");
   printf("\nEscolha sua opção [1, 2, 3, 4, 5]:");
   scanf("%d", &opcao);
 
   switch(opcao){
-  case 1 : printf("***** Inclusão *****");
+  case 1 :
              if(incluirCad()){
-                printf("\nProduto Incluído!");
+                printf("\nProduto Incluído!\n");
              } else {
-                printf("\nERRO ao Incluir na Listagem!");
+                printf("\nERRO ao Incluir na Listagem!\n");
              } 
              break;
  
-  case 2 : printf("***** Alteração *****");
+  case 2 : 
              if(alterarCad()){
-               printf("\nProduto Alterado!");
+               printf("\nProduto Alterado!\n");
              } else {
-               printf("\nERRO ao Alterar na Listagem!");
+               printf("\nERRO ao Alterar na Listagem!\n");
              } 
              break;  
 
-  case 3 : printf("***** Exclusão *****");
+  case 3 : printf("-------------------------Exclusão----------------------\n");
              if(excluirCad()){
-               printf("\nProduto Excluído!");
+               printf("\nProduto Excluído!\n");
              } else {
-               printf("\nERRO ao Excluir na Listagem!");
+               printf("\nERRO ao Excluir na Listagem!\n");
              } 
              break;
 
 
-  case 4 : printf("***** Listagem *****");
+  case 4 : printf("-----------------------Listagem-----------------------\n");
              if(listarCad()){
-               printf("\nListagem de Produtos!");
+               printf("\nListagem de Produtos!\n");
              } else {
-               printf("\nERRO ao Listar o Produto!");
+               printf("\nERRO ao Listar o Produto!\n");
              } 
              break;
 
