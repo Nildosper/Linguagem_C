@@ -740,12 +740,12 @@ int main()
 	  do 
 	  {
 	  system("cls");
-	  printf("\n\n---------------------------------------------------------------------------------------------------------\n\n");
-	  printf("|                                         BRPETS                                                |\n\n");	
- 	  printf("---------------------------------------------------------------------------------------------------------\n\n");
-	  printf("\n1 - Supervisor.");
-	  printf("\n2 - Cliente.");
-	  printf("\n3 - Fechar Programa.");
+	  printf("---------------------------------------------------------------------------------------------------------\n\n");
+      printf("|                                            Bem-vindo a BRPETS                                         |\n\n");
+      printf("---------------------------------------------------------------------------------------------------------\n\n");
+	  printf("\n1 - Administrador");
+	  printf("\n2 - Cliente");
+	  printf("\n3 - Fechar Programa");
 	  printf("\nEscolha sua opção [1, 2, 3]:");
 	  scanf("%d", &opcao);
 	
@@ -778,17 +778,23 @@ int menuCliente(){
 	  do 
 	  {
 	  system("cls");
-    printf("---------------------------------------------------------------------------------------------------------\n\n");
-    printf("|                                            Bem-vindo a BRPETS                                         |\n\n");
-    printf("---------------------------------------------------------------------------------------------------------\n\n");
+    printf("-------------------------------------------------------------------------------------------------------\n");
+    printf("--------------------------******   ******  ******   ******* ***********  ******------------------------\n");
+    printf("-------------------------*      * *      * *      * *            *      *      ------------------------\n");
+    printf("-------------------------*      * *      * *      * *            *      *      ------------------------\n");
+    printf("-------------------------*    *   *    *   ******   ******       *       ***** ------------------------\n");
+    printf("-------------------------*      * *   *    *        *            *             *-----------------------\n");
+    printf("-------------------------*      * *     *  *        *            *             *-----------------------\n");
+    printf("--------------------------******  *      * *        *******      *       ******------------------------\n");
+    printf("-------------------------------------------------------------------------------------------------------\n");
 
-    printf("1 - Conheça a BRPets.\n");
-    printf("2 - Clube Pet.\n");
-    printf("3 - Loja.\n");
-    printf("4 - Ofertas.\n");
-    printf("5 - Carrinho.\n");
-    printf("6 - Volta ao Menu Anterior.\n");
-    printf("0 - Sair do Site.\n");
+    printf("1 - Conheça a BRPets\n");
+    printf("2 - Clube Pet\n");
+    printf("3 - Loja\n");
+    printf("4 - Ofertas\n");
+    printf("5 - Carrinho\n");
+    printf("6 - Volta ao Menu Anterior\n");
+    printf("0 - Sair do Site\n");
     printf("\n Escolha a Opção Desejada [0, 1, 2, 3, 4, 5, 6]: ");
 
 	  scanf("%d", &opcao);
@@ -851,11 +857,11 @@ int menuSup() {
   printf("|                                         Gerenciamento de Estoque                                               |\n\n");	
   printf("---------------------------------------------------------------------------------------------------------\n\n");
   printf("\nListagem de Produtos.");
-  printf("\n1 - Inclusão.");
-  printf("\n2 - Alteração.");
-  printf("\n3 - Exclusão.");
-  printf("\n4 - Listar.");
-  printf("\n5 - Voltar ao Menu Anterior.");
+  printf("\n1 - Inclusão");
+  printf("\n2 - Alteração");
+  printf("\n3 - Exclusão");
+  printf("\n4 - Listar");
+  printf("\n5 - Voltar ao Menu Anterior");
   printf("\nEscolha sua opção [1, 2, 3, 4, 5]:");
   scanf("%d", &opcao);
 
