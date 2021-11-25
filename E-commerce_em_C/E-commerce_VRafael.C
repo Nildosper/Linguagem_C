@@ -11,6 +11,7 @@ int menuClube();
 int menuSup();
 int menuPetbox();
 int petboxFixa();
+int listarCliente();
 
 #define TAMANHO 5
 #define VERD 1
@@ -573,20 +574,13 @@ int menuPetbox()
   printf("2 - PetBox Escolha\n");
   printf("3 - Retornar ao Menu Principal\n");
   printf("\n Digite a Opção Desejada [1, 2, 3]: ");
-  scanf("%d",&opmenuPetbox);
-  
+    scanf("%d",&opmenuPetbox);
 
-  if (opmenuPetbox=1)
-  {
-      printf("aaaaaaaaaaaaaaaa");
-  }
-  
-/* 
-  switch (opMenu)
+   
+  switch (opmenuPetbox)
   {
     case 1: //petbox fixa
     {
-      printf("Aquiiiiiiiiiiiiiiiii 1111111111111");
     system("cls");
     petboxFixa();
     break;
@@ -594,8 +588,7 @@ int menuPetbox()
    
     case 2: //petbox escolha
     {
-     printf("Aquiiiiiiiiiiiiiiiii 2222222222222222");
-    //system("cls");
+    system("cls");
     //petboxEscolha();
     break;
     }
@@ -613,34 +606,52 @@ int menuPetbox()
   	printf("\n\n");
     system("pause");
     }
-  }*/
+  }
   return(0);
 }
 
 //Função Petbox Fixa
 int petboxFixa()
 {
-  
+  int opFixa;
   system("cls");
   printf("\n--------------------------------------------------------------------------------------------------------\n");
   printf("| PetBox Fixa                                                                                          |\n");
   printf("--------------------------------------------------------------------------------------------------------\n");
-  printf("\n1 -------------------------------------PetBox para filhotes---------------------------------------------\n");
+  printf("\n---------------------------------------PetBox para filhotes---------------------------------------------\n");
   printf("\nIdeal para seu Pet entre 40 dias e 1 ano vida!                                                       \n");
-  printf("\n2 --------------------------------------PetBox para adultos---------------------------------------------\n");
+  printf("\n----------------------------------------PetBox para adultos---------------------------------------------\n");
   printf("\nIdeal para seu Pet entre 1 a 7 anos de vida!                                                            \n");
-  printf("\n3 ------------------------------------------PetBox para idosos-------------------------------------------\n");
+  printf("\n--------------------------------------------PetBox para idosos-------------------------------------------\n");
   printf("\nIdeal para seu Pet com mais de 7 (grande porte) e 12 (pequeno porte) anos de vida!                    \n\n");
-  printf("\n----------------------------------------------OPÇÕES----------------------------------------------------\n\n");
-  printf("\n1 ------------------------------------------Standard----------------------------------------------------\n");
-  printf("\nAcompanha ração balanceada com proteínas de boa qualidade preparadas por empresas de renome no mercado \n");
-  printf("\nNa composição da ração você encontrar farinha de carne, gordura animal, glúten  e outros ingredientes  \n");
-  printf("\n2 -------------------------------------------Premium----------------------------------------------------\n");
-  printf("\nAcompanha rações de primeira qualidade ricas em proteínas de alta digestibilidade, as quais            \n");         
-  printf("\nproporcionaram um melhor funcionamento do organismo do seu Pet.                                        \n");     
+  printf("Deseja conhecer as opções?\n");
+  printf("1 - Sim                                                                                                 \n");
+  printf("2 - Não                                                                                                  \n");
+  scanf("%d", &opFixa);
+
+
+
+
+
+
+
+    if (opFixa==1)
+    {
+    printf("\n------------------------------------------------OPÇÕES--------------------------------------------------\n\n");
+    }
+    
+  
+  
       
 
 
+scanf("%d", &opFixa);
+
+
+
+
+  
+      
 
 
 
@@ -655,36 +666,6 @@ int petboxFixa()
             printf("2 - Não                                                                                                 \n");
             printf("\nOpção: ");
             scanf("%d", &carrinhoCaoFilhotes1);  
-
-
-
-
-            int listarCliente(){
-  int resp = FALSO;
-  int i;
-  for(i=0;i<TAMANHO; i++){
-    if(vetCad[i].id != -1){
-      printf("\n------------------------------------------Listagem de produtos -------------------------------------------");
-      printf("\nIdentificador: %d", vetCad[i].id);
-      printf("\nNome         : %s", vetCad[i].nomeProd);
-    //  printf("\nData Nasc.   : %02d/%02d/%04d", vetAgenda[i].dataNasc.dia, 
-    //        vetAgenda[i].dataNasc.mes, vetAgenda[i].dataNasc.ano);
-    //  printf("\nTelefone     : %s", vetAgenda[i].telefone);
-      printf("\nPreço       : %.2f", vetCad[i].precoProd);   
-	  printf("\nEstoque     : %.0f", vetCad[i].estoqueProd);               
-   }
- }
- printf("\n\nVoltar ao menu inicial.");
- printf("\n\n");
- system("pause");
-
-resp = VERD;
-return resp;
-        }
-      
-
-
-
 
 
 
