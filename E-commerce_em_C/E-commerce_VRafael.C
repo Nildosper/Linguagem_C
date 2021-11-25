@@ -11,7 +11,7 @@ int menuClube();
 int menuSup();
 int menuPetbox();
 int petboxFixa();
-int listarCliente();
+
 
 #define TAMANHO 5
 #define VERD 1
@@ -186,7 +186,7 @@ int entradaCad(int pos){ // posição livre para a inclusão
 
 
 
-//Função ListarCad
+//FunçãoCad
 int listarCad(){
   int resp = FALSO;
   int i;
