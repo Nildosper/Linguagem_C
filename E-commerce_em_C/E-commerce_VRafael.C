@@ -794,6 +794,7 @@ int main()
 	  printf("\n2 - Cliente");
 	  printf("\n3 - Fechar Programa\n");
 	  printf("\nEscolha sua opção [1, 2, 3]:");
+
 	  scanf("%d", &opcao);
 	
 	  switch(opcao)
