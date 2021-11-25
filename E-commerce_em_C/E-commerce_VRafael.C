@@ -878,7 +878,9 @@ int menuCliente(){
 	  case 6 : 	system("cls");//retornar ao menu anterior
               main();
             	break;	
-
+      case 0:
+            exit(0);
+    
 	  default: printf("\nOpção inválida!!!");
  	 		       printf("\n\n");
     	 	     system("pause");	
