@@ -36,7 +36,7 @@
    // struct data dataNasc;
    // char telefone[20];
     float precoProd, estoqueProd;
-  } vetCad[TAMANHO];
+  }   vetCad[TAMANHO];
 
 
 //struct carrinho
@@ -71,11 +71,13 @@ void limpa_linha()
 				printf("\n\n---------------------------------------------------------------------------------------------------------\n\n");
 				printf("|                                         Cadastro do Cliente                                               |\n\n");	
 				printf("---------------------------------------------------------------------------------------------------------\n\n");
-				printf("Cadastro Atual..:\n");
+				printf("Cadastro Atual:\n");
 				printf ("\n Nome do Cliente..: %s\n Telefone..: %s\n Rua..: %s\n Cidade..: %s\n Estado..: %s", nomeCliente, telefoneCliente, nomeRua, nomeCidade, nomeEstado);
 				printf ("\n CEP..: %.0f", cepCliente);
 				
-				printf("\n\n Deseja realizar um novo cadastro (1-Sim  2-Não)..: ");
+				printf("\n\n Deseja realizar um novo cadastro: ");
+        printf("\n1-Sim: ");
+        printf("\n2-Não: ");
 				scanf("%d", &confirmaCad);
 				if (confirmaCad==1)
 				{
@@ -166,7 +168,7 @@ int listarCad(){
     //        vetAgenda[i].dataNasc.mes, vetAgenda[i].dataNasc.ano);
     //  printf("\nTelefone     : %s", vetAgenda[i].telefone);
       printf("\nPreço       : %.2f", vetCad[i].precoProd);    
-	  printf("\nEstoque     : %.0f", vetCad[i].estoqueProd);          
+	    printf("\nEstoque     : %.0f", vetCad[i].estoqueProd);          
    }
  }
  resp = VERD;
@@ -186,10 +188,10 @@ int listarCliente(){
     //        vetAgenda[i].dataNasc.mes, vetAgenda[i].dataNasc.ano);
     //  printf("\nTelefone     : %s", vetAgenda[i].telefone);
       printf("\nPreço       : %.2f", vetCad[i].precoProd);   
-	  printf("\nEstoque     : %.0f", vetCad[i].estoqueProd);               
+	    printf("\nEstoque     : %.0f", vetCad[i].estoqueProd);               
    }
  }
- printf("\n\nVoltar ao menu inicial.");
+ printf("\n\nVoltar ao menu inicial");
  printf("\n\n");
  system("pause");
  menuCliente();
@@ -239,19 +241,27 @@ int incluirCad(){
 int alterarCad(){
   int resp = FALSO;
   int pos=-1;
-  char confirma;
+  int confirma;
   listarCad();
   printf("\n**************ALTERAÇÃO*********************");
   printf("\nQual é o identificador do Produto?");
   scanf("%d", &pos);
-  fflush(stdin);// limpeza do buffer do teclado para nãopular leituras
+  fflush(stdin);// limpeza do buffer do teclado para não pular leituras
   if(buscarCad(pos)){
-  printf("\nDeseja Alterar este Registro do Produto [s/n]?");
-    scanf("%c", &confirma);
-    if(confirma=='s' || confirma == 'S'){
+  printf("\nDeseja Alterar este Registro do Produto?");
+  printf("\n1- Sim");
+  printf("\n2- Não");
+  scanf("%d", &confirma);
+    if(confirma==1)
+    {
     entradaCad(pos);
     resp = VERD;
     }
+    else 
+    {
+    resp =  FALSO;
+    }
+    
   }
   return resp;
 }
@@ -260,18 +270,25 @@ int alterarCad(){
 int excluirCad(){
   int resp = FALSO;
   int pos=-1;
-  char confirma;
+  int confirma;
   listarCad();
   printf("\n**************EXCLUSÃO*********************");
   printf("\nQual é o identificador do Registro do Produto?");
   scanf("%d", &pos);
   fflush(stdin);// limpeza do buffer do teclado para nãopular leituras
   if(buscarCad(pos)){
-  printf("\nConfirma a EXCLUSÃO do Registro do Produto [s/n]?");
-  scanf("%c", &confirma);
-    if(confirma=='s' || confirma == 'S'){
+  printf("\nConfirma a EXCLUSÃO do Registro do Produto?");
+  printf("\n1- Sim");
+  printf("\n2- Não");
+  scanf("%d", &confirma);
+    if(confirma==1)
+    {
     vetCad[pos].id = -1;
     resp = VERD;
+    }
+    else 
+    {
+    resp =  FALSO;
     }
   }
   return resp;
@@ -472,12 +489,12 @@ int clienteCarrinho()
   printf("|                                         Gerenciamento de Estoque                                               |\n\n");	
   printf("---------------------------------------------------------------------------------------------------------\n\n");
   printf("\nListagem de Produtos.");
-  printf("\n1 - Inclusão.");
-  printf("\n2 - Alteração.");
-  printf("\n3 - Exclusão.");
-  printf("\n4 - Listar.");
-  printf("\n5 - Voltar ao Menu Anterior.");
-  printf("\nEscolha sua opção [1, 2, 3, 4, 5]:");
+  printf("\n1 - Inclusão");
+  printf("\n2 - Alteração");
+  printf("\n3 - Exclusão");
+  printf("\n4 - Listar");
+  printf("\n5 - Voltar ao Menu Anterior");
+  printf("\nEscolha sua opção:");
   scanf("%d", &opcao);
 /*
   switch(opcao){
@@ -547,12 +564,12 @@ int main()
 	  {
 	  system("cls");
 	  printf("\n\n---------------------------------------------------------------------------------------------------------\n\n");
-	  printf("|                                         BRPETS                                                |\n\n");	
- 	  printf("---------------------------------------------------------------------------------------------------------\n\n");
-	  printf("\n1 - Supervisor.");
-	  printf("\n2 - Cliente.");
+	  printf("|                                         BRPETS                                                          |\n\n");	
+ 	  printf("-----------------------------------------------------------------------------------------------------------\n\n");
+	  printf("\n1 - Administrador");
+	  printf("\n2 - Cliente");
 	  printf("\n3 - Fechar Programa.");
-	  printf("\nEscolha sua opção [1, 2, 3]:");
+	  printf("\nEscolha sua opção:");
 	  scanf("%d", &opcao);
 	
 	  switch(opcao)
@@ -577,6 +594,34 @@ int main()
 	 }while(continua);
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Menu Cliente
 int menuCliente(){
   	  int continua = VERD;  // VERD é uma constante que possui o valor 1
@@ -585,14 +630,14 @@ int menuCliente(){
 	  {
 	  system("cls");
 	  printf("\n\n---------------------------------------------------------------------------------------------------------\n\n");
-	  printf("|                                         BRPETS                                                |\n\n");	
+	  printf("|                                         BRPETS                                                        |\n\n");	
  	  printf("---------------------------------------------------------------------------------------------------------\n\n");
-	  printf("\n1 - Cadastro de Cliente.");
-	  printf("\n2 - Produtos em Estoque.");
-	  printf("\n3 - Carrinho.");
-	  printf("\n4 - Voltar ao Menu Anterior.");
-	  printf("\n5 - Fechar Programa.");
-	  printf("\nEscolha sua opção [1, 2, 3, 4, 5]:");
+	  printf("\n1 - Cadastro de Cliente");
+	  printf("\n2 - Produtos em Estoque");
+	  printf("\n3 - Carrinho");
+	  printf("\n4 - Voltar ao Menu Anterior");
+	  printf("\n5 - Fechar Programa");
+	  printf("\nEscolha sua opção:");
 	  scanf("%d", &opcao);
 	
 	  switch(opcao)
@@ -635,15 +680,15 @@ int menuSup() {
   do {
   //system("cls");
   printf("\n\n---------------------------------------------------------------------------------------------------------\n\n");
-  printf("|                                         Gerenciamento de Estoque                                               |\n\n");	
+  printf("|                                         Gerenciamento de Estoque                                      |\n\n");	
   printf("---------------------------------------------------------------------------------------------------------\n\n");
   printf("\nListagem de Produtos.");
-  printf("\n1 - Inclusão.");
-  printf("\n2 - Alteração.");
-  printf("\n3 - Exclusão.");
-  printf("\n4 - Listar.");
-  printf("\n5 - Voltar ao Menu Anterior.");
-  printf("\nEscolha sua opção [1, 2, 3, 4, 5]:");
+  printf("\n1 - Inclusão");
+  printf("\n2 - Alteração");
+  printf("\n3 - Exclusão");
+  printf("\n4 - Listar");
+  printf("\n5 - Voltar ao Menu Anterior");
+  printf("\nEscolha sua opção:");
   scanf("%d", &opcao);
 
   switch(opcao){
