@@ -9,6 +9,7 @@ int cadastroCliente();
 int menuCliente();
 int menuClube();
 int menuSup();
+int petboxFixa();
 
 #define TAMANHO 5
 #define VERD 1
@@ -538,7 +539,7 @@ int menuClube()
     case 2: //menupetbox
     {
       system("cls"); 
-    //  menuPetbox();
+      petboxFixa();
       break;
 
     }
@@ -614,14 +615,15 @@ int petboxFixa()
   printf("\n--------------------------------------------------------------------------------------------------------\n");
   printf("| PetBox Fixa                                                                                          |\n");
   printf("--------------------------------------------------------------------------------------------------------\n");
-  printf("\n1 - PetBox para filhotes                                                                              \n");
+  printf("\n1 -------------------------------------PetBox para filhotes---------------------------------------------\n");
   printf("\nIdeal para seu Pet entre 40 dias e 1 ano vida!                                                       \n");
-  printf("\n2 - PetBox para adultos                                                                               \n");
+  printf("\n2 --------------------------------------PetBox para adultos---------------------------------------------\n");
   printf("\nIdeal para seu Pet entre 1 a 7 anos de vida!                                                            \n");
-  printf("\n3 - PetBox para idosos                                                                                \n");
+  printf("\n3 ------------------------------------------PetBox para idosos-------------------------------------------\n");
   printf("\nIdeal para seu Pet com mais de 7 (grande porte) e 12 (pequeno porte) anos de vida!                    \n");
-  printf("\n4 - Retornar ao Menu Principal.");
-  printf("\n\n Digite a Opção Desejada [1, 2, 3]: ");
+  printf("\n--------------------------------------------------------------------------------------------------------\n");
+  printf("\n4 - Retornar ao Menu Principal\n");
+  printf("\n\n Digite a Opção Desejada [1, 2, 3, 4]: ");
   scanf("%d", &opcao);   
 
   switch (opcao)
@@ -640,6 +642,56 @@ int petboxFixa()
       printf("\nproporcionaram um melhor funcionamento do organismo do seu Pet.                                        \n");     
       printf("\nDigite a Opção Desejada [1, 2]: ");
       scanf("%d", &opValor); 
+
+
+
+
+
+
+/*
+        if (opValor==1)
+        {
+            printf("--------------------------------------------------------------------------------------------------------\n\n");
+            printf("Você escolheu: PetBox Standard - Tamanho P - Para cães filhotes\n\n");
+            printf("Quantidade em estoque: %d\nPlano mensal:R$%.2f\n\n", prodQtd[0], prodPreco[0]); 
+            printf("Deseja adicionar ao carinho de compras?\n");
+            printf("1 - Sim                                                                                                 \n");
+            printf("2 - Não                                                                                                 \n");
+            printf("\nOpção: ");
+            scanf("%d", &carrinhoCaoFilhotes1);  
+
+
+
+
+            int listarCliente(){
+  int resp = FALSO;
+  int i;
+  for(i=0;i<TAMANHO; i++){
+    if(vetCad[i].id != -1){
+      printf("\n------------------------------------------Listagem de produtos -------------------------------------------");
+      printf("\nIdentificador: %d", vetCad[i].id);
+      printf("\nNome         : %s", vetCad[i].nomeProd);
+    //  printf("\nData Nasc.   : %02d/%02d/%04d", vetAgenda[i].dataNasc.dia, 
+    //        vetAgenda[i].dataNasc.mes, vetAgenda[i].dataNasc.ano);
+    //  printf("\nTelefone     : %s", vetAgenda[i].telefone);
+      printf("\nPreço       : %.2f", vetCad[i].precoProd);   
+	  printf("\nEstoque     : %.0f", vetCad[i].estoqueProd);               
+   }
+ }
+ printf("\n\nVoltar ao menu inicial.");
+ printf("\n\n");
+ system("pause");
+
+resp = VERD;
+return resp;
+        }
+        */
+
+
+
+
+
+
 
       break;    
     }
