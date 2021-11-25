@@ -165,6 +165,24 @@ int entradaCad(int pos){ // posição livre para a inclusão
    return resp;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Função ListarCad
 int listarCad(){
   int resp = FALSO;
@@ -184,6 +202,25 @@ int listarCad(){
  resp = VERD;
  return resp;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -885,7 +922,7 @@ int menuSup() {
              } 
              break;  
 
-  case 3 : printf("-------------------------Exclusão----------------------\n");
+  case 3 : 
              if(excluirCad()){
                printf("\nProduto Excluído!\n");
              } else {
@@ -894,8 +931,8 @@ int menuSup() {
              break;
 
 
-  case 4 : printf("-----------------------Listagem-----------------------\n");
-             if(listarCad()){
+  case 4 : 
+             if(listarCliente()){
                printf("\nListagem de Produtos!\n");
              } else {
                printf("\nERRO ao Listar o Produto!\n");
