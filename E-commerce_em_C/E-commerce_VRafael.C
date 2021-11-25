@@ -7,6 +7,11 @@
 #define VERD 1
 #define FALSO 0
 
+int menuCliente();
+int cadastroCliente();
+int clienteCarrinho();
+int menuSup();
+
   	char nomeCliente[100], nomeRua[100], nomeCidade[100], nomeEstado[100], telefoneCliente[20];
   	int respCliente, confirmaCad;
   	float cepCliente;
@@ -117,9 +122,7 @@ void limpa_linha()
 					system("cls");
 				//	menuCliente();
 				}
-
-	}
-
+  }
 
 // F U N Ç Õ E S  C A D A S T R O 
 
@@ -623,7 +626,8 @@ int main()
 
 
 // Menu Cliente
-int menuCliente(){
+int menuCliente()
+{
   	  int continua = VERD;  // VERD é uma constante que possui o valor 1
 	  int opcao;
 	  do 
@@ -673,7 +677,8 @@ int menuCliente(){
 	
 
 // Menu Cadastro Produtos
-int menuSup() {
+int menuSup() 
+{
   int continua = VERD;  // VERD é uma constante que possui o valor 1
   int opcao;
   // menu principal
@@ -691,7 +696,8 @@ int menuSup() {
   printf("\nEscolha sua opção:");
   scanf("%d", &opcao);
 
-  switch(opcao){
+  switch(opcao)
+  {
   case 1 : printf("***** Inclusão *****");
              if(incluirCad()){
                 printf("\nProduto Incluído!");
@@ -732,14 +738,10 @@ int menuSup() {
   default: printf("\nOpção inválida!!!");
   		   printf("\n\n");
      	   system("pause");
-;
-
-  }
+}
   fflush(stdin);// limpeza do buffer do teclado para não pular leituras
- }
- while(continua);
-
-		return 0;
+ } while(continua);
+ return 0;
 }
 
 // F I M  F U N Ç Õ E S  M E N U
