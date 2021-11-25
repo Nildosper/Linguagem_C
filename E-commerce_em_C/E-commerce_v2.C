@@ -106,7 +106,7 @@ case 1:
   	{
   		printf("Código: ");
   		scanf("%d", &prodCod[i]);
-  		printf("Quantidade em estoque: ");
+  		printf("Quantidade em estoquerr: ");
   		scanf("%d", &prodQtd[i]);
   		printf("Preço: ");
   		scanf("%f", &prodPreco[i]);
