@@ -170,23 +170,6 @@ int entradaCad(int pos){ // posição livre para a inclusão
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //FunçãoCad
 int listarCad(){
   int resp = FALSO;
@@ -206,28 +189,6 @@ int listarCad(){
  resp = VERD;
  return resp;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -451,10 +412,13 @@ int buscarCarrinho(int posicao){
 int incluirCarrinho(){
   int resp = FALSO;
   int i;
+  int pos;
   int posicao=-1;
+  printf("\nQual é o identificador do Produto?");
+  scanf("%d", &pos);
   for(i=0;i<TAMANHO; i++){// verificar se tem espaço
     if(vetCarrinho[i].idCarrinho==-1){
-    posicao = i;
+    posicao = pos;
     break;
     }
   }
@@ -467,6 +431,21 @@ int incluirCarrinho(){
   }
   return resp;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // AlterarCad
 int alterarCarrinho(){
@@ -677,9 +656,7 @@ switch (opFixa)
       {
        case 1:
       {
-        printf("Qual o código indentificador da PETBOX desejada?\n");
-        
-
+        incluirCarrinho();
 
       break;
       }
