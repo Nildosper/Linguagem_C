@@ -765,7 +765,7 @@ int clienteCarrinho()
   printf("\nEscolha sua opção [1, 2, 3, 4, 5]:");
   scanf("%d", &opcao);
 
-/*
+
   switch(opcao){
   case 1 : printf("***** Inclusão *****");
              if(incluirCarrinho()){
@@ -804,7 +804,7 @@ int clienteCarrinho()
      	   system("pause");
 ;
   }
-*/
+
   fflush(stdin);// limpeza do buffer do teclado para não pular leituras
  }while(continua);
 
