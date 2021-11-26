@@ -864,13 +864,14 @@ do
           if (vetCad[i].estoqueProd > qtdAddCarrinho )
           {
           vetCarrinho[i].idCarrinho = vetCad[i].id;
+          strcpy(vetCarrinho[i].nomeCarrinho, vetCad[i].nomeProd);
           //vetCarrinho[i].nomeCarrinho = vetCad[i].nomeProd;
           vetCarrinho[i].precoCarrinho = vetCarrinho[i].precoCarrinho + (vetCad[i].precoProd*qtdAddCarrinho);
           vetCarrinho[i].qtdCarrinho = vetCarrinho[i].qtdCarrinho + qtdAddCarrinho;
           vetCad[i].estoqueProd = vetCad[i].estoqueProd - qtdAddCarrinho;
 
           printf("\n\nProduto adicionado ao carrinho..: ");
-          printf("\n\nId..: %d\nNome..: %s\nPreço..: %.2f\nQtd..: %.0f", vetCarrinho[i].idCarrinho, vetCarrinho[i].nomeCarrinho,vetCarrinho[i].precoCarrinho,vetCarrinho[i].qtdCarrinho);
+          printf("\n\nId..: %d\nNome..: %s\nPreço..: %.2f\nQtd..: %.0f", vetCarrinho[i].idCarrinho, strupr(vetCarrinho[i].nomeCarrinho),vetCarrinho[i].precoCarrinho,vetCarrinho[i].qtdCarrinho);
           printf("\nDeseja adicionar mais algum produto ao carrinho..? (1-Sim 0-Não): ");
           scanf("%d", &opcao);
           }
