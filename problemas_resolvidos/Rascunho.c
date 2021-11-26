@@ -412,7 +412,6 @@ int buscarCarrinho(int posicao){
 int incluirCarrinho(){
   int resp = FALSO;
   int i;
-  int pos;
   int posicao=-1;
   printf("\nQual é o identificador do Produto?");
   scanf("%d", &pos);
