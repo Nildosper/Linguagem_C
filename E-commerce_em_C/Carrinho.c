@@ -865,7 +865,7 @@ do
           {
           vetCarrinho[i].idCarrinho = vetCad[i].id;
           //vetCarrinho[i].nomeCarrinho = vetCad[i].nomeProd;
-          vetCarrinho[i].precoCarrinho = vetCad[i].precoProd;
+          vetCarrinho[i].precoCarrinho = vetCarrinho[i].precoCarrinho + (vetCad[i].precoProd*qtdAddCarrinho);
           vetCarrinho[i].qtdCarrinho = vetCarrinho[i].qtdCarrinho + qtdAddCarrinho;
           vetCad[i].estoqueProd = vetCad[i].estoqueProd - qtdAddCarrinho;
 
