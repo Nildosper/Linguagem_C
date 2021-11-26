@@ -646,6 +646,7 @@ switch (opFixa)
 
 
 
+
     break;
     }
    
@@ -714,6 +715,7 @@ int clienteCarrinho()
   printf("\n5 - Voltar ao Menu Anterior.");
   printf("\nEscolha sua opção [1, 2, 3, 4, 5]:");
   scanf("%d", &opcao);
+
 /*
   switch(opcao){
   case 1 : printf("***** Inclusão *****");
