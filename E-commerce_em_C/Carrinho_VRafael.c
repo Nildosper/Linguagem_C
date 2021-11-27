@@ -627,7 +627,7 @@ int menuClube()
   }
 return(0);
 }
-
+/*
 //Função Menu Pet Box
 int menuPetbox()
 {
@@ -674,14 +674,14 @@ int menuPetbox()
   }
   return(0);
 }
-
+*/
 //Função Petbox Fixa
 int petboxFixa()
 {
   int opFixa;
   system("cls");
   printf("\n--------------------------------------------------------------------------------------------------------\n");
-  printf("| PetBox Fixa                                                                                          |\n");
+  printf("| PETBOX                                                                                               |\n");
   printf("--------------------------------------------------------------------------------------------------------\n");
   printf("\n---------------------------------------PetBox para filhotes---------------------------------------------\n");
   printf("\nIdeal para seu Pet entre 40 dias e 1 ano vida!                                                       \n");
@@ -709,6 +709,11 @@ switch (opFixa)
       printf("\n--------------------------------------------------------------------------------------------------------\n\n");
       printf("\nDeseja adicionar algum produto ao carrinho..? (1-Sim 0-Não): ");
       scanf("%d", &opcao);
+       if (opcao != 1)
+        {
+        system("cls");
+        menuCliente();
+        }
       printf("\nDigite o código do produto que deseja adicionar ao carrinho..: ");
       scanf("%d", &idAddCarrinho);
       printf("\nDigite a quantidade do produto que deseja adicionar ao carrinho..: ");
@@ -728,6 +733,11 @@ switch (opFixa)
               printf("\n\nId..: %d\nNome..: %s\nPreço..: %.2f\nQtd..: %.0f", vetCarrinho[i].idCarrinho, vetCarrinho[i].nomeCarrinho,vetCarrinho[i].precoCarrinho,vetCarrinho[i].qtdCarrinho);
               printf("\nDeseja adicionar mais algum produto ao carrinho..? (1-Sim 0-Não): ");
               scanf("%d", &opcao);
+                if (opcao != 1)
+                {
+                system("cls");
+                menuCliente();
+                }
               }
               else
               {
@@ -779,40 +789,40 @@ int clienteCarrinho()
   printf("|                                         Gerenciamento de Carrinho                                     |\n");	
   printf("---------------------------------------------------------------------------------------------------------\n");
   printf("\nComo gostaria de continuar?\n");
-  printf("\n1 - Incluir um novo produto");
+  printf("\n1 - Finalizar Pedido");
   printf("\n2 - Alterar produtos do carrinho");
   printf("\n3 - Excluir produtos do carrinho");
   printf("\n4 - Listar produtos do carrinho");
-  printf("\n5 - Voltar ao Menu Anterior\n");
-  printf("\nEscolha sua opção [1, 2, 3, 4, 5]:");
+  printf("\n5 - Incluir novo produto\n");
+  printf("\nEscolha sua opção [1, 2, 3, 4, 5]: ");
   scanf("%d", &opcao);
 
 
   switch(opcao){
-  case 1 : 
+  case 1 : //voltar para a loja 
              continua = FALSO;
              break;
              break;
  
   case 2 : printf("***** Alteração *****");
              if(alterarCarrinho()){
-               printf("\nProduto Alterado!");
+               printf("\nProduto Alterado!\n");
              } else {
                printf("\nERRO ao Alterar no Carrinho!");
              } 
              break;  
   case 3 : printf("***** Exclusão *****");
              if(excluirCarrinho()){
-               printf("\nProduto Excluído!");
+               printf("\nProduto Excluído!\n");
              } else {
                printf("\nERRO ao Excluir no Carrinho!");
              } 
              break;
-  case 4 : printf("***** Listagem *****");
+  case 4 : printf("\n*************** Listagem **************");
              if(listarCarrinho()){
-               printf("\nListagem de Produtos!");
+           printf("\n***************************************\n");
              } else {
-               printf("\nERRO ao Listar o Produto!");
+               printf("\nERRO ao Listar o Produto!\n");
              } 
              break;
   case 5 : printf("***** Saída do Programa *****");
@@ -1001,13 +1011,19 @@ int idAddCarrinho, i, opcao ;
 float qtdAddCarrinho;
 do
 {
-  printf("Produtos da loja..: \n");
+  printf("Produtos da loja: \n");
   listarCliente();
-  printf("\nDeseja adicionar algum produto ao carrinho..? (1-Sim 0-Não): ");
+  printf("\nDeseja adicionar algum produto ao carrinho? (1-Sim 0-Não): ");
   scanf("%d", &opcao);
-  printf("\nDigite o código do produto que deseja adicionar ao carrinho..: ");
+  if (opcao != 1)
+  {
+    system("cls");
+    menuCliente();
+  }
+  
+  printf("\nDigite o código do produto que deseja adicionar ao carrinho: ");
   scanf("%d", &idAddCarrinho);
-  printf("\nDigite a quantidade do produto que deseja adicionar ao carrinho..: ");
+  printf("\nDigite a quantidade do produto que deseja adicionar ao carrinho: ");
   scanf("%f", &qtdAddCarrinho);
   i = idAddCarrinho;
         if (idAddCarrinho == vetCad[i].id)
@@ -1024,6 +1040,11 @@ do
           printf("\n\nId..: %d\nNome..: %s\nPreço..: %.2f\nQtd..: %.0f", vetCarrinho[i].idCarrinho, vetCarrinho[i].nomeCarrinho,vetCarrinho[i].precoCarrinho,vetCarrinho[i].qtdCarrinho);
           printf("\nDeseja adicionar mais algum produto ao carrinho..? (1-Sim 0-Não): ");
           scanf("%d", &opcao);
+            if (opcao != 1)
+            {
+             system("cls");
+             menuCliente();
+            }
           }
           else
           {
