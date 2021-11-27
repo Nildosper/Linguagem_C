@@ -21,7 +21,7 @@ int totalCarrinho();
 #define FALSO 0
 
   	char nomeCliente[100], nomeRua[100], nomeCidade[100], nomeEstado[100], telefoneCliente[20];
-  	int respCliente, confirmaCad;
+  	int respCliente, confirmaCad, num[10];
   	float cepCliente, cpfCliente;
  
 
@@ -63,53 +63,70 @@ void limpa_linha()
 
 // Função cadastroCliente
  int cadastroCliente()
-	{
-				system("cls");
-				printf("\n\n---------------------------------------------------------------------------------------------------------\n\n");
-				printf("|                                         Cadastro do Cliente                                               |\n\n");	
-				printf("---------------------------------------------------------------------------------------------------------\n\n");
-				printf("Cadastro Atual..:\n");
-				printf ("\n Nome do Cliente..: %s\n Telefone..: %s\n Rua..: %s\n Cidade..: %s\n Estado..: %s", nomeCliente, telefoneCliente, nomeRua, nomeCidade, nomeEstado);
-				printf ("\n CEP..: %.0f", cepCliente);
-				
-				printf("\n\n Deseja realizar um novo cadastro (1-Sim  2-Não)..: ");
+	{							
+				printf("\nPara finalizar a compra é necessário realizar o cadastro. Deseja fazer isso agora?\n");
+                printf("1 - Sim\n");
+                printf("2 - Não\n");
+                printf("Opção:");
 				scanf("%d", &confirmaCad);
 				if (confirmaCad==1)
 				{
 					do 
 					{
+                    printf("\n---------------------------------------------------------------------------------------------------------\n");
+				    printf("|                                         Cadastro do Cliente                                             |\n");	
+				    printf("---------------------------------------------------------------------------------------------------------\n");
+                    
 					printf("\n\n Digite seu nome completo: ");
 					gets(nomeCliente);
 					limpa_linha();
-					printf("\n Digite o seu documento: ");
+					printf("\n Digite o seu CPF (apenas números): ");
 					scanf("%f", &cpfCliente);
 					printf("\n Digite o seu teletone (apenas números): ");
 					gets(telefoneCliente);
 					limpa_linha();
-					printf("\n Digite a sua rua e número: ");
+					printf("\n Digite o nome da sua rua: ");
 					gets(nomeRua);
-					limpa_linha();
+                    limpa_linha();
+					printf("\n Digite o número da sua casa: ");
+					gets(num);
+                    limpa_linha();
 					printf("\n Digite a sua cidade: ");
 					gets(nomeCidade);
-					limpa_linha();
+                    limpa_linha();
 					printf("\n Digite o seu estado: ");
 					gets(nomeEstado);
-					limpa_linha();
-					printf("\n Digite o seu CEP (apenas números)..: ");
+                    limpa_linha();
+					printf("\n Digite o seu CEP (apenas números): ");
 					scanf("%f", &cepCliente);
-				
-					printf ("\n Nome do Cliente..: %s\n Telefone..: %s\n Rua..: %s\n Cidade..: %s\n Estado..: %s", nomeCliente, telefoneCliente, nomeRua, nomeCidade, nomeEstado);
+				    printf("\n---------------------------------------------------------------------------------------------------------\n");
+                    printf("Cadastro finalizado com sucesso!\n");
+                    printf("\n********Dados cadastrados*********\n");
+					printf ("\n Nome: %s\n Telefone: %s\n Rua: %s\n Número: %d\n Cidade: %s\n Estado: %s", nomeCliente, telefoneCliente, nomeRua, num, nomeCidade, nomeEstado);
 					printf ("\n CEP..: %.0f", cepCliente);
-					
-					printf("\n\n Cadastro de cliente completo. \n Deseja confirmar os dados e voltar ao menu inicial?\n (1-Sim  2-Não)..: ");
-					scanf("%d", &respCliente);
-				//	system("cls");
-				//	menuCliente();
-					} while (respCliente==2);
+					printf("\n**********************************\n");
+					printf("\n\nOs dados cadastrados estão corretos?\n");
+                    printf("1 - Sim\n");
+                    printf("2 - Não\n");
+                    printf("Opção:\n");
+                    scanf("%d", &respCliente);
+				    } while (respCliente==2);
+
+                    if (respCliente==1)
+                    {
+                        printf("\nEscolha uma forma pagamento\n");
+                    }
+                    else
+                    {
+                    printf("Voltando ao Menu Anterior\n");
+					system("pause");
+					system("cls");
+				    menuCliente();   
+                    }
 				}
 				else 
 				{
-					printf("Voltando ao Menu Anterior.");
+					printf("Voltando ao Menu Anterior\n");
 					system("pause");
 					system("cls");
 				    menuCliente();
@@ -796,11 +813,12 @@ int clienteCarrinho()
 
 
   switch(opcao){
-  case 1 : printf("\nFaça seu cadastro!\n");
-
+  case 1 : 
+           
            printf("\n*************** Listagem **************");
            listarCarrinho();
            totalCarrinho();
+           cadastroCliente();
              
              break;
  
