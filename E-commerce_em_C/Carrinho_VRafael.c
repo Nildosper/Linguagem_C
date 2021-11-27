@@ -799,19 +799,19 @@ int clienteCarrinho()
 
 
   switch(opcao){
-  case 1 : printf("\nVocê já possui cadastro em nossa loja?");
+  case 1 : printf("\nVocê já possui cadastro em nossa loja?\n");
            printf("1 - Sim\n");
            printf("2 - Não\n");
            printf("\nOpção: ");
            scanf("%d", &opCadCliente);
-           if (opCadCliente ==1)
+           if (opCadCliente == 1)
            {
-               /* code */
+               cadastroCliente();
            }
            else
            {
             printf("Cadastre-se!\n");
-            cadastroCliente();
+            
            }
 
 
