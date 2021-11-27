@@ -560,12 +560,15 @@ int excluirCarrinho(){
 int totalCarrinho(){
   int resp = FALSO;
   int i;
+  float somatorio;
   for(i=0;i<TAMANHO; i++){
     if(vetCarrinho[i].idCarrinho != -1)
     {
-      printf("\n***************************************");
-      printf("\nTotal       : %.2f\n", vetCarrinho[i].totCarrinho);   
+     somatorio = somatorio + vetCarrinho[i].totCarrinho;
+     printf("\n***************************************");
+     //printf("\nTotal       : %.2f\n", somatorio);
     }
+         
     }
  resp = VERD;
  return resp;
