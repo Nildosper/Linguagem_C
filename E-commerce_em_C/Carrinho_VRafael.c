@@ -838,8 +838,6 @@ int clienteCarrinho()
            printf("\n*************** Listagem **************");
            listarCarrinho();
            totalCarrinho();
-
-
              
              break;
  
@@ -1077,7 +1075,7 @@ do
           vetCarrinho[i].totCarrinho = vetCarrinho[i].totCarrinho + (vetCad[i].precoProd*qtdAddCarrinho);
           
           printf("\n\nProduto adicionado ao carrinho..: ");
-          printf("\n\nId: %d\nNome: %s\nPreço unitário: %.2f\nQtd: %.0f", vetCarrinho[i].idCarrinho, vetCarrinho[i].nomeCarrinho,vetCad[i].precoProd,vetCarrinho[i].qtdCarrinho);
+          printf("\n\nId..: %d\nNome..: %s\nPreço..: %.2f\nQtd..: %.0f", vetCarrinho[i].idCarrinho, vetCarrinho[i].nomeCarrinho,vetCarrinho[i].precoCarrinho,vetCarrinho[i].qtdCarrinho);
           printf("\nDeseja adicionar mais algum produto ao carrinho..? (1-Sim 0-Não): ");
           scanf("%d", &opcao);
             if (opcao != 1)
