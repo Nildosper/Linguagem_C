@@ -557,6 +557,13 @@ int excluirCarrinho(){
   return resp;
 }
 
+
+
+
+
+
+
+
 int totalCarrinho(){
   int resp = FALSO;
   int i;
@@ -565,11 +572,11 @@ int totalCarrinho(){
     if(vetCarrinho[i].idCarrinho != -1)
     {
      somatorio = somatorio + vetCarrinho[i].totCarrinho;
-     printf("\n***************************************");
-     //printf("\nTotal       : %.2f\n", somatorio);
     }
-         
-    }
+ }
+    printf("\n***************************************");
+    printf("\nTotal       : %.2f\n", somatorio); 
+    
  resp = VERD;
  return resp;
  printf("\n\nVoltar ao menu inicial.");
@@ -577,6 +584,12 @@ int totalCarrinho(){
  system("pause");
  menuCliente();
 }
+
+
+
+
+
+
 
 // F I M  F U N Ç Õ E S  C A R R I N H O 
 
