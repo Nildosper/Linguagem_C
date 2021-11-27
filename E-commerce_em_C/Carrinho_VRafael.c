@@ -21,7 +21,7 @@ int totalCarrinho();
 #define FALSO 0
 
   	char nomeCliente[100], nomeRua[100], nomeCidade[100], nomeEstado[100], telefoneCliente[20];
-  	int respCliente, confirmaCad, num[10];
+  	int respCliente, confirmaCad, num[10], formPag;
   	float cepCliente, cpfCliente;
  
 
@@ -74,10 +74,9 @@ void limpa_linha()
 					do 
 					{
                     printf("\n---------------------------------------------------------------------------------------------------------\n");
-				    printf("|                                         Cadastro do Cliente                                             |\n");	
+				    printf("|                                         Cadastro do Cliente                                           |\n");	
 				    printf("---------------------------------------------------------------------------------------------------------\n");
-                    
-					printf("\n\n Digite seu nome completo: ");
+                    printf("\n\n Digite seu nome completo: ");
 					gets(nomeCliente);
 					limpa_linha();
 					printf("\n Digite o seu CPF (apenas números): ");
@@ -108,13 +107,19 @@ void limpa_linha()
 					printf("\n\nOs dados cadastrados estão corretos?\n");
                     printf("1 - Sim\n");
                     printf("2 - Não\n");
-                    printf("Opção:\n");
+                    printf("Opção:");
                     scanf("%d", &respCliente);
 				    } while (respCliente==2);
 
                     if (respCliente==1)
                     {
                         printf("\nEscolha uma forma pagamento\n");
+                        printf("1 - Boleto bancário\n");
+                        printf("2 - Cartão de crédito\n");
+                        printf("2 - Pix\n");
+                        printf("Opção:");
+                        scanf("%d", &formPag);
+
                     }
                     else
                     {
