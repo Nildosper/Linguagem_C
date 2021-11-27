@@ -576,7 +576,7 @@ int totalCarrinho(){
  }
     printf("\n***************************************");
     printf("\nTotal       : %.2f\n", somatorio); 
-    
+
  resp = VERD;
  return resp;
  printf("\n\nVoltar ao menu inicial.");
@@ -764,7 +764,7 @@ switch (opFixa)
               vetCarrinho[i].totCarrinho = vetCarrinho[i].totCarrinho + (vetCad[i].precoProd*qtdAddCarrinho);
               
               printf("\n\nProduto adicionado ao carrinho..: ");
-              printf("\n\nId: %d\nNome: %s\nPreço: %.2f\nQtd: %.0f", vetCarrinho[i].idCarrinho, vetCarrinho[i].nomeCarrinho,vetCarrinho[i].precoCarrinho,vetCarrinho[i].qtdCarrinho);
+              printf("\n\nId: %d\nNome: %s\nPreço unitário: %.2f\nQtd: %.0f", vetCarrinho[i].idCarrinho, vetCarrinho[i].nomeCarrinho,vetCad[i].precoProd,vetCarrinho[i].qtdCarrinho);
               printf("\nDeseja adicionar mais algum produto ao carrinho..? (1-Sim 0-Não): ");
               scanf("%d", &opcao);
                 if (opcao != 1)
@@ -838,15 +838,6 @@ int clienteCarrinho()
            printf("\n*************** Listagem **************");
            listarCarrinho();
            totalCarrinho();
-/*
-           cadCarrinho[i].codProduto = prodCompra;
-           cadCarrinho[i].qtd = qtdCompra;
-           cadCarrinho[i].valTotal = qtdCompra * cadProd[posicaoProd].valor;
-           cadProd[posicaoProd].qtdEst = cadProd[posicaoProd].qtdEst - qtdCompra; // atualizar o estoque
-           printf("\n--------------------------------------------------------");
-          // fazer o somátorio do carrinho
-           totCarrinho = totCarrinho + cadCarrinho[i].valTotal;
-*/
 
 
              
@@ -1086,7 +1077,7 @@ do
           vetCarrinho[i].totCarrinho = vetCarrinho[i].totCarrinho + (vetCad[i].precoProd*qtdAddCarrinho);
           
           printf("\n\nProduto adicionado ao carrinho..: ");
-          printf("\n\nId..: %d\nNome..: %s\nPreço..: %.2f\nQtd..: %.0f", vetCarrinho[i].idCarrinho, vetCarrinho[i].nomeCarrinho,vetCarrinho[i].precoCarrinho,vetCarrinho[i].qtdCarrinho);
+          printf("\n\nId: %d\nNome: %s\nPreço unitário: %.2f\nQtd: %.0f", vetCarrinho[i].idCarrinho, vetCarrinho[i].nomeCarrinho,vetCad[i].precoProd,vetCarrinho[i].qtdCarrinho);
           printf("\nDeseja adicionar mais algum produto ao carrinho..? (1-Sim 0-Não): ");
           scanf("%d", &opcao);
             if (opcao != 1)
