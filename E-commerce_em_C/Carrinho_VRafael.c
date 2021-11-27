@@ -781,7 +781,7 @@ switch (opFixa)
 int clienteCarrinho()
 {
   int continua = VERD;  // VERD é uma constante que possui o valor 1
-  int opcao;
+  int opcao, opCadCliente;
   // menu principal
   do {
   //system("cls");
@@ -799,9 +799,24 @@ int clienteCarrinho()
 
 
   switch(opcao){
-  case 1 : //voltar para a loja 
-             continua = FALSO;
-             break;
+  case 1 : printf("\nVocê já possui cadastro em nossa loja?");
+           printf("1 - Sim\n");
+           printf("2 - Não\n");
+           printf("\nOpção: ");
+           scanf("%d", &opCadCliente);
+           if (opCadCliente ==1)
+           {
+               /* code */
+           }
+           else
+           {
+            printf("Cadastre-se!\n");
+            cadastroCliente();
+           }
+
+
+
+             
              break;
  
   case 2 : printf("***** Alteração *****");
