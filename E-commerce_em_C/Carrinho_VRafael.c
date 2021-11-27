@@ -13,6 +13,7 @@ int menuPetbox();
 int petboxFixa();
 int listarCarrinho();
 int menuLoja();
+int totalCarrinho();
 
 
 #define TAMANHO 12
@@ -41,7 +42,7 @@ int menuLoja();
   struct carrinho{
   	int idCarrinho; // -1 indica que a posição do elemento no vetor está vazia
     char nomeCarrinho[100];
-    float precoCarrinho, qtdCarrinho;
+    float precoCarrinho, qtdCarrinho, totCarrinho;
   } vetCarrinho[TAMANHO];
   
 
@@ -187,11 +188,11 @@ int listarClientePetbox(){
   for(i=0;i<6; i++){
     if(vetCad[i].id != -1){
       printf("\n------------------------------------------Listagem de produtos -------------------------------------------");
-      printf("\nIdentificador: %d", vetCad[i].id);
-      printf("\nNome da Petbox        : %s", vetCad[i].nomeProd);
+      printf("\nIdentificador : %d", vetCad[i].id);
+      printf("\nNome da Petbox: %s", vetCad[i].nomeProd);
       printf("\nProduto 1: %s\nProduto 2: %s\nProduto 3: %s\nProduto 4: %s\nProduto 5: %s", vetCad[i].nomeProd1, vetCad[i].nomeProd2, vetCad[i].nomeProd3, vetCad[i].nomeProd4, vetCad[i].nomeProd5);
-      printf("\nPreço       : %.2f", vetCad[i].precoProd);    
-	    printf("\nEstoque     : %.0f", vetCad[i].estoqueProd);                 
+      printf("\nPreço         : %.2f", vetCad[i].precoProd);    
+	    printf("\nQtd         : %.0f", vetCarrinho[i].qtdCarrinho);                 
    }
  }
  
@@ -338,8 +339,8 @@ int listarCliente(){
       printf("\n------------------------------------------Listagem de produtos -------------------------------------------");
       printf("\nIdentificador: %d", vetCad[i].id);
       printf("\nNome         : %s", vetCad[i].nomeProd);
-      printf("\nPreço       : %.2f", vetCad[i].precoProd);   
-	  printf("\nEstoque     : %.0f", vetCad[i].estoqueProd);               
+      printf("\nPreço        : %.2f", vetCad[i].precoProd);   
+	  printf("\nQtd          : %.0f", vetCarrinho[i].qtdCarrinho);               
    }
  }
  
@@ -467,8 +468,8 @@ int listarCarrinho(){
       printf("\n***************************************");
       printf("\nIdentificador: %d", vetCarrinho[i].idCarrinho);
       printf("\nNome         : %s", vetCarrinho[i].nomeCarrinho);
-      printf("\nPreço       : %.2f", vetCarrinho[i].precoCarrinho);   
-	  printf("\nEstoque     : %.0f", vetCarrinho[i].qtdCarrinho);               
+      printf("\nPreço        : %.2f", vetCarrinho[i].precoCarrinho);   
+	  printf("\nQtd          : %.0f", vetCarrinho[i].qtdCarrinho);               
    }
  }
  resp = VERD;
@@ -556,7 +557,23 @@ int excluirCarrinho(){
   return resp;
 }
 
-
+int totalCarrinho(){
+  int resp = FALSO;
+  int i;
+  for(i=0;i<TAMANHO; i++){
+    if(vetCarrinho[i].idCarrinho != -1)
+    {
+      printf("\n***************************************");
+      printf("\nTotal       : %.2f\n", vetCarrinho[i].totCarrinho);   
+    }
+    }
+ resp = VERD;
+ return resp;
+ printf("\n\nVoltar ao menu inicial.");
+ printf("\n\n");
+ system("pause");
+ menuCliente();
+}
 
 // F I M  F U N Ç Õ E S  C A R R I N H O 
 
@@ -705,7 +722,7 @@ switch (opFixa)
     do
       {
       printf("\n------------------------------------------------OPÇÕES--------------------------------------------------\n\n");
-      listarClientePetbox();
+      listarCadPetbox();
       printf("\n--------------------------------------------------------------------------------------------------------\n\n");
       printf("\nDeseja adicionar algum produto ao carrinho..? (1-Sim 0-Não): ");
       scanf("%d", &opcao);
@@ -728,9 +745,10 @@ switch (opFixa)
               vetCarrinho[i].precoCarrinho = vetCarrinho[i].precoCarrinho + (vetCad[i].precoProd*qtdAddCarrinho);
               vetCarrinho[i].qtdCarrinho = vetCarrinho[i].qtdCarrinho + qtdAddCarrinho;
               vetCad[i].estoqueProd = vetCad[i].estoqueProd - qtdAddCarrinho;
-
+              vetCarrinho[i].totCarrinho = vetCarrinho[i].totCarrinho + (vetCad[i].precoProd*qtdAddCarrinho);
+              
               printf("\n\nProduto adicionado ao carrinho..: ");
-              printf("\n\nId..: %d\nNome..: %s\nPreço..: %.2f\nQtd..: %.0f", vetCarrinho[i].idCarrinho, vetCarrinho[i].nomeCarrinho,vetCarrinho[i].precoCarrinho,vetCarrinho[i].qtdCarrinho);
+              printf("\n\nId: %d\nNome: %s\nPreço: %.2f\nQtd: %.0f", vetCarrinho[i].idCarrinho, vetCarrinho[i].nomeCarrinho,vetCarrinho[i].precoCarrinho,vetCarrinho[i].qtdCarrinho);
               printf("\nDeseja adicionar mais algum produto ao carrinho..? (1-Sim 0-Não): ");
               scanf("%d", &opcao);
                 if (opcao != 1)
@@ -781,7 +799,7 @@ switch (opFixa)
 int clienteCarrinho()
 {
   int continua = VERD;  // VERD é uma constante que possui o valor 1
-  int opcao, opCadCliente;
+  int opcao;
   // menu principal
   do {
   //system("cls");
@@ -799,21 +817,20 @@ int clienteCarrinho()
 
 
   switch(opcao){
-  case 1 : printf("\nVocê já possui cadastro em nossa loja?\n");
-           printf("1 - Sim\n");
-           printf("2 - Não\n");
-           printf("\nOpção: ");
-           scanf("%d", &opCadCliente);
-           if (opCadCliente == 1)
-           {
-               cadastroCliente();
-           }
-           else
-           {
-            printf("Cadastre-se!\n");
-            
-           }
+  case 1 : printf("\nFaça seu cadastro!\n");
 
+           printf("\n*************** Listagem **************");
+           listarCarrinho();
+           totalCarrinho();
+/*
+           cadCarrinho[i].codProduto = prodCompra;
+           cadCarrinho[i].qtd = qtdCompra;
+           cadCarrinho[i].valTotal = qtdCompra * cadProd[posicaoProd].valor;
+           cadProd[posicaoProd].qtdEst = cadProd[posicaoProd].qtdEst - qtdCompra; // atualizar o estoque
+           printf("\n--------------------------------------------------------");
+          // fazer o somátorio do carrinho
+           totCarrinho = totCarrinho + cadCarrinho[i].valTotal;
+*/
 
 
              
@@ -1027,7 +1044,7 @@ float qtdAddCarrinho;
 do
 {
   printf("Produtos da loja: \n");
-  listarCliente();
+  listarCad();
   printf("\nDeseja adicionar algum produto ao carrinho? (1-Sim 0-Não): ");
   scanf("%d", &opcao);
   if (opcao != 1)
@@ -1050,7 +1067,8 @@ do
           vetCarrinho[i].precoCarrinho = vetCarrinho[i].precoCarrinho + (vetCad[i].precoProd*qtdAddCarrinho);
           vetCarrinho[i].qtdCarrinho = vetCarrinho[i].qtdCarrinho + qtdAddCarrinho;
           vetCad[i].estoqueProd = vetCad[i].estoqueProd - qtdAddCarrinho;
-
+          vetCarrinho[i].totCarrinho = vetCarrinho[i].totCarrinho + (vetCad[i].precoProd*qtdAddCarrinho);
+          
           printf("\n\nProduto adicionado ao carrinho..: ");
           printf("\n\nId..: %d\nNome..: %s\nPreço..: %.2f\nQtd..: %.0f", vetCarrinho[i].idCarrinho, vetCarrinho[i].nomeCarrinho,vetCarrinho[i].precoCarrinho,vetCarrinho[i].qtdCarrinho);
           printf("\nDeseja adicionar mais algum produto ao carrinho..? (1-Sim 0-Não): ");
@@ -1130,7 +1148,7 @@ int menuCadPetbox()
 
 
   case 4 : 
-             if(listarClientePetbox()){
+             if(listarCadPetbox()){
                printf("\nListagem de Produtos!\n");
              } else {
                printf("\nERRO ao Listar o Produto!\n");
@@ -1199,7 +1217,7 @@ int menuCadProd() {
 
 
   case 4 : 
-             if(listarCliente()){
+             if(listarCad()){
                printf("\nListagem de Produtos!\n");
              } else {
                printf("\nERRO ao Listar o Produto!\n");
