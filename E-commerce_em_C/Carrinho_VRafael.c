@@ -338,7 +338,7 @@ int excluirCadPetbox(){
   }
 
 //Função entradaCad()
-int entradaCad(int pos){ // posição livre para a inclusão
+int entradaCadProd(int pos){ // posição livre para a inclusão
    int resp = FALSO;
    printf("\n----------------------------------------Inclusão de novo produto------------------------------------------");
    printf("\nIdentificador: %d", pos);
@@ -357,7 +357,7 @@ int entradaCad(int pos){ // posição livre para a inclusão
 
 
 //FunçãoCad
-int listarCad(){
+int listarCadProd(){
   int resp = FALSO;
   int i;
   for(i=0;i<TAMANHO; i++){
@@ -394,7 +394,7 @@ return resp;
 
 
 // buscarCad()
-int buscarCad(int pos){
+int buscarCadProd(int pos){
   int resp = FALSO;
   printf("\n-------------------------------------------Busca por produtos---------------------------------------------");
   printf("\nIdentificador: %d", vetCad[pos].id);
@@ -418,7 +418,7 @@ int incluirCadProd(){
     }
   }
   if(posicao!=-1) {
-  if(entradaCad(posicao)){
+  if(entradaCadProd(posicao)){
     resp = VERD;
     }
   }else {
@@ -430,20 +430,20 @@ int incluirCadProd(){
 
 
 // AlterarCad
-int alterarCad(){
+int alterarCadProd(){
   int resp = FALSO;
   int pos=-1;
   char confirma;
-  listarCad();
+  listarCadProd();
   printf("\n------------------------------------------Alteração de produtos ------------------------------------------");
   printf("\nQual é o identificador do Produto?");
   scanf("%d", &pos);
   fflush(stdin);// limpeza do buffer do teclado para nãopular leituras
-  if(buscarCad(pos)){
+  if(buscarCadProd(pos)){
   printf("\nDeseja Alterar este Registro do Produto [s/n]?");
     scanf("%c", &confirma);
     if(confirma=='s' || confirma == 'S'){
-    entradaCad(pos);
+    entradaCadProd(pos);
     resp = VERD;
     }
   }
@@ -451,16 +451,16 @@ int alterarCad(){
 }
 
 //excluirCad()
-int excluirCad(){
+int excluirCadProd(){
   int resp = FALSO;
   int pos=-1;
   char confirma;
-  listarCad();
+  listarCadProd();
   printf("\n------------------------------------------Exclusão de produtos--------------------------------------------");
   printf("\nQual é o identificador do Registro do Produto?");
   scanf("%d", &pos);
   fflush(stdin);// limpeza do buffer do teclado para nãopular leituras
-  if(buscarCad(pos)){
+  if(buscarCadProd(pos)){
   printf("\nConfirma a EXCLUSÃO do Registro do Produto [s/n]?");
   scanf("%c", &confirma);
     if(confirma=='s' || confirma == 'S'){
@@ -573,7 +573,7 @@ int alterarCarrinho(){
   printf("\nDeseja Alterar este Registro do Produto [s/n]?");
     scanf("%c", &confirma);
     if(confirma=='s' || confirma == 'S'){
-    entradaCad(posicao);
+    entradaCadProd(posicao);
     resp = VERD;
     }
   }
@@ -619,7 +619,7 @@ int totalCarrinho(){
     }
  }
     printf("\n***************************************");
-    printf("\nTotal       : %.2f\n", somatorio); 
+    printf("\nTotal         : %.2f\n", somatorio); 
 
  resp = VERD;
  return resp;
@@ -664,14 +664,14 @@ int menuClube()
       printf("| Como funciona a PetBox                                                                                |\n");
       printf("---------------------------------------------------------------------------------------------------------\n");
       printf("\n         No Clube Pet você recebe, todo mês, uma PetBOX com tudo que o seu bichinho precisa!         \n\n");
-	  printf("\n                                 PASSOS PARA ADQUIRIR SUA PET BOX                                      \n");
-	  printf("\n                                        1 - Você escolhe!                                              \n");
+	    printf("\n                                 PASSOS PARA ADQUIRIR SUA PET BOX                                      \n");
+	    printf("\n                                        1 - Você escolhe!                                              \n");
       printf("\n         São vários clubes diferentes, e você escolhe a PetBOX que mais combina com o seu pet.         \n");
-	  printf("\n                                        2 - Nós selecionamos                                           \n"); 
+	    printf("\n                                        2 - Nós selecionamos                                           \n"); 
       printf("\n  Nossos especialistas  se encarregam em selecionar os melhores produtos que farão parte de cada PetBOX\n");
-	  printf("\n                                        3 - Comodidade                                                 \n");
+	    printf("\n                                        3 - Comodidade                                                 \n");
       printf("\n                Todo mês, você recebe a sua PetBOX no conforto da sua casa.                            \n");
-	  printf("\n                                        4 - Aproveite                                                  \n");
+	    printf("\n                                        4 - Aproveite                                                  \n");
       printf("\n                            O seu bichinho com o melhor do mundo Pet!                                  \n");
       printf("--------------------------------------------------------------------------------------------------------\n\n");
       system("pause");
@@ -1009,11 +1009,11 @@ int menuCliente(){
             printf("|                                                BRPETS                                                 |\n\n");
             printf("---------------------------------------------------------------------------------------------------------\n\n");
             printf("\n A BRPet é uma empresa que surgiu para fazer a relação entre você e seu pet ser melhor a cada dia!     \n");
-	        printf("\n Somos apaixonados por pets e , por isso, a nossa loja foi preparada e organizada para você encontrar  \n"); 
+	          printf("\n Somos apaixonados por pets e , por isso, a nossa loja foi preparada e organizada para você encontrar  \n"); 
             printf("\n facilmente o que procura a qualquer hora e em qualquer lugar.                                         \n");
-	        printf("\n Os nossos principais produtos são as PetBOX, uma maneira inovadora de ter todo mês na sua casa tudo   \n");
+	          printf("\n Os nossos principais produtos são as PetBOX, uma maneira inovadora de ter todo mês na sua casa tudo   \n");
             printf("\n que seu pet precisa.                                                                                  \n");   
-	        printf("\n Faça parte do nosso Clube Pet  e aproveite o que há de melhor no mundo pet!                           \n");
+	          printf("\n Faça parte do nosso Clube Pet  e aproveite o que há de melhor no mundo pet!                           \n");
             printf("---------------------------------------------------------------------------------------------------------\n\n");
             system("pause");
             system("cls");
@@ -1055,7 +1055,7 @@ float qtdAddCarrinho;
 do
 {
   printf("Produtos da loja: \n");
-  listarCad();
+  listarCadProd();
   printf("\n---------------------------------------------------------------------------------------------------------\n");
   printf("\nDeseja adicionar algum produto ao carrinho? (1-Sim 0-Não): ");
   scanf("%d", &opcao);
@@ -1213,7 +1213,7 @@ int menuCadProd() {
               break;
  
   case 2 : 
-             if(alterarCad()){
+             if(alterarCadProd()){
                printf("\nProduto Alterado!\n");
              } else {
                printf("\nERRO ao Alterar na Listagem!\n");
@@ -1221,7 +1221,7 @@ int menuCadProd() {
              break;  
 
   case 3 : 
-             if(excluirCad()){
+             if(excluirCadProd()){
                printf("\nProduto Excluído!\n");
              } else {
                printf("\nERRO ao Excluir na Listagem!\n");
@@ -1230,7 +1230,7 @@ int menuCadProd() {
 
 
   case 4 : 
-             if(listarCad()){
+             if(listarCadProd()){
                printf("\nListagem de Produtos!\n");
              } else {
                printf("\nERRO ao Listar o Produto!\n");
