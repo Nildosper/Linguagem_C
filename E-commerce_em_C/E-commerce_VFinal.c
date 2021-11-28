@@ -698,14 +698,9 @@ int excluirCad(){
 //Função entradaCad()
 int entradaCarrinho(int pos){ // posição livre para a inclusão
    int resp = FALSO;
-   printf("\n**********Inclusão de novo produto!********");
    printf("\nIdentificador: %d", pos);
    vetCarrinho[pos].idCarrinho = pos;
-   printf("\nNome        : ");
-   scanf("%s", vetCarrinho[pos].nomeCarrinho); // não vai poder ter espaço no nome
-   printf("\nPreço       : ");
-   scanf("%f", &vetCarrinho[pos].precoCarrinho);  
-   printf("\nEstoque     : ");
+   printf("\nQtd    : ");
    scanf("%f", &vetCarrinho[pos].qtdCarrinho); 
    resp = VERD;
    return resp;
@@ -735,11 +730,12 @@ int listarCarrinho(){
 // buscarCad()
 int buscarCarrinho(int posicao){
   int resp = FALSO;
+  int i;
   printf("\n***************************************");
   printf("\nIdentificador : %d", vetCarrinho[posicao].idCarrinho);
   printf("\nNome          : %s", vetCarrinho[posicao].nomeCarrinho);
-  printf("\nPreço unitário: %.2f", vetCarrinho[posicao].precoCarrinho);   
-  printf("\nEstoque      : %.0f", vetCarrinho[posicao].qtdCarrinho);               
+  printf("\nPreço unitário: %.2f", vetCad[i].precoProd);   
+  printf("\nQtd      : %.0f", vetCarrinho[posicao].qtdCarrinho);               
            
   resp = VERD;
   return resp;
@@ -780,7 +776,7 @@ int alterarCarrinho(){
   printf("\nDeseja Alterar este Registro do Produto [s/n]?");
     scanf("%c", &confirma);
     if(confirma=='s' || confirma == 'S'){
-    entradaCad(posicao);
+    entradaCarrinho(posicao);
     resp = VERD;
     }
   }
@@ -1033,9 +1029,11 @@ int clienteCarrinho()
   printf("---------------------------------------------------------------------------------------------------------\n");
   printf("|                                         Gerenciamento de Carrinho                                     |\n");    
   printf("---------------------------------------------------------------------------------------------------------\n");
+  listarCarrinho();
+  totalCarrinho();
   printf("\nComo gostaria de continuar?\n");
   printf("\n1 - Finalizar Pedido");
-  printf("\n2 - Alterar produtos do carrinho");
+  printf("\n2 - Alterar quantidade de produtos do carrinho");
   printf("\n3 - Excluir produtos do carrinho");
   printf("\n4 - Listar produtos do carrinho");
   printf("\n5 - Incluir novo produto\n");
@@ -1044,10 +1042,7 @@ int clienteCarrinho()
 
   switch(opcao){
   case 1 : 
-           printf("\n*************** Listagem **************\n\n");
-           listarCarrinho();
-           totalCarrinho();
-           novoCad();
+             novoCad();
              
              break;
  
