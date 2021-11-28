@@ -360,13 +360,13 @@ int entradaCadProd(int pos){ // posição livre para a inclusão
 int listarCadProd(){
   int resp = FALSO;
   int i;
-  for(i=0;i<TAMANHO; i++){
+  for(i=6;i<TAMANHO; i++){
     if(vetCad[i].id != -1){
       printf("\n------------------------------------------Listagem de produtos -------------------------------------------");
       printf("\nIdentificador: %d", vetCad[i].id);
       printf("\nNome         : %s", vetCad[i].nomeProd);
-      printf("\nPreço       : %.2f", vetCad[i].precoProd);    
-	  printf("\nEstoque     : %.0f", vetCad[i].estoqueProd);          
+      printf("\nPreço        : %.2f", vetCad[i].precoProd);    
+	    printf("\nEstoque      : %.0f", vetCad[i].estoqueProd);          
    }
  }
  resp = VERD;
