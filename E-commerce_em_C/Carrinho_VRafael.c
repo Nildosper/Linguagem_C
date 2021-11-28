@@ -73,10 +73,10 @@ void limpa_linha()
 				{
 					do 
 					{
-                    printf("\n---------------------------------------------------------------------------------------------------------\n");
-				    printf("|                                         Cadastro do Cliente                                           |\n");	
-				    printf("---------------------------------------------------------------------------------------------------------\n");
-                    printf("\n Digite seu nome completo: ");
+          printf("\n---------------------------------------------------------------------------------------------------------\n");
+				  printf("|                                         Cadastro do Cliente                                           |\n");	
+				  printf("---------------------------------------------------------------------------------------------------------\n");
+          printf("\n Digite seu nome completo: ");
 					gets(nomeCliente);
 					limpa_linha();
 					printf("\n Digite o seu CPF (apenas números): ");
@@ -86,29 +86,29 @@ void limpa_linha()
 					limpa_linha();
 					printf("\n Digite o nome da sua rua: ");
 					gets(nomeRua);
-                    limpa_linha();
+          limpa_linha();
 					printf("\n Digite o número da sua casa: ");
 					gets(num);
-                    limpa_linha();
+          limpa_linha();
 					printf("\n Digite a sua cidade: ");
 					gets(nomeCidade);
-                    limpa_linha();
+          limpa_linha();
 					printf("\n Digite o seu estado: ");
 					gets(nomeEstado);
-                    limpa_linha();
+          limpa_linha();
 					printf("\n Digite o seu CEP (apenas números): ");
 					scanf("%f", &cepCliente);
-				    printf("\n---------------------------------------------------------------------------------------------------------\n");
-                    printf("Cadastro finalizado com sucesso!\n");
-                    printf("\n********Dados cadastrados*********\n");
+				  printf("\n---------------------------------------------------------------------------------------------------------\n");
+          printf("Cadastro finalizado com sucesso!\n");
+          printf("\n********Dados cadastrados*********\n");
 					printf ("\n Nome: %s\n Telefone: %s\n Rua: %s\n Número: %d\n Cidade: %s\n Estado: %s", nomeCliente, telefoneCliente, nomeRua, num, nomeCidade, nomeEstado);
 					printf ("\n CEP..: %.0f", cepCliente);
 					printf("\n**********************************\n");
 					printf("\nOs dados cadastrados estão corretos?\n\n");
-                    printf("1 - Sim\n");
-                    printf("2 - Não\n");
-                    printf("Opção:");
-                    scanf("%d", &respCliente);
+          printf("1 - Sim\n");
+          printf("2 - Não\n");
+          printf("Opção:");
+          scanf("%d", &respCliente);
 				    } while (respCliente==2);
 
                     if (respCliente==1)
@@ -148,7 +148,7 @@ void limpa_linha()
                     printf("Voltando ao Menu Anterior\n");
 					system("pause");
 					system("cls");
-				    menuCliente();   
+				  menuCliente();   
                     }
 				}
 				else 
