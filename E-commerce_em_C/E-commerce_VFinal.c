@@ -56,6 +56,13 @@ void limpa_linha()
 // Função novoCad
 int novoCad()
 {
+    printf("\nPara finalizar a compra é necessário realizar o cadastro. Deseja fazer isso agora?\n");
+                printf("1 - Sim\n");
+                printf("2 - Não\n");
+                printf("Opção:");
+				scanf("%d", &confirmaCad);
+				if (confirmaCad==1)
+				{
   do{
                     printf("\n---------------------------------------------------------------------------------------------------------\n");
                     printf("|                                         Cadastro do Cliente                                           |\n");  
@@ -115,6 +122,15 @@ int novoCad()
                         }
                      
      } while (respCliente==2);
+
+     }
+				else 
+				{
+					printf("Voltando ao Menu Anterior\n");
+					system("pause");
+					system("cls");
+				    menuCliente();
+				}
     return 0;
 }
 
