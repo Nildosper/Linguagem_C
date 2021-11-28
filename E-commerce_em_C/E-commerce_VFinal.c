@@ -102,7 +102,18 @@ int novoCad()
                     printf("1 - Sim\n");
                     printf("2 - Não\n");
                     printf("Opção:");
-                    scanf("%d", &respCliente); 
+                    scanf("%d", &respCliente);
+                    if (respCliente==1)
+                    {
+                        menuPag();
+                    }
+                        else
+                        {
+                            printf("\nRetornando ao menu do cliente.");
+                            system("pause");
+                            menuCliente();
+                        }
+                     
      } while (respCliente==2);
     return 0;
 }
@@ -1019,7 +1030,7 @@ int clienteCarrinho()
            printf("\n*************** Listagem **************\n\n");
            listarCarrinho();
            totalCarrinho();
-           cadastroCliente();
+           novoCad();
              
              break;
  
