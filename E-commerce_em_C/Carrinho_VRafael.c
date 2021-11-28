@@ -496,7 +496,7 @@ int entradaCarrinho(int pos){ // posição livre para a inclusão
    scanf("%s", vetCarrinho[pos].nomeCarrinho); // não vai poder ter espaço no nome
    printf("\nPreço       : ");
    scanf("%f", &vetCarrinho[pos].precoCarrinho);  
-   printf("\nEstoque     : ");
+   printf("\nQtd     : ");
    scanf("%f", &vetCarrinho[pos].qtdCarrinho); 
    resp = VERD;
    return resp;
@@ -573,7 +573,7 @@ int alterarCarrinho(){
   printf("\nDeseja Alterar este Registro do Produto [s/n]?");
     scanf("%c", &confirma);
     if(confirma=='s' || confirma == 'S'){
-    entradaCadProd(posicao);
+    entradaCarrinho(posicao);
     resp = VERD;
     }
   }
