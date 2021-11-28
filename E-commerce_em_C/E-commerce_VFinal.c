@@ -730,12 +730,7 @@ int listarCarrinho(){
 // buscarCad()
 int buscarCarrinho(int posicao){
   int resp = FALSO;
-  int i;
-  printf("\n***************************************");
-  printf("\nIdentificador : %d", vetCarrinho[posicao].idCarrinho);
-  printf("\nNome          : %s", vetCarrinho[posicao].nomeCarrinho);
-  printf("\nPreço unitário: %.2f", vetCad[i].precoProd);   
-  printf("\nQtd      : %.0f", vetCarrinho[posicao].qtdCarrinho);               
+         
            
   resp = VERD;
   return resp;
@@ -773,7 +768,7 @@ int alterarCarrinho(){
   scanf("%d", &posicao);
   fflush(stdin);// limpeza do buffer do teclado para nãopular leituras
   if(buscarCarrinho(posicao)){
-  printf("\nDeseja Alterar este Registro do Produto [s/n]?");
+  printf("\nDeseja Alterar a quantidade do Produto [s/n]?");
     scanf("%c", &confirma);
     if(confirma=='s' || confirma == 'S'){
     entradaCarrinho(posicao);
@@ -1035,9 +1030,8 @@ int clienteCarrinho()
   printf("\n1 - Finalizar Pedido");
   printf("\n2 - Alterar quantidade de produtos do carrinho");
   printf("\n3 - Excluir produtos do carrinho");
-  printf("\n4 - Listar produtos do carrinho");
-  printf("\n5 - Incluir novo produto\n");
-  printf("\nEscolha sua opção [1, 2, 3, 4, 5]: ");
+  printf("\n4 - Incluir novo produto\n");
+  printf("\nEscolha sua opção [1, 2, 3, 4]: ");
   scanf("%d", &opcao);
 
   switch(opcao){
@@ -1060,14 +1054,7 @@ int clienteCarrinho()
                printf("\nERRO ao Excluir no Carrinho!");
              } 
              break;
-  case 4 : printf("\n*************** Listagem **************");
-             if(listarCarrinho()){
-           printf("\n***************************************\n");
-             } else {
-               printf("\nERRO ao Listar o Produto!\n");
-             } 
-             break;
-  case 5 : printf("***** Saída do Programa *****");
+  case 4 : printf("***** Saída do Programa *****");
              continua = FALSO;
              break;
   default: printf("\nOpção inválida!!!");
