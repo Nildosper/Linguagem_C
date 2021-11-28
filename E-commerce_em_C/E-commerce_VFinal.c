@@ -183,7 +183,7 @@ int menuPag()
                              if (opcao==1)
                              {
                                 printf("\n\n*************************COMPRA FINALIZADA COM SUCESSO*********************\n");
-                                printf("\nDeseja finalizar retornar ao site? (1-Sim 2-Não)...: ");
+                                printf("\nDeseja retornar ao site? (1-Sim 2-Não)...: ");
                                 scanf("%d", &opcao1);
                                 if (opcao1==1)
                                 {
@@ -250,7 +250,7 @@ int menuPag()
                              if (opcao==1)
                              {
                                 printf("\n\n*************************COMPRA FINALIZADA COM SUCESSO*********************\n");
-                                printf("\nDeseja finalizar retornar ao site? (1-Sim 2-Não)...: ");
+                                printf("\nDeseja retornar ao site? (1-Sim 2-Não)...: ");
                                 scanf("%d", &opcao1);
                                 if (opcao1==1)
                                 {
@@ -306,7 +306,7 @@ int menuPag()
                              if (opcao==1)
                              {
                                 printf("\n\n*************************COMPRA FINALIZADA COM SUCESSO*********************\n");
-                                printf("\nDeseja finalizar retornar ao site? (1-Sim 2-Não)...: ");
+                                printf("\nDeseja retornar ao site? (1-Sim 2-Não)...: ");
                                 scanf("%d", &opcao1);
                                 if (opcao1==1)
                                 {
