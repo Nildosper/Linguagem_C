@@ -176,7 +176,8 @@ int menuPag()
                             resp = VERD;
                             totalCarrinho();
                              printf("\n\n*************************MÉTODO DE PAGAMENTO*********************\n");
-                             printf("\n                        Boleto Bancário                          \n");
+                             printf("\n                        Boleto Bancário                          \n\n");
+                             
                              printf("\nDeseja finalizar sua compra? (1-Sim 2-Não)...: ");
                              scanf("%d", &opcao);
                              if (opcao==1)
