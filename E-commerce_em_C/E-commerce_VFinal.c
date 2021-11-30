@@ -96,14 +96,14 @@ int novoCad()
                     printf("\n---------------------------------------------------------------------------------------------------------\n");
                     printf("Cadastro finalizado com sucesso!\n");
                     printf("\n********Dados cadastrados*********\n");
-                    printf("\n Nome..: %s", nomeCliente);
-                    printf("\n Documento..: %s", cpfCliente);
-                    printf("\n Telefone..: %s", telefoneCliente);
-                    printf("\n CEP..: %s", cepCliente);
-                    printf("\n Rua..: %s", nomeRua);
-                    printf("\n Número..: %s", numRua);
-                    printf("\n Cidade..: %s", nomeCidade);
-                    printf("\n Estado..: %s", nomeEstado);
+                    printf("\n Nome: %s", nomeCliente);
+                    printf("\n Documento: %s", cpfCliente);
+                    printf("\n Telefone: %s", telefoneCliente);
+                    printf("\n CEP: %s", cepCliente);
+                    printf("\n Rua: %s", nomeRua);
+                    printf("\n Número: %s", numRua);
+                    printf("\n Cidade: %s", nomeCidade);
+                    printf("\n Estado: %s", nomeEstado);
                     printf("\n**********************************\n");
                     printf("\nOs dados cadastrados estão corretos?\n\n");
                     printf("1 - Sim\n");
@@ -152,14 +152,14 @@ int menuPag()
                              system("cls");
                              printf("\n***************DADOS DADOS FINAIS DA COMPRA***************\n\n\n");
                              printf("\n***************DADOS CADASTRADOS DO CLIENTE***************\n");
-                             printf("\n Nome..: %s", nomeCliente);
-                             printf("\n Documento..: %s", cpfCliente);
-                             printf("\n Telefone..: %s", telefoneCliente);
-                             printf("\n CEP..: %s", cepCliente);
-                             printf("\n Rua..: %s", nomeRua);
-                             printf("\n Número..: %s", numRua);
-                             printf("\n Cidade..: %s", nomeCidade);
-                             printf("\n Estado..: %s", nomeEstado);
+                             printf("\n Nome: %s", nomeCliente);
+                             printf("\n Documento: %s", cpfCliente);
+                             printf("\n Telefone: %s", telefoneCliente);
+                             printf("\n CEP: %s", cepCliente);
+                             printf("\n Rua: %s", nomeRua);
+                             printf("\n Número: %s", numRua);
+                             printf("\n Cidade: %s", nomeCidade);
+                             printf("\n Estado: %s", nomeEstado);
                              printf("\n**********************************\n\n");
                              printf("\n******************CARRINHO DE COMPRAS*********************");
                                 for(i=0;i<TAMANHO; i++)
@@ -178,12 +178,12 @@ int menuPag()
                              printf("\n\n*************************MÉTODO DE PAGAMENTO*********************\n");
                              printf("\n                        Boleto Bancário                          \n\n");
                              
-                             printf("\nDeseja finalizar sua compra? (1-Sim 2-Não)...: ");
+                             printf("\nDeseja finalizar sua compra? (1-Sim 2-Não): ");
                              scanf("%d", &opcao);
                              if (opcao==1)
                              {
                                 printf("\n\n*************************COMPRA FINALIZADA COM SUCESSO*********************\n");
-                                printf("\nDeseja retornar ao site? (1-Sim 2-Não)...: ");
+                                printf("\nDeseja retornar ao site? (1-Sim 2-Não): ");
                                 scanf("%d", &opcao1);
                                 if (opcao1==1)
                                 {
@@ -206,14 +206,14 @@ int menuPag()
                              system("cls");
                              printf("\n***************DADOS DADOS FINAIS DA COMPRA***************\n\n\n");
                              printf("\n***************DADOS CADASTRADOS DO CLIENTE***************\n");
-                             printf("\n Nome..: %s", nomeCliente);
-                             printf("\n Documento..: %s", cpfCliente);
-                             printf("\n Telefone..: %s", telefoneCliente);
-                             printf("\n CEP..: %s", cepCliente);
-                             printf("\n Rua..: %s", nomeRua);
-                             printf("\n Número..: %s", numRua);
-                             printf("\n Cidade..: %s", nomeCidade);
-                             printf("\n Estado..: %s", nomeEstado);
+                             printf("\n Nome: %s", nomeCliente);
+                             printf("\n Documento: %s", cpfCliente);
+                             printf("\n Telefone: %s", telefoneCliente);
+                             printf("\n CEP: %s", cepCliente);
+                             printf("\n Rua: %s", nomeRua);
+                             printf("\n Número: %s", numRua);
+                             printf("\n Cidade: %s", nomeCidade);
+                             printf("\n Estado: %s", nomeEstado);
                              printf("\n**********************************\n\n");
                              printf("\n******************CARRINHO DE COMPRAS*********************");
   
@@ -244,13 +244,13 @@ int menuPag()
                              gets(cvvCartao);
                              limpa_linha();
                              printf("\n\n*************************DADOS DO CARTÃO*********************\n");
-                             printf("\nNúmero do cartão..: %s\nNome do Cartão..: %s\nCódigo CVV..: ***", numeroCartao, nomeCartao);
-                             printf("\n\n\nDeseja finalizar sua compra? (1-Sim 2-Não)...: ");
+                             printf("\nNúmero do cartão: %s\nNome do Cartão: %s\nCódigo CVV: ***", numeroCartao, nomeCartao);
+                             printf("\n\n\nDeseja finalizar sua compra? (1-Sim 2-Não): ");
                              scanf("%d", &opcao);
                              if (opcao==1)
                              {
                                 printf("\n\n*************************COMPRA FINALIZADA COM SUCESSO*********************\n");
-                                printf("\nDeseja retornar ao site? (1-Sim 2-Não)...: ");
+                                printf("\nDeseja retornar ao site? (1-Sim 2-Não): ");
                                 scanf("%d", &opcao1);
                                 if (opcao1==1)
                                 {
@@ -273,14 +273,14 @@ int menuPag()
                              system("cls");
                              printf("\n***************DADOS DADOS FINAIS DA COMPRA***************\n\n\n");
                              printf("\n***************DADOS CADASTRADOS DO CLIENTE***************\n");
-                             printf("\n Nome..: %s", nomeCliente);
-                             printf("\n Documento..: %s", cpfCliente);
-                             printf("\n Telefone..: %s", telefoneCliente);
-                             printf("\n CEP..: %s", cepCliente);
-                             printf("\n Rua..: %s", nomeRua);
-                             printf("\n Número..: %s", numRua);
-                             printf("\n Cidade..: %s", nomeCidade);
-                             printf("\n Estado..: %s", nomeEstado);
+                             printf("\n Nome: %s", nomeCliente);
+                             printf("\n Documento: %s", cpfCliente);
+                             printf("\n Telefone: %s", telefoneCliente);
+                             printf("\n CEP: %s", cepCliente);
+                             printf("\n Rua: %s", nomeRua);
+                             printf("\n Número: %s", numRua);
+                             printf("\n Cidade: %s", nomeCidade);
+                             printf("\n Estado: %s", nomeEstado);
                              printf("\n**********************************\n\n");
                              printf("\n******************CARRINHO DE COMPRAS*********************");
   
@@ -301,12 +301,12 @@ int menuPag()
                              printf("\n                        PIX                                  \n");
                              printf("\n\n*************************DADOS DO PIX*********************\n");
                              printf("\n Código PIX..: brpetsfinanceiro@brpets.com\n");
-                             printf("\n\n\nDeseja finalizar sua compra? (1-Sim 2-Não)...: ");
+                             printf("\n\n\nDeseja finalizar sua compra? (1-Sim 2-Não): ");
                              scanf("%d", &opcao);
                              if (opcao==1)
                              {
                                 printf("\n\n*************************COMPRA FINALIZADA COM SUCESSO*********************\n");
-                                printf("\nDeseja retornar ao site? (1-Sim 2-Não)...: ");
+                                printf("\nDeseja retornar ao site? (1-Sim 2-Não): ");
                                 scanf("%d", &opcao1);
                                 if (opcao1==1)
                                 {
@@ -340,14 +340,14 @@ int menuPag()
       int i, opcao, opcao1, respClientefinal;
       int resp = FALSO;       
                 printf("\n********Dados cadastrados atuais*********\n");
-                printf("\n Nome..: %s", nomeCliente);
-                printf("\n Documento..: %s", cpfCliente);
-                printf("\n Telefone..: %s", telefoneCliente);
-                printf("\n CEP..: %s", cepCliente);
-                printf("\n Rua..: %s", nomeRua);
-                printf("\n Número..: %s", numRua);
-                printf("\n Cidade..: %s", nomeCidade);
-                printf("\n Estado..: %s", nomeEstado);
+                printf("\n Nome: %s", nomeCliente);
+                printf("\n Documento: %s", cpfCliente);
+                printf("\n Telefone: %s", telefoneCliente);
+                printf("\n CEP: %s", cepCliente);
+                printf("\n Rua: %s", nomeRua);
+                printf("\n Número: %s", numRua);
+                printf("\n Cidade: %s", nomeCidade);
+                printf("\n Estado: %s", nomeEstado);
                 printf("\n**********************************\n");
                 printf("\nOs dados cadastrados estão corretos?\n\n");
                 printf("1 - Sim\n");
