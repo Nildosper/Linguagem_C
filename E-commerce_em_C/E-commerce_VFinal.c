@@ -14,7 +14,7 @@ int listarCarrinho();
 int menuLoja();
 int totalCarrinho();
 
-#define TAMANHO 12
+#define TAMANHO 19
 #define VERD 1
 #define FALSO 0
 
